@@ -1,0 +1,1069 @@
+{
+  "applianceInfo": {
+    "typeCode": "008",
+    "typeName": "ac_window_machine",
+    "isGorenje": false
+  },
+  "logo": {
+    "icon": "0xe7c4",
+    "fontFamily": "ConnectLifeAirConditionerFont"
+  },
+  "logoBold": {
+    "icon": "0xe793",
+    "fontFamily": "ConnectLifeAirConditionerFont"
+  },
+  "softAp": {
+    "type": "1",
+    "resource": [
+      {
+        "title": "step",
+        "style": 0,
+        "content": "add_window_ac_1",
+        "content_pair": "add_window_ac_1",
+        "path": "resource/images/appliance/add_window_ac_1.png",
+        "pair_path": "resource/images/appliance/add_window_ac_1.png"
+      },{
+        "title": "step",
+        "style": 0,
+        "content": "add_window_ac_2",
+        "content_pair": "add_window_ac_2",
+        "path": "resource/images/appliance/add_window_ac_2.png",
+        "pair_path": "resource/images/appliance/add_window_ac_2.png"
+      }
+    ]
+  },
+  "applianceTile": {
+    "convertType": "air",
+    "icon": {
+      "icon": "0xe7c4",
+      "fontFamily": "ConnectLifeAirConditionerFont"
+    },
+    "style": "air",
+    "properties": [
+      {
+        "propertyKey": "t_power",
+        "type": "5",
+        "prefix": "",
+        "suffix": "",
+        "display": {
+          "t_power": "0"
+        }
+      },
+      {
+        "propertyKey": "t_work_mode",
+        "type": "1",
+        "prefix": "",
+        "suffix": "",
+        "display": {
+          "t_power": "1"
+        }
+      },
+      {
+        "propertyKey": "t_temp",
+        "type": "3",
+        "unitPropertyKey": "t_temp_type",
+        "prefix": "",
+        "suffix": "",
+        "display": {
+          "t_power": "1",
+          "t_work_mode": "1,2,5"
+        }
+      },
+      {
+        "propertyKey": "t_fan_speed",
+        "type": "1",
+        "prefix": "",
+        "suffix": "",
+        "display": {
+          "t_power": "1"
+        }
+      }
+    ]
+  },
+  "activity": {
+    "icon": {
+      "icon": "0xe7c4",
+      "fontFamily": "ConnectLifeAirConditionerFont"
+    },
+    "style": "0",
+    "condition": [
+      {
+        "propertyKey": "t_power",
+        "value": "1"
+      }
+    ],
+    "progress": {
+      "totalPropertyKey": "总对应的属性",
+      "remainingPropertyKey": "总对应的属性",
+      "currentPropertyKey": "总对应的属性",
+      "type": ""
+    },
+    "properties": [
+      {
+        "propertyKey": "t_work_mode",
+        "type": "1",
+        "prefix": "",
+        "suffix": ""
+      },
+      {
+        "propertyKey": "t_temp",
+        "type": "3",
+        "prefix": "",
+        "unitPropertyKey": "t_temp_type",
+        "suffix": "",
+        "display": {
+          "t_work_mode": "1,2"
+        }
+      },
+      {
+        "propertyKey": "t_fan_speed",
+        "type": "1",
+        "prefix": "",
+        "suffix": ""
+      },
+      {
+        "propertyKey": "t_fanspeedCV",
+        "type": "1",
+        "prefix": "",
+        "suffix": ""
+      }
+    ]
+  },
+  "scene": {
+    "isSupport": 0,
+    "convertType": "air",
+    "automation": {
+      "timing": [
+        {
+          "icon": {
+            "icon": "0xe768",
+            "fontFamily": "ConnectLifeAirConditionerFont"
+          },
+          "title": "ac_mode",
+          "propertyKey": "t_work_mode"
+        },
+        {
+          "icon": {
+            "icon": "0xe783",
+            "fontFamily": "ConnectLifeAirConditionerFont"
+          },
+          "title": "ac_target_temperature",
+          "propertyKey": "t_temp"
+        },
+        {
+          "icon": {
+            "icon": "0xe75d",
+            "fontFamily": "ConnectLifeAirConditionerFont"
+          },
+          "title": "ac_wind_speed",
+          "propertyKey": "t_fan_speed"
+        }
+      ],
+      "condition": [
+        {
+          "propertyKey": "t_power",
+          "title": "ac_power",
+          "desc": "开/关机",
+          "type": "1",
+          "style": "switch",
+          "prefix": "",
+          "suffix": ""
+        },
+        {
+          "propertyKey": "t_work_mode",
+          "title": "ac_mode",
+          "desc": "模式",
+          "type": "1",
+          "style": "picker",
+          "prefix": "",
+          "suffix": ""
+        },
+        {
+          "propertyKey": "t_fan_speed",
+          "title": "ac_wind_speed",
+          "desc": "风速",
+          "type": "1",
+          "style": "picker",
+          "prefix": "",
+          "suffix": ""
+        },
+        {
+          "propertyKey": "f_temp_in",
+          "title": "ac_temperature",
+          "desc": "房间温度范围",
+          "type": "3",
+          "unitPropertyKey": "t_temp_type",
+          "icon": {
+            "icon": "0xe783",
+            "fontFamily": "ConnectLifeAirConditionerFont"
+          },
+          "style": "picker",
+          "prefix": "",
+          "suffix": ""
+        }
+      ],
+      "action": [
+        {
+          "propertyKey": "t_power",
+          "title": "ac_power",
+          "desc": "开/关机",
+          "type": "1",
+          "style": "picker",
+          "prefix": "",
+          "suffix": ""
+        },
+        {
+          "propertyKey": "t_work_mode",
+          "title": "ac_mode",
+          "desc": "模式",
+          "type": "1",
+          "style": "picker",
+          "prefix": "",
+          "suffix": ""
+        },
+        {
+          "propertyKey": "t_fan_speed",
+          "title": "ac_wind_speed",
+          "desc": "风速",
+          "type": "1",
+          "style": "picker",
+          "prefix": "",
+          "suffix": ""
+        },
+        {
+          "propertyKey": "t_temp",
+          "title": "ac_temperature",
+          "desc": "设定温度",
+          "type": "3",
+          "unitPropertyKey": "t_temp_type",
+          "style": "picker",
+          "prefix": "",
+          "suffix": ""
+        },
+        {
+          "propertyKey": "t_fanspeedCV",
+          "title": "ac_wind_speed",
+          "desc": "设定风速",
+          "type": "4",
+          "style": "picker",
+          "prefix": "",
+          "suffix": "%"
+        }
+      ]
+    },
+    "manual": [
+      {
+        "propertyKey": "t_work_mode",
+        "title": "ac_mode",
+        "desc": "模式",
+        "type": "1",
+        "prefix": "",
+        "suffix": ""
+      },
+      {
+        "propertyKey": "t_fan_speed",
+        "title": "ac_wind_speed",
+        "desc": "风速",
+        "type": "1",
+        "prefix": "",
+        "suffix": ""
+      },
+      {
+        "propertyKey": "t_fanspeedCV",
+        "title": "ac_wind_speed",
+        "desc": "无极风",
+        "type": "4",
+        "prefix": "",
+        "suffix": "%FAN"
+      },
+      {
+        "propertyKey": "t_temp",
+        "title": "ac_temperature",
+        "desc": "设定温度",
+        "type": "3",
+        "unitPropertyKey": "t_temp_type",
+        "prefix": "",
+        "suffix": ""
+      }
+    ]
+  },
+  "appliancePreference": "type_1",
+  "options": {
+    "t_power": [
+      {
+        "value": 0,
+        "des": "关",
+        "title": "ac_power_off",
+        "icon": {
+          "icon": "0xe74a",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 1,
+        "des": "开",
+        "title": "ac_power_on",
+        "icon": {
+          "icon": "0xe74a",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      }
+    ],
+    "t_work_mode": [
+      {
+        "value": 0,
+        "des": "送风",
+        "title": "ac_air_supply",
+        "icon": {
+          "icon": "0xe763",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 1,
+        "des": "制热",
+        "title": "ac_heating",
+        "icon": {
+          "icon": "0xe768",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 2,
+        "des": "制冷",
+        "title": "ac_cold",
+        "icon": {
+          "icon": "0xe749",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 3,
+        "des": "除湿",
+        "title": "ac_dehumidify",
+        "icon": {
+          "icon": "0xe744",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 4,
+        "des": "自动",
+        "title": "ac_auto",
+        "icon": {
+          "icon": "0xe746",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 5,
+        "des": "节能",
+        "title": "ac_save_energy",
+        "icon": {
+          "icon": "0xe742",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      }
+    ],
+    "t_fan_speed": [
+      {
+        "value": 0,
+        "des": "自动",
+        "title": "ac_auto_wind",
+        "icon": {
+          "icon": "0xe75d",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 1,
+        "des": "超低风(静音风)",
+        "title": "ac_super_low_wind",
+        "icon": {
+          "icon": "0xe75e",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 2,
+        "des": "低风",
+        "title": "ac_low_wind",
+        "icon": {
+          "icon": "0xe75f",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 3,
+        "des": "中风",
+        "title": "ac_middle_wind",
+        "icon": {
+          "icon": "0xe76f",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 4,
+        "des": "高风",
+        "title": "ac_high_wind",
+        "icon": {
+          "icon": "0xe76e",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 5,
+        "des": "超低风",
+        "title": "ac_super_low_wind",
+        "icon": {
+          "icon": "0xe75e",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 6,
+        "des": "低风",
+        "title": "ac_low_wind",
+        "icon": {
+          "icon": "0xe75f",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 7,
+        "des": "中风",
+        "title": "ac_middle_wind",
+        "icon": {
+          "icon": "0xe76f",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 8,
+        "des": "高风",
+        "title": "ac_high_wind",
+        "icon": {
+          "icon": "0xe76e",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 9,
+        "des": "超高风",
+        "title": "ac_super_high_wind",
+        "icon": {
+          "icon": "0xe760",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      }
+    ],
+    "t_fanspeedCV": [
+      {
+        "value": 0,
+        "des": "自动",
+        "title": "ac_auto_wind",
+        "icon": {
+          "icon": "0xe75d",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      }
+    ],
+    "t_swing_angle": [
+      {
+        "value": 0,
+        "des": "000",
+        "title": "ac_ud_swing",
+        "icon": {
+          "icon": "0xe757",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 2,
+        "des": "010",
+        "title": "ac_up_top",
+        "icon": {
+          "icon": "0xe750",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 3,
+        "des": "011",
+        "title": "ac_up_upper",
+        "icon": {
+          "icon": "0xe774",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 4,
+        "des": "100",
+        "title": "ac_up_m_up",
+        "icon": {
+          "icon": "0xe772",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 5,
+        "des": "101",
+        "title": "ac_up_down",
+        "icon": {
+          "icon": "0xe76b",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 6,
+        "des": "110",
+        "title": "ac_up_lower",
+        "icon": {
+          "icon": "0xe776",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 7,
+        "des": "111",
+        "title": "ac_up_bottom",
+        "icon": {
+          "icon": "0xe755",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 1,
+        "des": "001",
+        "title": "ac_up_auto",
+        "icon": {
+          "icon": "0xe74b",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      }
+    ],
+    "t_temp_compensate": [
+      {
+        "value": 0,
+        "title": "0°C",
+        "des": "0°C"
+      },
+      {
+        "value": 1,
+        "title": "+1°C",
+        "des": "+1°C"
+      },
+      {
+        "value": 2,
+        "title": "+2°C",
+        "des": "+2°C"
+      },
+      {
+        "value": 3,
+        "title": "+3°C",
+        "des": "+3°C"
+      },
+      {
+        "value": 15,
+        "title": "-1°C",
+        "des": "-1°C"
+      },
+      {
+        "value": 14,
+        "title": "-2°C",
+        "des": "-2°C"
+      },
+      {
+        "value": 13,
+        "title": "-3°C",
+        "des": "-3°C"
+      }
+    ],
+    "t_sleep": [
+      {
+        "value": 0,
+        "des": "关",
+        "title": "ac_closed",
+        "icon": {
+          "icon": "0xe745",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 1,
+        "des": "开",
+        "title": "ac_opened",
+        "icon": {
+          "icon": "0xe745",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      }
+    ],
+    "t_up_down": [
+      {
+        "value": 0,
+        "title": "ac_closed",
+        "des": "取消",
+        "icon": {
+          "icon": "0xe75a",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 1,
+        "title": "ac_opened",
+        "des": "开启",
+        "icon": {
+          "icon": "0xe75a",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      }
+    ],
+    "t_left_right": [
+      {
+        "value": 0,
+        "title": "ac_closed",
+        "des": "取消",
+        "icon": {
+          "icon": "0xe75a",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 1,
+        "title": "ac_opened",
+        "des": "开启",
+        "icon": {
+          "icon": "0xe75a",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      }
+    ],
+    "t_tms": [
+      {
+        "value": 0,
+        "des": "退出AI",
+        "title": "ac_closed",
+        "icon": {
+          "icon": "0xe752",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 1,
+        "des": "进入AI",
+        "title": "ac_opened",
+        "icon": {
+          "icon": "0xe752",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      }
+    ],
+    "t_swing_follow": [
+      {
+        "value": 0,
+        "des": "普通风向",
+        "title": "ac_closed",
+        "icon": {
+          "icon": "0xe748",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 1,
+        "des": "风吹人",
+        "title": "ac_wind_blow_people",
+        "icon": {
+          "icon": "0xe762",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 2,
+        "des": "风避人",
+        "title": "ac_wind_avoid_people",
+        "icon": {
+          "icon": "0xe740",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      }
+    ],
+    "t_swing_direction": [
+      {
+        "value": 0,
+        "title": "ac_forward",
+        "des": "正向",
+        "icon": {
+          "icon": "0xe759",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 1,
+        "title": "ac_all_right",
+        "des": "全右",
+        "icon": {
+          "icon": "0xe773",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 2,
+        "title": "ac_eight_characters",
+        "des": "八字",
+        "icon": {
+          "icon": "0xe767",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 3,
+        "title": "ac_lr_swing",
+        "des": "扫掠",
+        "icon": {
+          "icon": "0xe764",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 4,
+        "title": "ac_all_left",
+        "des": "全左",
+        "icon": {
+          "icon": "0xe777",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 5,
+        "title": "ac_instant_stop",
+        "des": "即时停",
+        "icon": {
+          "icon": "0xe75a",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      }
+    ],
+    "t_eco": [
+      {
+        "value": 0,
+        "des": "取消",
+        "title": "ac_closed",
+        "icon": {
+          "icon": "0xe742",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 1,
+        "des": "开启",
+        "title": "ac_opened",
+        "icon": {
+          "icon": "0xe742",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      }
+    ],
+    "t_fan_mute": [
+      {
+        "value": 0,
+        "des": "停",
+        "title": "ac_closed",
+        "icon": {
+          "icon": "0xe756",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 1,
+        "des": "开",
+        "title": "ac_opened",
+        "icon": {
+          "icon": "0xe756",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      }
+    ],
+    "t_super": [
+      {
+        "value": 0,
+        "des": "取消",
+        "title": "ac_closed",
+        "icon": {
+          "icon": "0xe781",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 1,
+        "des": "开启",
+        "title": "ac_opened",
+        "icon": {
+          "icon": "0xe781",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      }
+    ],
+    "t_temp_type": [
+      {
+        "value": 0,
+        "title": "℃",
+        "des": "摄氏",
+        "icon": {
+          "icon": "0xe753",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 1,
+        "title": "℉",
+        "des": "华氏",
+        "icon": {
+          "icon": "0xe753",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      }
+    ],
+    "t_device_info": [
+      {
+        "value": 0,
+        "title": "ac_no_refresh_required",
+        "des": "不需要刷新"
+      },
+      {
+        "value": 1,
+        "title": "ac_refresh_required",
+        "des": "需要刷新"
+      }
+    ],
+    "t_beep": [
+      {
+        "value": 0,
+        "title": "ac_closed",
+        "des": "关"
+      },
+      {
+        "value": 1,
+        "title": "ac_opened",
+        "des": "开"
+      }
+    ],
+    "f_e_push": [
+      {
+        "value": 1,
+        "title": "ac_in_temp_sensor_failure",
+        "des": "室内温度传感器故障"
+      },
+      {
+        "value": 2,
+        "title": "ac_in_coil_temp_sensor_failure",
+        "des": "室内盘管温度传感器故障"
+      },
+      {
+        "value": 3,
+        "title": "ac_in_humidity_temp_sensor_failure",
+        "des": "室内湿度传感器故障"
+      },
+      {
+        "value": 4,
+        "title": "ac_in_fan_motor_running_failure",
+        "des": "室内风机电机运转异常故障"
+      },
+      {
+        "value": 5,
+        "title": "ac_cabinet_grid_protection_alarm",
+        "des": "柜机格栅保护告警"
+      },
+      {
+        "value": 6,
+        "title": "ac_vol_zero_crossing_detection_failure",
+        "des": "室内电压过零检测故障"
+      },
+      {
+        "value": 7,
+        "title": "ac_in_and_out_comm_failure",
+        "des": "室内外通信故障"
+      },
+      {
+        "value": 8,
+        "title": "ac_in_ctrl_and_display_comm_failure",
+        "des": "室内控制板与显示板通信故障"
+      },
+      {
+        "value": 9,
+        "title": "ac_in_ctrl_and_key_comm_failure",
+        "des": "室内控制板与按键板通信故障"
+      },
+      {
+        "value": 10,
+        "title": "ac_bbwifi_and_ctrl_comm_failure",
+        "des": "bbWIFI控制板与室内控制板通信故障b"
+      },
+      {
+        "value": 11,
+        "title": "ac_in_electric_and_ctrl_comm_failure",
+        "des": "室内控制板与室内电量板通信故障"
+      },
+      {
+        "value": 12,
+        "title": "ac_in_ctrl_eeprom_failure",
+        "des": "室内控制板EEPROM出错"
+      },
+      {
+        "value": 13,
+        "title": "ac_out_eeprom_failure",
+        "des": "室外EEPROM出错"
+      },
+      {
+        "value": 14,
+        "title": "ac_out_coil_temp_sensor_failure",
+        "des": "室外盘管温度传感器故障"
+      },
+      {
+        "value": 15,
+        "title": "ac_exhaust_temp_sensor_failure",
+        "des": "排气温度传感器故障"
+      },
+      {
+        "value": 16,
+        "title": "ac_out_ambient_temp_sensor_failure",
+        "des": "室外环境温度传感器故障"
+      },
+      {
+        "value": 17,
+        "title": "ac_full_alarm",
+        "des": "水满报警"
+      },
+      {
+        "value": 18,
+        "title": "ac_in_upper_dc_fan_motor_failure",
+        "des": "室内（上部）直流风机电机运转异常故障"
+      },
+      {
+        "value": 19,
+        "title": "ac_in_lower_dc_fan_motor_failure",
+        "des": "室外（下部）直流风机电机运转异常故障"
+      }
+    ],
+    "f_e_intemp": [
+      {
+        "value": 0,
+        "des": "正常",
+        "title": "ac_in_temp_sensor_failure",
+        "icon": {
+          "icon": "0xe781",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 1,
+        "des": "告警",
+        "title": "ac_in_temp_sensor_failure",
+        "icon": {
+          "icon": "0xe781",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      }
+    ],
+    "f_e_incoiltemp": [
+      {
+        "value": 0,
+        "des": "正常",
+        "title": "ac_in_coil_temp_sensor_failure",
+        "icon": {
+          "icon": "0xe781",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 1,
+        "des": "告警",
+        "title": "ac_in_coil_temp_sensor_failure",
+        "icon": {
+          "icon": "0xe781",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      }
+    ],
+    "f_e_incom": [
+      {
+        "value": 0,
+        "des": "正常",
+        "title": "ac_in_and_out_comm_failure",
+        "icon": {
+          "icon": "0xe781",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 1,
+        "des": "告警",
+        "title": "ac_in_and_out_comm_failure",
+        "icon": {
+          "icon": "0xe781",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      }
+    ],
+    "f_e_ineeprom": [
+      {
+        "value": 0,
+        "des": "正常",
+        "title": "ac_in_ctrl_eeprom_failure",
+        "icon": {
+          "icon": "0xe781",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 1,
+        "des": "告警",
+        "title": "ac_in_ctrl_eeprom_failure",
+        "icon": {
+          "icon": "0xe781",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      }
+    ],
+    "f_e_over_cold": [
+      {
+        "value": 0,
+        "des": "正常",
+        "title": "ac_refrigeration_subsoiling_protection",
+        "icon": {
+          "icon": "0xe781",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 1,
+        "des": "告警",
+        "title": "ac_refrigeration_subsoiling_protection",
+        "icon": {
+          "icon": "0xe781",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      }
+    ],
+    "f_e_over_hot": [
+      {
+        "value": 0,
+        "des": "正常",
+        "title": "ac_heating_overheat_protection",
+        "icon": {
+          "icon": "0xe781",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      },
+      {
+        "value": 1,
+        "des": "告警",
+        "title": "ac_heating_overheat_protection",
+        "icon": {
+          "icon": "0xe781",
+          "fontFamily": "ConnectLifeAirConditionerFont"
+        }
+      }
+    ]
+  }
+}

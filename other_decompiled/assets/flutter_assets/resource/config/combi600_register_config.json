@@ -1,0 +1,150 @@
+{
+  "applianceInfo": {
+    "typeCode": "011",
+    "typeName": "atosRf_type",
+    "isGorenje": true
+  },
+  "logo": {
+    "icon": "0xe850",
+    "fontFamily": "ConnectLifeCombi600"
+  },
+  "logoBold": {
+    "icon": "0xe93b",
+    "fontFamily": "ConnectLifeCombi600"
+  },
+  "softAp": {
+    "type": "1",
+    "resource": [
+      {
+        "title": "step",
+        "content": "combi_600_config_wifi_step1",
+        "content_pair": "combi_600_config_pair_step1",
+        "path": "resource/images/fs600/cs-step1.png",
+        "pair_path": "resource/images/fs600/p-step1.png"
+      },{
+        "title": "step",
+        "content": "combi_600_config_wifi_step2",
+        "content_pair": "combi_600_config_pair_step2",
+        "path": "resource/images/fs600/cs-step2.png",
+        "pair_path": "resource/images/fs600/p-step2.png"
+      },{
+        "title": "step",
+        "content": "combi_600_config_wifi_step3",
+        "content_pair": "combi_600_config_pair_step3",
+        "path": "resource/images/fs600/cs-step3.png",
+        "pair_path": "resource/images/fs600/p-step3.png"
+      },
+      {
+        "title": "step",
+        "content": "combi_600_config_wifi_step4",
+        "content_pair": "",
+        "path": "resource/images/fs600/cs-step4.png",
+        "pair_path": ""
+      },
+      {
+        "title": "step",
+        "content": "combi_600_config_wifi_step5",
+        "content_pair": "",
+        "path": "resource/images/fs600/cs-step5.png",
+        "pair_path": ""
+      }
+    ]
+  },
+  "applianceTile": {
+    "convertType": "combi",
+    "icon": {
+      "icon": "0xe7e7",
+      "fontFamily": "ConnectLifeFont"
+    },
+    "style": "combi",
+    "properties": [
+      {
+        "propertyKey": "ApplianceMode2",
+        "type": "5",
+        "signPropertyKey": "ZoneTopTemperatureSign2",
+        "unitPropertyKey": "ZoneTopTemperatureUnit2",
+        "prefix": "",
+        "suffix": "",
+        "display": {
+          "ApplianceMode2": "1"
+        }
+      },
+      {
+        "propertyKey": "ZoneTopTemperature",
+        "type": "7",
+        "signPropertyKey": "ZoneTopTemperatureSign2",
+        "unitPropertyKey": "ZoneTopTemperatureUnit2",
+        "prefix": "",
+        "suffix": "",
+        "display": {
+          "ApplianceMode2": "2"
+        }
+      },
+      {
+        "propertyKey": "ZoneBottomTemperature",
+        "type": "7",
+        "signPropertyKey": "ZoneBottomTemperatureSign2",
+        "unitPropertyKey": "ZoneBottomTemperatureUnit2",
+        "prefix": "",
+        "suffix": "",
+        "display": {
+          "ApplianceMode2": "2"
+        }
+      }
+    ]
+  },
+  "scene": {
+    "isSupport": 1
+  },
+  "options": {
+    "ZoneTopTemperatureUnit2": [
+      {
+        "value": 0,
+        "des": "°F",
+        "title": "°F"
+      },
+      {
+        "value": 1,
+        "des": "°C",
+        "title": "°C"
+      }
+    ],
+    "ZoneBottomTemperatureUnit2": [
+      {
+        "value": 0,
+        "des": "°F",
+        "title": "°F"
+      },
+      {
+        "value": 1,
+        "des": "°C",
+        "title": "°C"
+      }
+    ],
+    "ZoneTopTemperatureSign2": [
+      {
+        "value": 1,
+        "des": "+",
+        "title": ""
+      },
+      {
+        "value": 2,
+        "des": "-",
+        "title": "-"
+      }
+    ],
+    "ZoneBottomTemperatureSign2": [
+      {
+        "value": 1,
+        "des": "+",
+        "title": ""
+      },
+      {
+        "value": 2,
+        "des": "-",
+        "title": "-"
+      }
+    ]
+  },
+  "appliancePreference": "type_5"
+}

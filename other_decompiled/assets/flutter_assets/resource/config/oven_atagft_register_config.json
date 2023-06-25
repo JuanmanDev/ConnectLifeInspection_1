@@ -1,0 +1,75 @@
+{
+  "applianceInfo": {
+    "typeCode": "013",
+    "typeName": "oven",
+    "isGorenje": true
+  },
+  "logo": {
+    "icon": "0xe838",
+    "fontFamily": "ConnectLifeOvenFont"
+  },
+  "logoBold": {
+    "icon": "0xe7c4",
+    "fontFamily": "ConnectLifeOvenFont"
+  },
+  "escaped": [],
+  "softAp": {
+    "type": "1",
+    "resource": [
+      {
+        "title": "step",
+        "style": 0,
+        "content": "g650_cs_step_1",
+        "content_pair": "g650_cs_step_1",
+        "path": "resource/images/g650/instruction_oven_g650_cs_step1@3x.png",
+        "pair_path": "resource/images/g650/instruction_oven_g650_p_step1@3x.png"
+      },
+      {
+        "title": "step",
+        "style": 0,
+        "content": "g650_cs_step_2",
+        "content_pair": "g650_p_step_2",
+        "path": "resource/images/g650/instruction_oven_g650_cs_step2@3x.png",
+        "pair_path": "resource/images/g650/instruction_oven_g650_p_step2@3x.png"
+      }
+    ]
+  },
+  "applianceTile": {
+    "convertType": "oven",
+    "icon": {
+      "icon": "0xe838",
+      "fontFamily": "ConnectLifeOvenFont"
+    },
+    "style": "oven",
+    "properties": [
+      {
+        "propertyKey": "Device_status",
+        "type": "5",
+        "prefix": "",
+        "suffix": "",
+        "display": {
+          "Device_status": "3011"
+        }
+      }
+    ]
+  },
+  "activity": {
+    "icon": {
+      "icon": "0xe838",
+      "fontFamily": "ConnectLifeOvenFont"
+    },
+    "style": "0",
+    "condition": [
+      {
+        "propertyKey": "Device_status",
+        "value": "5"
+      }
+    ],
+    "properties": []
+  },
+  "scene": {
+    "isSupport": 1
+  },
+  "appliancePreference": "type_6",
+  "options": {}
+}

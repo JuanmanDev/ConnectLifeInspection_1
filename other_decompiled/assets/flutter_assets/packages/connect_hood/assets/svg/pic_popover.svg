@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="343px" height="56px" viewBox="0 0 343 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>pic_popover</title>
+    <g id="Oven" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.379999995">
+        <g id="apliances-/-oven-/-monitor-/-1-step-/-preheat-/-preheat" transform="translate(-16.000000, -252.000000)" fill="#00B0A9">
+            <g id="pic_popover" transform="translate(16.000000, 252.686292)">
+                <path d="M27,0 L35.0718561,11.3137085 L339,11.3137085 C341.209139,11.3137085 343,13.1045695 343,15.3137085 L343,51.3137085 C343,53.5228475 341.209139,55.3137085 339,55.3137085 L4,55.3137085 C1.790861,55.3137085 0,53.5228475 0,51.3137085 L0,15.3137085 C0,13.1045695 1.790861,11.3137085 4,11.3137085 L18.9281439,11.3137085 L27,0 Z" id="路径"></path>
+            </g>
+        </g>
+    </g>
+</svg>

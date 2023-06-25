@@ -1,0 +1,64 @@
+{
+  "comment": "connect_hood",
+  "version": {
+    "des": "Host code软件版本号",
+    "title": "属性的中文名称的多语言key",
+    "property": "version",
+    "combination": null,
+    "extraInfo": {}
+  },
+  "oem_host_version": {
+    "des": "模板版本号",
+    "title": "属性的中文名称的多语言key",
+    "property": "oem_host_version",
+    "combination": null,
+    "extraInfo": {}
+  },
+  "hardware_type": {
+    "des": "硬件设备的类型",
+    "title": "属性的中文名称的多语言key",
+    "property": "hardware_type",
+    "combination": null,
+    "extraInfo": {}
+  },
+  "quick_operation": [
+
+    {
+      "style": "normal",
+      "des": "手动设置",
+      "iconType": "0",
+      "isNormal": "1",
+      "type": "0",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "",
+      "icon":{
+        "icon": "icon_aplnc_64_hood.svg",
+        "fontFamily": "ConnectLifeCombi600"
+      },
+      "title": "manual_set",
+      "property": "",
+      "combination": null,
+      "extraInfo": {}
+    },
+
+    {
+      "style": "normal",
+      "des": "过滤器",
+      "iconType": "0",
+      "isNormal": "1",
+      "type": "0",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "",
+      "icon":{
+        "icon": "ic_48_hood_filter_alarm.svg",
+        "fontFamily": "ConnectLifeCombi600"
+      },
+      "title": "filters",
+      "property": "",
+      "combination": null,
+      "extraInfo": {}
+    }
+  ]
+}

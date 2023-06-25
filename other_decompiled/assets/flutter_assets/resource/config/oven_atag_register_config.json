@@ -1,0 +1,103 @@
+{
+  "applianceInfo": {
+    "typeCode": "013",
+    "typeName": "oven",
+    "isGorenje": true
+  },
+  "logo": {
+    "icon": "0xe838",
+    "fontFamily": "ConnectLifeOvenFont"
+  },
+  "logoBold": {
+    "icon": "0xe7c4",
+    "fontFamily": "ConnectLifeOvenFont"
+  },
+  "escaped": [],
+  "softAp": {
+    "type": "1",
+    "resource": [
+      {
+        "title": "step",
+        "style": 0,
+        "content": "atag_oven_cs_step_1",
+        "content_pair": "atag_oven_p_step_1",
+        "path": "resource/images/atag_hood/instructions_BIO21_step1@3x.png",
+        "pair_path": "resource/images/atag_hood/instructions_BIO21_step1@3x.png"
+      },{
+        "title": "step",
+        "style": 0,
+        "content": "atag_oven_cs_step_2",
+        "content_pair": "atag_oven_p_step_2",
+        "path": "resource/images/atag_hood/instructions_BIO21_step2@3x.png",
+        "pair_path": "resource/images/atag_hood/instructions_BIO21_step2@3x.png"
+      },{
+        "title": "step",
+        "style": 0,
+        "content": "atag_oven_cs_step_3",
+        "content_pair": "atag_oven_p_step_3",
+        "path": "resource/images/atag_hood/instructions_BIO21_step3@3x.png",
+        "pair_path": "resource/images/atag_hood/instructions_BIO21_step2_pair@3x.png"
+      },{
+        "title": "step",
+        "style": 0,
+        "content": "atag_oven_cs_step_4",
+        "content_pair": "atag_oven_p_step_4",
+        "path": "resource/images/atag_hood/instructions_BIO21_step4@3x.png",
+        "pair_path": "resource/images/atag_hood/instructions_BIO21_step4_pair@3x.png"
+      },{
+        "title": "step",
+        "style": 0,
+        "content": "atag_oven_cs_step_5",
+        "content_pair": "atag_oven_p_step_5",
+        "path": "resource/images/atag_hood/instructions_BIO21_step5@3x.png",
+        "pair_path": "resource/images/atag_hood/instructions_BIO21_step5_pair@3x.png"
+      },{
+        "title": "step",
+        "style": 0,
+        "content": "atag_oven_cs_step_6",
+        "content_pair": "",
+        "path": "resource/images/atag_hood/instructions_BIO21_step6@3x.png",
+        "pair_path": ""
+      }
+
+    ]
+  },
+  "applianceTile": {
+    "convertType": "oven",
+    "icon": {
+      "icon": "0xe838",
+      "fontFamily": "ConnectLifeOvenFont"
+    },
+    "style": "oven",
+    "properties": [
+      {
+        "propertyKey": "Device_status",
+        "type": "5",
+        "prefix": "",
+        "suffix": "",
+        "display": {
+          "Device_status": "3011"
+        }
+      }
+    ]
+  },
+  "activity": {
+    "icon": {
+      "icon": "0xe838",
+      "fontFamily": "ConnectLifeOvenFont"
+    },
+    "style": "0",
+    "condition": [
+      {
+        "propertyKey": "Device_status",
+        "value": "5"
+      }
+    ],
+    "properties": []
+  },
+  "scene": {
+    "isSupport": 1
+  },
+  "appliancePreference": "type_6",
+  "options": {}
+}

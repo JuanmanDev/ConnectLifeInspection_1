@@ -1,0 +1,94 @@
+{
+  "quick_operation": [
+    {
+      "style": "normal",
+      "des": "washing machine",
+      "iconType": "0",
+      "isNormal": "1",
+      "type": "0",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "",
+      "icon":{
+        "icon": "0xe80e",
+        "fontFamily": "ConnectLifeWashingMachine"
+      },
+      "title": "laundry_wizard",
+      "property": "laundry_wizard",
+      "combination": null,
+      "extraInfo": {}
+    },
+
+    {
+      "style": "normal",
+      "des": "手动设置",
+      "iconType": "0",
+      "isNormal": "1",
+      "type": "0",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "",
+      "icon":{
+        "icon": "0xe964",
+        "fontFamily": "ConnectLifeWashingMachine"
+      },
+      "title": "manual_dry",
+      "property": "manual_dry",
+      "combination": null,
+      "extraInfo": {}
+    },
+    {
+      "style": "switch",
+      "des": "儿童模式",
+      "iconType": "0",
+      "isNormal": "1",
+      "type": "0",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "",
+      "icon":{
+        "icon": "0xe81f",
+        "fontFamily": "ConnectLifeWashingMachine"
+      },
+      "title": "child_lock",
+      "property": "Child_Lock_status",
+      "combination": null,
+      "extraInfo": {}
+    },
+    {
+      "style": "switch",
+      "des": "洗干联动",
+      "iconType": "0",
+      "isNormal": "1",
+      "type": "0",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "",
+      "icon":{
+        "icon": "0xeac8",
+        "fontFamily": "CLFont"
+      },
+      "title": "wash_dry_sync",
+      "property": "Washer_to_Dryersetting",
+      "combination": null,
+      "extraInfo": {}
+    },
+    {
+      "style": "normal",
+      "des": "share device",
+      "iconType": "0",
+      "isNormal": "1",
+      "type": "0",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "",
+      "icon":{
+        
+      },
+      "title": "share_device",
+      "property": "share_device",
+      "combination": null,
+      "extraInfo": {}
+    }
+  ]
+}

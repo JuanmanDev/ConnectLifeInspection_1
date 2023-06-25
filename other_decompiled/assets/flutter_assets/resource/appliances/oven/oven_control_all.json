@@ -1,0 +1,474 @@
+{
+  "comment": "烤箱全量属性",
+  "quick_operation": [
+    {
+      "style": "normal",
+      "des": "pro bake",
+      "iconType": "0",
+      "isNormal": "1",
+      "type": "0",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "",
+      "icon":{
+        "icon": "0xe83d",
+        "fontFamily": "ConnectLifeOvenFont"
+      },
+      "title": "oven_pro_bake",
+      "property": "pro_bake",
+      "combination": null,
+      "extraInfo": {}
+    },
+    {
+      "style": "normal",
+      "des": "browse recipes",
+      "iconType": "0",
+      "isNormal": "1",
+      "type": "0",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "",
+      "icon":{
+        "icon": "0xe831",
+        "fontFamily": "ConnectLifeOvenFont"
+      },
+      "title": "oven_browse_recipes",
+      "property": "browse_recipes",
+      "combination": null,
+      "extraInfo": {}
+    },
+    {
+      "style": "normal",
+      "des": "tips and tricks",
+      "iconType": "0",
+      "isNormal": "1",
+      "type": "0",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "",
+      "icon":{
+        "icon": "0xe7cf",
+        "fontFamily": "ConnectLifeOvenFont"
+      },
+      "title": "oven_tips_tricks",
+      "property": "tips_tricks",
+      "combination": null,
+      "extraInfo": {}
+    },
+    {
+      "style": "switch",
+      "des": "child lock",
+      "iconType": "0",
+      "isNormal": "0",
+      "type": "0",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "",
+      "icon":{
+        "icon": "0xe824",
+        "fontFamily": "ConnectLifeOvenFont"
+      },
+      "title": "oven_child_lock",
+      "property": "Child_lock",
+      "combination": null,
+      "extraInfo": {}
+    }
+  ],
+  "options": {
+    "device_status": [
+      {
+        "value": 3011,
+        "des": "Idle",
+        "title": "device_status_idle"
+      },
+      {
+        "value": 3012,
+        "des": "Running",
+        "title": "device_status_running"
+      },
+      {
+        "value": 3013,
+        "des": "Paused",
+        "title": "device_status_paused"
+      },
+      {
+        "value": 3014,
+        "des": "Production",
+        "title": "device_status_production"
+      },
+      {
+        "value": 3015,
+        "des": "Delay time waiting",
+        "title": "device_status_waiting"
+      },
+      {
+        "value": 3016,
+        "des": "Error",
+        "title": "device_status_error"
+      },
+      {
+        "value": 3017,
+        "des": "Running",
+        "title": "device_status_running"
+      },
+      {
+        "value": 3018,
+        "des": "After baking",
+        "title": "after_baking"
+      }
+    ],
+    "current_baking_step": [
+      {
+        "value": 3251,
+        "des": "Preheat",
+        "title": "0"
+      },
+      {
+        "value": 3252,
+        "des": "Step 1",
+        "title": "1"
+      },
+      {
+        "value": 3253,
+        "des": "Step 2",
+        "title": "2"
+      },
+      {
+        "value": 3254,
+        "des": "Step 3",
+        "title": "3"
+      },
+      {
+        "value": 3018,
+        "des": "After bake - finished",
+        "title": "4"
+      }
+    ],
+    "heat_mode": [
+      {
+        "value": 3081,
+        "des": "HOTAIR",
+        "title": "heat_mode_hot_air",
+        "icon": {
+          "icon": "0xe840",
+          "fontFamily": "ConnectLifeOvenFont"
+        }
+      },
+      {
+        "value": 3082,
+        "des": "ECOHOTAIR",
+        "title": "heat_mode_eco_hot_air",
+        "icon": {
+          "icon": "0xe856",
+          "fontFamily": "ConnectLifeOvenFont"
+        }
+      },
+      {
+        "value": 3083,
+        "des": "TOPBOTTOM",
+        "title": "heat_mode_top_bottom",
+        "icon": {
+          "icon": "0xe841",
+          "fontFamily": "ConnectLifeOvenFont"
+        }
+      },
+      {
+        "value": 3084,
+        "des": "HOTAIRBOTTOM",
+        "title": "heat_mode_hot_air_bottom",
+        "icon": {
+          "icon": "0xe840",
+          "fontFamily": "ConnectLifeOvenFont"
+        }
+      },
+      {
+        "value": 3085,
+        "des": "BOTTOMFAN",
+        "title": "heat_mode_bottom_fan",
+        "icon": {
+          "icon": "0xe840",
+          "fontFamily": "ConnectLifeOvenFont"
+        }
+      },
+      {
+        "value": 3086,
+        "des": "BOTTOM",
+        "title": "heat_mode_bottom",
+        "icon": {
+          "icon": "0xe840",
+          "fontFamily": "ConnectLifeOvenFont"
+        }
+      },
+      {
+        "value": 3087,
+        "des": "TOP",
+        "title": "heat_mode_top",
+        "icon": {
+          "icon": "0xe8f6",
+          "fontFamily": "ConnectLifeOvenFont"
+        }
+      },
+      {
+        "value": 3088,
+        "des": "SMALLGRILL",
+        "title": "heat_mode_small_grill",
+        "icon": {
+          "icon": "0xe8ec",
+          "fontFamily": "ConnectLifeOvenFont"
+        }
+      },
+      {
+        "value": 3089,
+        "des": "LARGEGRILL",
+        "title": "heat_mode_large_grill",
+        "icon": {
+          "icon": "0xe8e0",
+          "fontFamily": "ConnectLifeOvenFont"
+        }
+      },
+      {
+        "value": 3090,
+        "des": "LARGEGRILLFAN",
+        "title": "heat_mode_large_grill_fan",
+        "icon": {
+          "icon": "0xe8e1",
+          "fontFamily": "ConnectLifeOvenFont"
+        }
+      },
+      {
+        "value": 3091,
+        "des": "PROROASTING",
+        "title": "heat_mode_pro_roasting",
+        "icon": {
+          "icon": "0xe840",
+          "fontFamily": "ConnectLifeOvenFont"
+        }
+      },
+      {
+        "value": 3092,
+        "des": "HOTAIRMICRO",
+        "title": "heat_mode_hot_air_micro",
+        "icon": {
+          "icon": "0xe8e2",
+          "fontFamily": "ConnectLifeOvenFont"
+        }
+      },
+      {
+        "value": 3093,
+        "des": "GRILLFANMICRO",
+        "title": "heat_mode_grill_fan_micro",
+        "icon": {
+          "icon": "0xe840",
+          "fontFamily": "ConnectLifeOvenFont"
+        }
+      },
+      {
+        "value": 3094,
+        "des": "MICRO",
+        "title": "heat_mode_micro",
+        "icon": {
+          "icon": "0xe8e5",
+          "fontFamily": "ConnectLifeOvenFont"
+        }
+      },
+      {
+        "value": 3095,
+        "des": "HOTAIRSTEAM1",
+        "title": "heat_mode_hot_air_steam1",
+        "icon": {
+          "icon": "0xe840",
+          "fontFamily": "ConnectLifeOvenFont"
+        }
+      },
+      {
+        "value": 3096,
+        "des": "HOTAIRSTEAM2",
+        "title": "heat_mode_hot_air_steam2",
+        "icon": {
+          "icon": "0xe840",
+          "fontFamily": "ConnectLifeOvenFont"
+        }
+      },
+      {
+        "value": 3097,
+        "des": "HOTAIRSTEAM3",
+        "title": "heat_mode_hot_air_steam3",
+        "icon": {
+          "icon": "0xe840",
+          "fontFamily": "ConnectLifeOvenFont"
+        }
+      },
+      {
+        "value": 3098,
+        "des": "FASTPREHEAT",
+        "title": "heat_mode_fast_preheat",
+        "icon": {
+          "icon": "0xe8dd",
+          "fontFamily": "ConnectLifeOvenFont"
+        }
+      },
+      {
+        "value": 3099,
+        "des": "PYRO",
+        "title": "heat_mode_pyro",
+        "icon": {
+          "icon": "0xe840",
+          "fontFamily": "ConnectLifeOvenFont"
+        }
+      },
+      {
+        "value": 3100,
+        "des": "DEFROST",
+        "title": "heat_mode_defrost",
+        "icon": {
+          "icon": "0xe8eb",
+          "fontFamily": "ConnectLifeOvenFont"
+        }
+      },
+      {
+        "value": 3101,
+        "des": "KEEPWARM",
+        "title": "heat_mode_keep_warm",
+        "icon": {
+          "icon": "0xe85c",
+          "fontFamily": "ConnectLifeOvenFont"
+        }
+      },
+      {
+        "value": 3102,
+        "des": "PLATES",
+        "title": "heat_mode_plates",
+        "icon": {
+          "icon": "0xe840",
+          "fontFamily": "ConnectLifeOvenFont"
+        }
+      },
+      {
+        "value": 3103,
+        "des": "AQUACLEAN",
+        "title": "heat_mode_aqua_clean",
+        "icon": {
+          "icon": "0xe840",
+          "fontFamily": "ConnectLifeOvenFont"
+        }
+      },
+      {
+        "value": 3104,
+        "des": "STEAMCLEAN",
+        "title": "heat_mode_steam_clean",
+        "icon": {
+          "icon": "0xe8f1",
+          "fontFamily": "ConnectLifeOvenFont"
+        }
+      },
+      {
+        "value": 3105,
+        "des": "REGENERATE",
+        "title": "heat_mode_regenerate",
+        "icon": {
+          "icon": "0xe8ed",
+          "fontFamily": "ConnectLifeOvenFont"
+        }
+      },
+      {
+        "value": 3107,
+        "des": "MWDEFROST",
+        "title": "heat_mode_mw_defrost",
+        "icon": {
+          "icon": "0xe840",
+          "fontFamily": "ConnectLifeOvenFont"
+        }
+      },
+      {
+        "value": 3108,
+        "des": "SOUSVIDE",
+        "title": "heat_mode_sousvide",
+        "icon": {
+          "icon": "0xe8ef",
+          "fontFamily": "ConnectLifeOvenFont"
+        }
+      },
+      {
+        "value": 3109,
+        "des": "LOWTEMPSTEAM",
+        "title": "heat_mode_low_temp_steam",
+        "icon": {
+          "icon": "0xe8e4",
+          "fontFamily": "ConnectLifeOvenFont"
+        }
+      },
+      {
+        "value": 3110,
+        "des": "STEAM",
+        "title": "heat_mode_steam",
+        "icon": {
+          "icon": "0xe83b",
+          "fontFamily": "ConnectLifeOvenFont"
+        }
+      },
+      {
+        "value": 3111,
+        "des": "QUICK",
+        "title": "heat_mode_quick",
+        "icon": {
+          "icon": "0xe840",
+          "fontFamily": "ConnectLifeOvenFont"
+        }
+      },
+      {
+        "value": 3112,
+        "des": "CLEANAIR",
+        "title": "heat_mode_clean_air",
+        "icon": {
+          "icon": "0xe840",
+          "fontFamily": "ConnectLifeOvenFont"
+        }
+      },
+      {
+        "value": 3113,
+        "des": "DEFROST_AUTO",
+        "title": "heat_mode_defrost_auto",
+        "icon": {
+          "icon": "0xe840",
+          "fontFamily": "ConnectLifeOvenFont"
+        }
+      },
+      {
+        "value": 3114,
+        "des": "SABBATH",
+        "title": "heat_mode_sabbath",
+        "icon": {
+          "icon": "0xe8ea",
+          "fontFamily": "ConnectLifeOvenFont"
+        }
+      },
+      {
+        "value": 3115,
+        "des": "PROGRAMS",
+        "title": "heat_mode_programs",
+        "icon": {
+          "icon": "0xe840",
+          "fontFamily": "ConnectLifeOvenFont"
+        }
+      },
+      {
+        "value": 3116,
+        "des": "WARMING",
+        "title": "heat_mode_warming",
+        "icon": {
+          "icon": "0xe7f9",
+          "fontFamily": "ConnectLifeOvenFont"
+        }
+      },
+      {
+        "value": 3117,
+        "des": "MWCLEAN",
+        "title": "heat_mode_mw_clean",
+        "icon": {
+          "icon": "0xe8f0",
+          "fontFamily": "ConnectLifeOvenFont"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "009": "separated_air_conditioner_control_all",
+  "006": "mobile_air_conditioner_control_all",
+  "008": "ac_window_control_all",
+  "007": "ac_dehumidifier_control_all",
+  "012": "hood_atag_control_all",
+  "021": "hood_control_all",
+  "011": "combi_control_all",
+  "022": "dishwasher_control_all",
+  "024": "atosrf_control_all",
+  "015": "washer_atag_control_all",
+  "016": "pump_control_all",
+  "026": "hisenserf_control_all",
+  "025": "conn_vm_hisense_all",
+  "027": "washingMachine_atag_control_all",
+  "032": "td22_control_all"
+}

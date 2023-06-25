@@ -1,0 +1,89 @@
+{
+  "applianceInfo": {
+    "typeCode": "030",
+    "typeName": "tumble_dryer",
+    "isGorenje": false
+  },
+  "logo": {
+    "icon": "0xe94c",
+    "fontFamily": "CLFont"
+  },
+  "logo2": {
+    "icon": "0xe976",
+    "fontFamily": "CLFont"
+  },
+  "logoBold": {
+    "icon": "0xe976",
+    "fontFamily": "CLFont"
+  },
+
+  "logoBold2": {
+    "icon": "0xe8bd",
+    "fontFamily": "ConnectLifeHisenseVmFont"
+  },
+  "softAp": {
+    "type": "1",
+    "resource": [
+      {
+        "title": "step",
+        "content": "combi_config_wifi_step1",
+        "content_pair": "combi_pair_step1",
+        "path": "resource/images/atos_pair_page/instructions_fs600_step_1.png",
+        "pair_path": "resource/images/atos_pair_page/instructions_fs600_step_1.png"
+      },{
+        "title": "step",
+        "content": "combi_config_wifi_step2",
+        "content_pair": "combi_pair_step2",
+        "path": "resource/images/atos_pair_page/instructions_fs600_step_2.png",
+        "pair_path": "resource/images/atos_pair_page/instructions_fs600_step_2_pair.png"
+      },{
+        "title": "step",
+        "content": "combi_config_wifi_step3",
+        "content_pair": "combi_pair_step3",
+        "path": "resource/images/atos_pair_page/instructions_fs600_step_3.png",
+        "pair_path": "resource/images/atos_pair_page/instructions_fs600_step_3_pair.png"
+      }
+    ]
+  },
+  "applianceTile": {
+    "convertType": "hisensewm",
+    "icon": {
+      "icon": "0xe8bc",
+      "fontFamily": "ConnectLifeHisenseVmFont"
+    },
+    "style": "hisensewm",
+    "properties": []
+  },
+  "activity": {
+    "icon": {
+      "icon": "0xe8bc",
+      "fontFamily": "ConnectLifeOvenFont"
+    },
+    "style": "0",
+    "condition": [
+      {
+        "propertyKey": "machine_status",
+        "value": "2"
+      }
+    ],
+    "properties": []
+  },
+  "scene": {
+    "isSupport": 1
+  },
+  "options": {
+    "temperature_unit": [
+      {
+        "value": 1,
+        "des": "°F",
+        "title": "°F"
+      },
+      {
+        "value": 0,
+        "des": "°C",
+        "title": "°C"
+      }
+    ]
+  },
+  "appliancePreference": "type_8"
+}

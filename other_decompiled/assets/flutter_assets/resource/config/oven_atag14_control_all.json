@@ -1,0 +1,563 @@
+{
+  "comment": "烤箱全量属性",
+  "quick_operation": [
+    {
+      "style": "normal",
+      "des": "browse recipes",
+      "iconType": "0",
+      "isNormal": "1",
+      "type": "0",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "",
+      "icon":{
+        "icon": "0xe831",
+        "fontFamily": "ConnectLifeOvenFont"
+      },
+      "title": "oven_browse_recipes",
+      "property": "browse_recipes",
+      "combination": null,
+      "extraInfo": {}
+    },
+    {
+      "style": "normal",
+      "des": "bake",
+      "iconType": "0",
+      "isNormal": "1",
+      "type": "0",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "",
+      "icon":{
+        "icon": "0xe83d",
+        "fontFamily": "ConnectLifeOvenFont"
+      },
+      "title": "bake_bake_title",
+      "property": "bake",
+      "combination": null,
+      "extraInfo": {}
+    },
+    {
+      "style": "normal",
+      "des": "hob monitoring",
+      "iconType": "0",
+      "isNormal": "1",
+      "type": "0",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "",
+      "icon":{
+        "icon": "0xe810",
+        "fontFamily": "ConnectLifeOvenAtagFont"
+      },
+      "title": "oven_atag_hob_monitoring",
+      "property": "hob_monitoring",
+      "combination": null,
+      "extraInfo": {}
+    },
+    {
+      "style": "normal",
+      "des": "warming drawer",
+      "iconType": "0",
+      "isNormal": "1",
+      "type": "0",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "",
+      "icon":{
+        "icon": "0xe810",
+        "fontFamily": "ConnectLifeOvenAtagFont"
+      },
+      "title": "oven_atag_warming_drawer",
+      "property": "warming_drawer",
+      "combination": null,
+      "extraInfo": {}
+    },
+    {
+      "style": "normal",
+      "des": "extras",
+      "iconType": "0",
+      "isNormal": "1",
+      "type": "0",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "",
+      "icon":{
+        "icon": "0xe810",
+        "fontFamily": "ConnectLifeOvenAtagFont"
+      },
+      "title": "oven_extras",
+      "property": "extras",
+      "combination": null,
+      "extraInfo": {}
+    },
+    {
+      "style": "normal",
+      "des": "tips and tricks",
+      "iconType": "0",
+      "isNormal": "1",
+      "type": "0",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "",
+      "icon":{
+        "icon": "0xe7cf",
+        "fontFamily": "ConnectLifeOvenFont"
+      },
+      "title": "oven_tips_tricks",
+      "property": "tips_tricks",
+      "combination": null,
+      "extraInfo": {}
+    },
+    {
+      "style": "switch",
+      "des": "child lock",
+      "iconType": "0",
+      "isNormal": "0",
+      "type": "0",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "Child_lock",
+      "icon":{
+        "icon": "0xe824",
+        "fontFamily": "ConnectLifeOvenFont"
+      },
+      "title": "oven_child_lock",
+      "property": "Child_lock",
+      "combination": null,
+      "extraInfo": {}
+    },
+    {
+      "style": "switch",
+      "des": "light",
+      "iconType": "0",
+      "isNormal": "0",
+      "type": "0",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "Interior_light",
+      "icon":{
+        "icon": "0xe702",
+        "fontFamily": "ConnectLifeOvenFont"
+      },
+      "title": "light",
+      "property": "Interior_light",
+      "combination": null,
+      "extraInfo": {}
+    },
+    {
+      "style": "normal",
+      "des": "egg timer",
+      "iconType": "0",
+      "isNormal": "1",
+      "type": "0",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "",
+      "icon":{
+        "icon": "0xe703",
+        "fontFamily": "ConnectLifeOvenAtagFont"
+      },
+      "title": "timer",
+      "property": "Egg_timer",
+      "combination": null,
+      "extraInfo": {}
+    }
+  ],
+  "options": {
+    "current_baking_step": [
+      {
+        "value": 1,
+        "des": "Preheat",
+        "title": "0"
+      },
+      {
+        "value": 2,
+        "des": "Step 1",
+        "title": "1"
+      },
+      {
+        "value": 3,
+        "des": "Step 2",
+        "title": "2"
+      },
+      {
+        "value": 4,
+        "des": "Step 3",
+        "title": "3"
+      },
+      {
+        "value": 5,
+        "des": "Step after bake",
+        "title": "4"
+      },
+      {
+        "value": 6,
+        "des": "Special",
+        "title": "5"
+      }
+    ],
+    "heat_mode": [
+      {
+        "value": 0,
+        "des": "HOTAIR",
+        "title": "heat_mode_hot_air"
+      },
+      {
+        "value": 1,
+        "des": "ECOHOTAIR",
+        "title": "heat_mode_eco_hot_air"
+      },
+      {
+        "value": 2,
+        "des": "TOPBOTTOM",
+        "title": "heat_mode_top_bottom"
+      },
+      {
+        "value": 3,
+        "des": "HOTAIRBOTTOM",
+        "title": "heat_mode_hot_air_bottom"
+      },
+      {
+        "value": 4,
+        "des": "BOTTOMFAN",
+        "title": "heat_mode_bottom_fan"
+      },
+      {
+        "value": 5,
+        "des": "BOTTOM",
+        "title": "heat_mode_bottom"
+      },
+      {
+        "value": 6,
+        "des": "TOP",
+        "title": "heat_mode_top"
+      },
+      {
+        "value": 7,
+        "des": "SMALLGRILL",
+        "title": "heat_mode_small_grill"
+      },
+      {
+        "value": 8,
+        "des": "LARGEGRILL",
+        "title": "heat_mode_large_grill"
+      },
+      {
+        "value": 9,
+        "des": "LARGEGRILLFAN",
+        "title": "heat_mode_large_grill_fan"
+      },
+      {
+        "value": 10,
+        "des": "PROROASTING",
+        "title": "heat_mode_pro_roasting"
+      },
+      {
+        "value": 11,
+        "des": "HOTAIRMICRO",
+        "title": "heat_mode_hot_air_micro"
+      },
+      {
+        "value": 12,
+        "des": "GRILLFANMICRO",
+        "title": "heat_mode_grill_fan_micro"
+      },
+      {
+        "value": 13,
+        "des": "MICRO",
+        "title": "heat_mode_micro"
+      },
+      {
+        "value": 14,
+        "des": "HOTAIRSTEAM1",
+        "title": "heat_mode_hot_air_steam1"
+      },
+      {
+        "value": 15,
+        "des": "HOTAIRSTEAM2",
+        "title": "heat_mode_hot_air_steam2"
+      },
+      {
+        "value": 16,
+        "des": "HOTAIRSTEAM3",
+        "title": "heat_mode_hot_air_steam3"
+      },
+      {
+        "value": 17,
+        "des": "FASTPREHEAT",
+        "title": "heat_mode_fast_preheat"
+      },
+      {
+        "value": 18,
+        "des": "PYRO",
+        "title": "heat_mode_pyro"
+      },
+      {
+        "value": 19,
+        "des": "DEFROST",
+        "title": "heat_mode_defrost"
+      },
+      {
+        "value": 20,
+        "des": "KEEPWARM",
+        "title": "heat_mode_keep_warm"
+      },
+      {
+        "value": 21,
+        "des": "PLATES",
+        "title": "heat_mode_plates"
+      },
+      {
+        "value": 22,
+        "des": "AQUACLEAN",
+        "title": "heat_mode_aqua_clean"
+      },
+      {
+        "value": 23,
+        "des": "STEAMCLEAN",
+        "title": "heat_mode_steam_clean"
+      },
+      {
+        "value": 24,
+        "des": "REGENERATE",
+        "title": "heat_mode_regenerate"
+      },
+      {
+        "value": 25,
+        "des": "DESCALE",
+        "title": "heat_mode_descale"
+      },
+      {
+        "value": 26,
+        "des": "MWDEFROST",
+        "title": "heat_mode_mw_defrost"
+      },
+      {
+        "value": 27,
+        "des": "SOUSVIDE",
+        "title": "heat_mode_sousvide"
+      },
+      {
+        "value": 28,
+        "des": "LOWTEMPSTEAM",
+        "title": "heat_mode_low_temp_steam"
+      },
+      {
+        "value": 29,
+        "des": "STEAM",
+        "title": "heat_mode_steam"
+      },
+      {
+        "value": 30,
+        "des": "QUICK",
+        "title": "heat_mode_quick"
+      },
+      {
+        "value": 31,
+        "des": "CLEANAIR",
+        "title": "heat_mode_clean_air"
+      },
+      {
+        "value": 32,
+        "des": "DEFROST_AUTO",
+        "title": "heat_mode_defrost_auto"
+      },
+      {
+        "value": 33,
+        "des": "SABBATH",
+        "title": "heat_mode_sabbath"
+      },
+      {
+        "value": 34,
+        "des": "PROGRAMS",
+        "title": "heat_mode_programs"
+      },
+      {
+        "value": 35,
+        "des": "WARMING",
+        "title": "heat_mode_warming"
+      },
+      {
+        "value": 36,
+        "des": "MWCLEAN",
+        "title": "heat_mode_mw_clean"
+      },
+      {
+        "value": 37,
+        "des": "COUNT",
+        "title": "heat_mode_count"
+      },
+      {
+        "value": 38,
+        "des": "UNDEFINED",
+        "title": "heat_mode_undefined"
+      },
+      {
+        "value": 39,
+        "des": "PYROLIZE",
+        "title": "heat_mode_pyrolize"
+      },
+      {
+        "value": 40,
+        "des": "GENTLE",
+        "title": "heat_mode_gentle"
+      },
+      {
+        "value": 41,
+        "des": "AIR FRY",
+        "title": "heat_mode_air_fry"
+      },
+      {
+        "value": 42,
+        "des": "Bottom & Top heat",
+        "title": "heat_mode_bottom_topheat"
+      },
+      {
+        "value": 43,
+        "des": "Large grill + bottom",
+        "title": "heat_mode_largegrill_bottom"
+      },
+      {
+        "value": 44,
+        "des": "Large grill +bottom+ fan",
+        "title": "heat_mode_largegrill_bottom_fan"
+      },
+      {
+        "value": 45,
+        "des": "Large grill",
+        "title": "heat_mode_largegrill"
+      },
+      {
+        "value": 46,
+        "des": "Hot air + bottomheat",
+        "title": "heat_mode_hotair_bottomheat"
+      },
+      {
+        "value": 47,
+        "des": "3D Hot air",
+        "title": "heat_mode_3d_hotai"
+      },
+      {
+        "value": 48,
+        "des": "ECO",
+        "title": "heat_mode_eco"
+      },
+      {
+        "value": 49,
+        "des": "Bottom & Top heat+ fan + Steam",
+        "title": "heat_mode_bottom_topheat_fan_steam"
+      },
+      {
+        "value": 50,
+        "des": "Large grill + fan +Steam",
+        "title": "heat_mode_largegrill_fan_steam"
+      },
+      {
+        "value": 51,
+        "des": "Hot air + Upper",
+        "title": "Hot_air_upper"
+      },
+      {
+        "value": 52,
+        "des": "Hot air + Infra",
+        "title": "Hot_air_infra"
+      },
+      {
+        "value": 53,
+        "des": "Bottom + Infra",
+        "title": "bottom_infra"
+      },
+      {
+        "value": 54,
+        "des": "Bottom + Infra +fan,",
+        "title": "bottom_infra_fan"
+      },
+      {
+        "value": 55,
+        "des": "Pizza",
+        "title": "pizza"
+      },
+      {
+        "value": 56,
+        "des": "Frozen Bake",
+        "title": "heat_mode_frozen_bake"
+      },
+      {
+        "value": 57,
+        "des": "Gratin",
+        "title": "heat_mode_gratin"
+      },
+      {
+        "value": 58,
+        "des": "Bake",
+        "title": "heat_mode_bake"
+      },
+      {
+        "value": 59,
+        "des": "Convection Bake",
+        "title": "heat_mode_convectionbake"
+      },
+      {
+        "value": 60,
+        "des": "Broil",
+        "title": "heat_mode_broil"
+      },
+      {
+        "value": 61,
+        "des": "Self Clean",
+        "title": "heat_mode_selfclean"
+      },
+      {
+        "value": 62,
+        "des": "Convection Roast",
+        "title": "heat_mode_convectionroast"
+      },
+      {
+        "value": 63,
+        "des": "Proof",
+        "title": "heat_mode_proof"
+      },
+      {
+        "value": 64,
+        "des": "Dehydrate",
+        "title": "heat_mode_dehydrate"
+      },
+      {
+        "value": 65,
+        "des": "Crisp",
+        "title": "heat_mode_crisp"
+      },
+      {
+        "value": 66,
+        "des": "Large grill + bottom + Hot air",
+        "title": "oven_atag_mode_66"
+      },
+      {
+        "value": 67,
+        "des": "Bottom & top heat + Fan",
+        "title": "oven_atag_mode_67"
+      },
+      {
+        "value": 68,
+        "des": "LARGEGRILLSTEAK_PYRO",
+        "title": "oven_atag_mode_68"
+      },
+      {
+        "value": 69,
+        "des": "LARGEGRILL_PYRO",
+        "title": "oven_atag_mode_69"
+      },
+      {
+        "value": 70,
+        "des": "LARGEGRILLFAN_PYRO",
+        "title": "oven_atag_mode_70"
+      },
+      {
+        "value": 71,
+        "des": "SMALLGRILL_PYRO",
+        "title": "oven_atag_mode_71"
+      }
+    ]
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "applianceInfo": {
+    "typeCode": "020",
+    "typeName": "pind_induction_hob",
+    "isGorenje": true
+  },
+  "logo": {
+    "icon": "0xe7b6",
+    "fontFamily": "ConnectLifeFont"
+  },
+  "logoBold": {
+    "icon": "0xe7d4",
+    "fontFamily": "ConnectLifeFont"
+  },
+  "escaped": [],
+  "softAp": {
+    "type": "1",
+    "resource": [
+      {
+        "title": "step",
+        "content": "hob_config_wifi_step1",
+        "content_pair": "hob_config_wifi_step1_pair",
+        "path": "resource/images/atos_pair_page/instructions_hob_step_1.png",
+        "pair_path": "resource/images/atos_pair_page/instructions_hob_step_1.png"
+      },{
+        "title": "step",
+        "content": "hob_config_wifi_step2",
+        "content_pair": "hob_config_wifi_step2_pair",
+        "path": "resource/images/atos_pair_page/instructions_hob_step_2.png",
+        "pair_path": "resource/images/atos_pair_page/instructions_hob_step_2.png"
+      },{
+        "title": "step",
+        "content": "hob_config_wifi_step3",
+        "content_pair": "hob_config_wifi_step3_pair",
+        "path": "resource/images/atos_pair_page/instructions_hob_step_3.png",
+        "pair_path": "resource/images/atos_pair_page/instructions_hob_step_3_pair.png"
+      },{
+        "title": "step",
+        "content": "hob_config_wifi_step4",
+        "content_pair": "hob_config_wifi_step4_pair",
+        "path": "resource/images/atos_pair_page/instructions_hob_step_4.png",
+        "pair_path": "resource/images/atos_pair_page/instructions_hob_step_4_pair.png"
+      }
+    ]
+  },
+  "applianceTile": {
+    "convertType": "hob",
+    "icon": {
+      "icon": "0xe7b6",
+      "fontFamily": "ConnectLifeFont"
+    },
+    "style": "pind",
+    "properties": []
+  },
+  "activity": {
+    "icon": {
+      "icon": "0xe7b6",
+      "fontFamily": "ConnectLifeFont"
+    },
+    "style": "0",
+    "condition": [
+      {
+        "propertyKey": "Device_status",
+        "value": "5"
+      }
+    ],
+    "properties": []
+  },
+  "scene": {
+    "isSupport": 1
+  },
+  "appliancePreference": "type_2",
+  "options": {
+    "SL1_Cooking_methob": [
+      {
+        "value": 0,
+        "des": "Standard",
+        "title": "pind_standard"
+      },
+      {
+        "value": 1,
+        "des": "Plus",
+        "title": "pind_plus_cooking"
+      },
+      {
+        "value": 2,
+        "des": "Hestan Cue",
+        "title": "pind_hestan_cue"
+      }
+    ],
+    "SL1_Functions": [
+      {
+        "value": 8166,
+        "des": "None",
+        "title": "",
+        "icon": {
+          "icon": "",
+          "fontFamily": ""
+        }
+      },
+      {
+        "value": 8169,
+        "des": "Warm up Keep warm",
+        "title": "pind_function_warm_up",
+        "icon": {
+          "icon": "0xe848",
+          "fontFamily": "ConnectLifeHob"
+        }
+      },
+      {
+        "value": 8170,
+        "des": "Fry Wokk",
+        "title": "pind_function_fry",
+        "icon": {
+          "icon": "0xe84a",
+          "fontFamily": "ConnectLifeHob"
+        }
+      },
+      {
+        "value": 8172,
+        "des": "Grill",
+        "title": "pind_function_grill",
+        "icon": {
+          "icon": "0xe847",
+          "fontFamily": "ConnectLifeHob"
+        }
+      },
+      {
+        "value": 8171,
+        "des": "Roast",
+        "title": "pind_function_hestan_mode",
+        "icon": {
+          "icon": "0xe845",
+          "fontFamily": "ConnectLifeHob"
+        }
+      },
+      {
+        "value": 8168,
+        "des": "SIMMER_FUNCTION",
+        "title": "pind_function_hestan_slow",
+        "icon": {
+          "icon": "0xe846",
+          "fontFamily": "ConnectLifeHob"
+        }
+      },
+      {
+        "value": 8167,
+        "des": "Boil",
+        "title": "pind_function_hestan_boil",
+        "icon": {
+          "icon": "0xe844",
+          "fontFamily": "ConnectLifeHob"
+        }
+      }
+    ]
+  }
+}

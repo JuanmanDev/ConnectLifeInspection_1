@@ -1,0 +1,295 @@
+{
+  "applianceInfo": {
+    "typeCode": "032",
+    "typeName": "tumble_dryer",
+    "isGorenje": true
+  },
+  "logo": {
+    "icon": "0xe964",
+    "fontFamily": "ConnectLifeWashingMachine"
+  },
+  "logoBold": {
+    "icon": "0xe82d",
+    "fontFamily": "ConnectLifeWashingMachine"
+  },
+  "softAp": {
+    "type": "1",
+    "pairDesc": "td22_pair_desc",
+    "resource": [
+      {
+        "title": "step",
+        "style": 0,
+        "content": "td22_connect_step1_desc",
+        "content_pair": "td22_pair_step1_desc",
+        "path": "resource/images/td22/instruction_td22_cs_step1.png",
+        "pair_path": "resource/images/td22/instruction_td22_p_step1.png"
+      },{
+        "title": "step",
+        "style": 0,
+        "content": "td22_connect_step2_desc",
+        "content_pair": "td22_pair_step2_desc",
+        "path": "resource/images/td22/instruction_td22_cs_step2.png",
+        "pair_path": "resource/images/td22/instruction_td22_p_step2.png"
+      },{
+        "title": "step",
+        "style": 0,
+        "content": "td22_connect_step3_desc",
+        "content_pair": "td22_pair_step3_desc",
+        "path": "resource/images/td22/instruction_td22_cs_step3.png",
+        "pair_path": "resource/images/td22/instruction_td22_p_step3.png"
+      },{
+        "title": "step",
+        "style": 0,
+        "content": "td22_connect_step4_desc",
+        "content_pair": "",
+        "path": "resource/images/td22/instruction_td22_cs_step4.png",
+        "pair_path": ""
+      }
+    ]
+  },
+  "appliancePreference": "type_3",
+  "applianceTile": {
+    "convertType": "pind",
+    "icon": {
+      "icon": "0xe80b",
+      "fontFamily": "ConnectLifeFont"
+    },
+    "style": "pind",
+    "properties": []
+  },
+  "scene": {
+    "isSupport": 1
+  },
+  "activity": {
+    "icon": {
+      "icon": "0xe82d",
+      "fontFamily": "ConnectLifeWashingMachine"
+    },
+    "style": "0",
+    "condition": [
+      {
+        "propertyKey": "Status",
+        "value": "3"
+      }
+    ],
+    "properties": []
+  },
+  "scene": {
+    "isSupport": 1,
+    "convertType": "diswasher",
+    "automation": {
+    },
+    "manual": [
+      {
+        "propertyKey": "Selected_program_id",
+        "title": "program_name",
+        "desc": "program_name",
+        "type": "1",
+        "prefix": "",
+        "suffix": ""
+      }
+    ]
+  },
+  "options": {
+    "Selected_program_id": [
+      {
+        "value": 0,
+        "title": "program_name_cotton_storage",
+        "des": "program_name_cotton_storage",
+        "icon": {
+          "icon": "0xe908",
+          "fontFamily": "ConnectLifeWashingMachine"
+        }
+      },
+      {
+        "value": 1,
+        "title": "program_name_standard",
+        "des": "program_name_standard",
+        "icon": {
+          "icon": "0xe8fe",
+          "fontFamily": "ConnectLifeWashingMachine"
+        }
+      },
+      {
+        "value": 2,
+        "title": "program_name_iron",
+        "des": "program_name_iron",
+        "icon": {
+          "icon": "0xe8f9",
+          "fontFamily": "ConnectLifeWashingMachine"
+        }
+      },
+      {
+        "value": 3,
+        "title": "program_name_mix",
+        "des": "program_name_mix",
+        "icon": {
+          "icon": "0xe935",
+          "fontFamily": "ConnectLifeWashingMachine"
+        }
+      },
+      {
+        "value": 4,
+        "title": "program_name_synthetics",
+        "des": "program_name_synthetics",
+        "icon": {
+          "icon": "0xe907",
+          "fontFamily": "ConnectLifeWashingMachine"
+        }
+      },
+      {
+        "value": 5,
+        "title": "program_name_wool",
+        "des": "program_name_wool",
+        "icon": {
+          "icon": "0xe90c",
+          "fontFamily": "ConnectLifeWashingMachine"
+        }
+      },
+      {
+        "value": 6,
+        "title": "program_name_pillow",
+        "des": "program_name_pillow",
+        "icon": {
+          "icon": "0xe91a",
+          "fontFamily": "ConnectLifeWashingMachine"
+        }
+      },
+      {
+        "value": 7,
+        "title": "program_name_air_refresh",
+        "des": "program_name_air_refresh",
+        "icon": {
+          "icon": "0xe86e",
+          "fontFamily": "ConnectLifeWashingMachine"
+        }
+      },
+      {
+        "value": 8,
+        "title": "program_name_bedding",
+        "des": "program_name_bedding",
+        "icon": {
+          "icon": "0xe91a",
+          "fontFamily": "ConnectLifeWashingMachine"
+        }
+      },
+      {
+        "value": 9,
+        "title": "program_name_baby",
+        "des": "program_name_baby",
+        "icon": {
+          "icon": "0xe8f8",
+          "fontFamily": "ConnectLifeWashingMachine"
+        }
+      },
+      {
+        "value": 10,
+        "title": "program_name_sensitive",
+        "des": "program_name_sensitive",
+        "icon": {
+          "icon": "0xe933",
+          "fontFamily": "ConnectLifeWashingMachine"
+        }
+      },
+      {
+        "value": 11,
+        "title": "program_name_shirts",
+        "des": "program_name_shirts",
+        "icon": {
+          "icon": "0xe92d",
+          "fontFamily": "ConnectLifeWashingMachine"
+        }
+      },
+      {
+        "value": 12,
+        "title": "program_name_sportsware",
+        "des": "program_name_sportsware",
+        "icon": {
+          "icon": "0xe90d",
+          "fontFamily": "ConnectLifeWashingMachine"
+        }
+      },
+      {
+        "value": 13,
+        "title": "program_name_time",
+        "des": "program_name_time",
+        "icon": {
+          "icon": "0xe823",
+          "fontFamily": "ConnectLifeWashingMachine"
+        }
+      },
+      {
+        "value": 14,
+        "title": "program_name_steam_refresh",
+        "des": "program_name_steam_refresh",
+        "icon": {
+          "icon": "0xe83b",
+          "fontFamily": "ConnectLifeWashingMachine"
+        }
+      },
+      {
+        "value": 15,
+        "title": "program_name_fast89",
+        "des": "program_name_fast89",
+        "icon": {
+          "icon": "0xe83b",
+          "fontFamily": "ConnectLifeWashingMachine"
+        }
+      },
+      {
+        "value": 16,
+        "title": "program_name_extra_hygiene",
+        "des": "program_name_extra_hygiene",
+        "icon": {
+          "icon": "0xe83b",
+          "fontFamily": "ConnectLifeWashingMachine"
+        }
+      },
+      {
+        "value": 17,
+        "title": "program_name_towels",
+        "des": "program_name_towels",
+        "icon": {
+          "icon": "0xe8ff",
+          "fontFamily": "ConnectLifeWashingMachine"
+        }
+      },
+      {
+        "value": 18,
+        "title": "program_name_kids_toys",
+        "des": "program_name_kids_toys",
+        "icon": {
+          "icon": "0xe86e",
+          "fontFamily": "ConnectLifeWashingMachine"
+        }
+      },
+      {
+        "value": 19,
+        "title": "program_name_jackets",
+        "des": "program_name_jackets",
+        "icon": {
+          "icon": "0xe90f",
+          "fontFamily": "ConnectLifeWashingMachine"
+        }
+      },
+      {
+        "value": 20,
+        "title": "program_name_sneakers",
+        "des": "program_name_sneakers",
+        "icon": {
+          "icon": "0xe86e",
+          "fontFamily": "ConnectLifeWashingMachine"
+        }
+      },
+      {
+        "value": 21,
+        "title": "program_name_cotton_underwear",
+        "des": "program_name_cotton_underwear",
+        "icon": {
+          "icon": "0xe86e",
+          "fontFamily": "ConnectLifeWashingMachine"
+        }
+      }
+    ]
+  }
+}

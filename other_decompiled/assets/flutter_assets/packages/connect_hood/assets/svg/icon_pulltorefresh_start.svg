@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon_general_36_pulltorefresh</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.549020 0 0 0 0 0.549020 0 0 0 0 0.549020 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Dashbboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon_general_36_pulltorefresh" transform="translate(-169.000000, -66.000000)" filter="url(#filter-1)">
+            <g transform="translate(169.000000, 66.000000)">
+                <rect id="矩形" x="0" y="0" width="36" height="36"></rect>
+                <path d="M28.6990614,16.9696155 L28.7111394,17.0474523 C28.8752979,18.1053668 28.1772777,19.1049438 27.1275486,19.3151819 L18.0011615,21.143 L18.0011615,21.143 L8.87704795,19.315244 C7.827359,19.1049688 7.12938488,18.1054136 7.29353838,17.0475307 L7.30562861,16.9696155 C7.46718297,15.9284828 8.44215349,15.2154436 9.48328624,15.3769979 C9.51082512,15.3812712 9.53826705,15.3861474 9.56559228,15.391623 L17.2153277,16.9245293 C17.7340619,17.0284768 18.2682635,17.0284885 18.7870022,16.9245637 L26.4390805,15.3915373 C27.4721905,15.1845628 28.4774776,15.8542779 28.6844521,16.8873879 C28.6899213,16.9146872 28.6947922,16.942103 28.6990614,16.9696155 Z" id="Path" fill="#8C8C8C"></path>
+            </g>
+        </g>
+    </g>
+</svg>

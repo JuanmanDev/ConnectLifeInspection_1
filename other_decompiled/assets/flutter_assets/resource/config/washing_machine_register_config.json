@@ -1,0 +1,39 @@
+{
+  "applianceInfo": {
+    "typeCode": "003",
+    "typeName": "washing_type",
+    "isGorenje": true
+  },
+  "logo": {
+    "icon": "0xe80b",
+    "fontFamily": "ConnectLifeFont"
+  },
+  "logoBold": {
+    "icon": "0xe82c",
+    "fontFamily": "ConnectLifeFont"
+  },
+  "softAp": {
+    "type": "1",
+    "resource": [
+      {
+        "title": "add_appliance_step",
+        "content": "add_washing_machine",
+        "content_pair": "add_washing_machine_pair",
+        "path": "resource/images/appliance/add_app_mobile_wm.png"
+      }
+    ]
+  },
+  "applianceTile": {
+    "convertType": "pind",
+    "icon": {
+      "icon": "0xe80b",
+      "fontFamily": "ConnectLifeFont"
+    },
+    "style": "pind",
+    "properties": []
+  },
+  "scene": {
+    "isSupport": 1
+  },
+  "appliancePreference": "hisenseAir"
+}

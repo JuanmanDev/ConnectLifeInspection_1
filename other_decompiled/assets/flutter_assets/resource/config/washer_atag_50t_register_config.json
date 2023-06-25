@@ -1,0 +1,497 @@
+{
+  "applianceInfo": {
+    "typeCode": "015",
+    "typeName": "dishwasher_type",
+    "isGorenje": true
+  },
+  "logo": {
+    "icon": "0xe81e",
+    "fontFamily": "ConnectLifeAllFont"
+  },
+  "logoBold": {
+    "icon": "0xe7c6",
+    "fontFamily": "ConnectLifeAllFont"
+  },
+  "softAp": {
+    "type": "1",
+    "resource": [
+      {
+        "title": "step",
+        "style": 0,
+        "content": "washer_atag_cs_step1",
+        "content_pair": "washer_atag_step1",
+        "path": "resource/images/atag_dw/instructions_dw50T_step1.png",
+        "pair_path": "resource/images/atag_dw/instructions_dw50T_step1.png"
+      },{
+        "title": "step",
+        "style": 0,
+        "content": "washer_atag_50_cs_step2",
+        "content_pair": "washer_atag_50_pair_step2",
+        "path": "resource/images/atag_dw/instructions_dw50T_step2.png",
+        "pair_path": "resource/images/atag_dw/instructions_dw50T_step2_pair.png"
+      },{
+        "title": "step",
+        "style": 0,
+        "content": "washer_atag_50_cs_step3",
+        "content_pair": "washer_atag_50_pair_step3",
+        "path": "resource/images/atag_dw/instructions_dw50T_step3.png",
+        "pair_path": "resource/images/atag_dw/instructions_dw50T_step3_pair.png"
+      }, {
+        "title": "step",
+        "style": 0,
+        "content": "washer_atag_50_cs_step4",
+        "content_pair": "",
+        "pair_path": "",
+        "path": "resource/images/atag_dw/instructions_dw50T_step4.png"
+      }
+    ]
+  },
+  "applianceTile": {
+    "convertType": "dw",
+    "icon": {
+      "icon": "0xe7c6",
+      "fontFamily": "ConnectLifeWasher"
+    },
+    "style": "dw",
+    "properties": [
+      {
+        "propertyKey": "Device_status",
+        "type": "5",
+        "prefix": "",
+        "suffix": "",
+        "display": {
+          "Device_status": "1"
+        }
+      }
+    ]
+  },
+  "appliancePreference": "type_7",
+  "activity": {
+    "icon": {
+      "icon": "0xe7c6",
+      "fontFamily": "ConnectLifeWasher"
+    },
+    "style": "0",
+    "condition": [
+      {
+        "propertyKey": "Device_status",
+        "value": "5"
+      }
+    ],
+    "properties": []
+  },
+  "scene": {
+    "isSupport": 1,
+    "convertType": "diswasher",
+    "automation": {
+    },
+    "manual": [
+      {
+        "propertyKey": "Selected_program_id",
+        "title": "program_name",
+        "desc": "program_name",
+        "type": "1",
+        "prefix": "",
+        "suffix": ""
+      }
+    ]
+  },
+  "options": {
+    "Selected_program_id": [
+      {
+        "value": 0,
+        "title": "washer_atag_program_undefined",
+        "des": "UNDEF"
+      },
+      {
+        "value": 1,
+        "title": "STR_PROG_AUTO",
+        "des": "Auto"
+      },
+      {
+        "value": 2,
+        "title": "STR_PROG_AUTO",
+        "des": "Auto"
+      },
+      {
+        "value": 3,
+        "title": "STR_PROG_AUTO",
+        "des": "Auto"
+      },
+      {
+        "value": 4,
+        "title": "STR_PROG_ECO",
+        "des": "Eco"
+      },
+      {
+        "value": 5,
+        "title": "STR_PROG_ECO",
+        "des": "Eco"
+      },
+      {
+        "value": 6,
+        "title": "STR_PROG_NORMAL",
+        "des": "Normal"
+      },
+      {
+        "value": 7,
+        "title": "STR_PROG_NORMAL",
+        "des": "Normal"
+      },
+      {
+        "value": 8,
+        "title": "STR_PROG_UNIVERSAL",
+        "des": "Universal"
+      },
+      {
+        "value": 9,
+        "title": "STR_PROG_INTENSIVE",
+        "des": "Intensive"
+      },
+      {
+        "value": 10,
+        "title": "STR_PROG_QUICK",
+        "des": "Quick"
+      },
+      {
+        "value": 11,
+        "title": "STR_PROG_QUICK",
+        "des": "Quick"
+      },
+      {
+        "value": 12,
+        "title": "washer_atag_program_1hour",
+        "des": "1h"
+      },
+      {
+        "value": 13,
+        "title": "STR_PROG_QUICK",
+        "des": "Quick"
+      },
+      {
+        "value": 14,
+        "title": "STR_PROG_QUICK",
+        "des": "Quick"
+      },
+      {
+        "value": 15,
+        "title": "STR_PROG_PREHEATED",
+        "des": "Preheated"
+      },
+      {
+        "value": 16,
+        "title": "washer_atag_program_glass",
+        "des": "Glass"
+      },
+      {
+        "value": 17,
+        "title": "STR_PROG_TIME",
+        "des": "Time"
+      },
+      {
+        "value": 18,
+        "title": "STR_PROG_TIME",
+        "des": "Time"
+      },
+      {
+        "value": 19,
+        "title": "STR_PROG_TIME",
+        "des": "Time"
+      },
+      {
+        "value": 20,
+        "title": "STR_PROG_TIME",
+        "des": "Time"
+      },
+      {
+        "value": 21,
+        "title": "STR_PROG_TIME",
+        "des": "Time"
+      },
+      {
+        "value": 22,
+        "title": "STR_PROG_TIME",
+        "des": "Time"
+      },
+      {
+        "value": 23,
+        "title": "STR_PROG_TIME",
+        "des": "Time"
+      },
+      {
+        "value": 24,
+        "title": "STR_PROG_HYGIENE",
+        "des": "Hygiene"
+      },
+      {
+        "value": 25,
+        "title": "STR_PROG_HYGIENE",
+        "des": "Hygiene"
+      },
+      {
+        "value": 26,
+        "title": "STR_PROG_PLASTIC",
+        "des": "Plastic"
+      },
+      {
+        "value": 27,
+        "title": "STR_PROG_SELFCLEAN",
+        "des": "Self-clean"
+      },
+      {
+        "value": 28,
+        "title": "STR_PROG_RINSE",
+        "des": "Rinse and hold"
+      },
+      {
+        "value": 29,
+        "title": "STR_PROG_LOWER",
+        "des": "Lower half"
+      },
+      {
+        "value": 30,
+        "title": "STR_PROG_UPPER",
+        "des": "Upper half"
+      },
+      {
+        "value": 30,
+        "title": "STR_PROG_UPPER",
+        "des": "Upper half"
+      },
+      {
+        "value": 31,
+        "title": "washer_atag_program_night",
+        "des": "Night"
+      },
+      {
+        "value": 32,
+        "title": "STR_PROG_SANI",
+        "des": "SANI"
+      },
+      {
+        "value": 33,
+        "title": "STR_PROG_SANI_QUICK",
+        "des": "ANI Quick"
+      },
+      {
+        "value": 34,
+        "title": "STR_PROG_ION_TECH",
+        "des": "IonTech"
+      }
+    ],
+    "Selected_program_mode": [
+      {
+        "value": 2,
+        "title": "NORMAL_MODE",
+        "des": "NORMAL_MODE"
+      },
+      {
+        "value": 3,
+        "title": "GREEN_MODE",
+        "des": "GREEN_MODE"
+      },
+      {
+        "value": 4,
+        "title": "SPEED_MODE",
+        "des": "SPEED_MODE"
+      },
+      {
+        "value": 5,
+        "title": "NIGHT_MODE",
+        "des": "NIGHT_MODE"
+      },
+      {
+        "value": 6,
+        "title": "INTENSIVE_MODE",
+        "des": "INTENSIVE_MODE"
+      },
+      {
+        "value": 7,
+        "title": "washer_atag_mode_uv",
+        "des": "UV_MODE"
+      },
+      {
+        "value": 8,
+        "title": "washer_atag_mode_heat_boost",
+        "des": "HEAT BOOST"
+      },
+      {
+        "value": 9,
+        "title": "washer_atag_mode_storage",
+        "des": "STORAGE_MODE"
+      }
+    ],
+    "Extra_drying_function": [
+      {
+        "value": 0,
+        "title": "OFF",
+        "des": "OFF"
+      },
+      {
+        "value": 1,
+        "title": "ON",
+        "des": "ON"
+      }
+    ],
+    "Time_program_set_duration": [
+      {
+        "value": 2,
+        "title": "15",
+        "des": "15"
+      },
+      {
+        "value": 3,
+        "title": "30",
+        "des": "30"
+      },
+      {
+        "value": 4,
+        "title": "45",
+        "des": "45"
+      },
+      {
+        "value": 5,
+        "title": "60",
+        "des": "60"
+      },
+      {
+        "value": 6,
+        "title": "90",
+        "des": "90"
+      },
+      {
+        "value": 7,
+        "title": "120",
+        "des": "120"
+      },
+      {
+        "value": 8,
+        "title": "150",
+        "des": "150"
+      }
+    ],
+    "Device_status": [
+      {
+        "value": 4,
+        "title": "Failure",
+        "des": "Failure"
+      },
+      {
+        "value": 1,
+        "title": "Idle",
+        "des": "Idle"
+      },
+      {
+        "value": 5,
+        "title": "Service",
+        "des": "Service"
+      },
+      {
+        "value": 6,
+        "title": "Production",
+        "des": "Production"
+      },
+      {
+        "value": 2,
+        "title": "Running",
+        "des": "Running"
+      },
+      {
+        "value": 3,
+        "title": "Paused",
+        "des": "Paused"
+      }
+    ],
+    "Selected_program_auto_door_open_function": [
+      {
+        "value": 7093,
+        "title": "OFF",
+        "des": "OFF"
+      },
+      {
+        "value": 7094,
+        "title": "ON",
+        "des": "ON"
+      },
+      {
+        "value": 7099,
+        "title": "not_available",
+        "des": "Not available"
+      }
+    ],
+    "Feedback_volumen_setting": [
+      {
+        "value": 0,
+        "title": "0",
+        "des": "0"
+      },
+      {
+        "value": 1,
+        "title": "1",
+        "des": "1"
+      },
+      {
+        "value": 2,
+        "title": "2",
+        "des": "2"
+      },
+      {
+        "value": 3,
+        "title": "3",
+        "des": "3"
+      }
+    ],
+    "Water_hardness_setting": [
+      {
+        "value": 0,
+        "title": "0",
+        "des": "0"
+      },
+      {
+        "value": 1,
+        "title": "1",
+        "des": "1"
+      },
+      {
+        "value": 2,
+        "title": "2",
+        "des": "2"
+      },
+      {
+        "value": 3,
+        "title": "3",
+        "des": "3"
+      },
+      {
+        "value": 4,
+        "title": "4",
+        "des": "4"
+      },
+      {
+        "value": 5,
+        "title": "5",
+        "des": "5"
+      },
+      {
+        "value": 6,
+        "title": "6",
+        "des": "6"
+      },
+      {
+        "value": 7,
+        "title": "7",
+        "des": "7"
+      },
+      {
+        "value": 8,
+        "title": "8",
+        "des": "8"
+      },
+      {
+        "value": 9,
+        "title": "9",
+        "des": "9"
+      }
+    ]
+  }
+}

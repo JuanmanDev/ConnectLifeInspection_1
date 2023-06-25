@@ -1,0 +1,90 @@
+{
+  "applianceInfo": {
+    "typeCode": "012",
+    "typeName": "hood_atag",
+    "isGorenje": true
+  },
+  "logo": {
+    "icon": "0xe7e3",
+    "fontFamily": "connectLifeHood"
+  },
+  "logoBold": {
+    "icon": "0xe7c8",
+    "fontFamily": "connectLifeHood"
+  },
+  "softAp": {
+    "type": "1",
+    "resource": [
+      {
+        "title": "step",
+        "content": "atag_hood_type1_wifi_step1",
+        "content_pair": "atag_hood_type1_pair_step1",
+        "path": "resource/images/atag_hood/instructions_hood_step_1@3x.png",
+        "pair_path": "resource/images/atag_hood/instructions_hood_step_1@3x.png"
+      },
+      {
+        "title": "step",
+        "content": "atag_hood_type1_wifi_step2_wifioff",
+        "content_pair": "atag_hood_type1_pair_step2",
+        "path": "resource/images/atag_hood/instructions_hood_step_1@3x.png",
+        "pair_path": "resource/images/atag_hood/instructions_hood_step_2_2@3x.png"
+      },
+      {
+        "title": "step",
+        "content": "atag_hood_type1_wifi_step2",
+        "content_pair": "atag_hood_type1_pair_step3",
+        "path": "resource/images/atag_hood/instructions_hood_step_2_2@3x.png",
+        "pair_path": "resource/images/atag_hood/instructions_hood_step_3_pair@3x.png"
+      },
+
+      {
+        "title": "step",
+        "content": "atag_hood_type1_wifi_step3",
+        "content_pair": "atag_hood_type1_pair_step4",
+        "path": "resource/images/atag_hood/instructions_hood_step_3_copy_3@3x.png",
+        "pair_path": "resource/images/atag_hood/instructions_hood_step_4_pair@3x.png"
+      },
+      {
+        "title": "step",
+        "content": "atag_hood_type1_wifi_step4",
+        "content_pair": "",
+        "path": "resource/images/atag_hood/instructions_hood_step_4_copy@3x.png",
+        "pair_path": ""
+      }
+
+    ]
+  },
+  "applianceTile": {
+    "convertType": "hood_atag",
+    "icon": {
+      "icon": "0xe7e7",
+      "fontFamily": "ConnectLifeFont"
+    },
+    "style": "hood_atag",
+    "properties": [
+      {
+        "propertyKey": "DeviceStatus",
+        "type": "5",
+        "prefix": "",
+        "suffix": "",
+        "display": {
+          "DeviceStatus": "1"
+        }
+      },
+
+      {
+        "propertyKey": "DeviceStatus",
+        "type": "5",
+        "prefix": "",
+        "suffix": "",
+        "display": {
+          "DeviceStatus": "5"
+        }
+      }
+    ]
+  },
+  "scene": {
+    "isSupport": 1
+  },
+  "appliancePreference": "type_3"
+}
