@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:id="@+id/item_notification_ll" android:layout_width="match_parent" android:layout_height="64dp">
+    <com.hisense.connect_life.core.widget.IconFontView android:textSize="@dimen/text_size_22" android:id="@+id/item_ticket_ic" android:layout_width="26dp" android:layout_height="26dp" android:text="@string/icon_add_wine" android:layout_marginStart="@dimen/margin_16" android:layout_marginEnd="@dimen/margin_16"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textSize="@dimen/text_size_18" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@+id/item_ticket_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/app_name"/>
+        <Space android:layout_width="wrap_content" android:layout_height="4dp"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/colorBlack" android:ellipsize="end" android:id="@+id/item_ticket_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_6" android:text="@string/app_name" android:lines="1" android:layout_toLeftOf="@+id/item_ticket_status"/>
+            <TextView android:textSize="@dimen/text_size_16" android:id="@+id/item_ticket_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:layout_alignParentRight="true" android:layout_marginEnd="@dimen/margin_16"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

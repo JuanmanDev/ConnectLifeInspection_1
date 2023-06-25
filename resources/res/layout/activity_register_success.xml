@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/account_top_bar"/>
+    <com.hisense.connect_life.core.widget.IconFontView style="@style/icon_splash_logo_style"/>
+    <androidx.cardview.widget.CardView android:layout_gravity="center_horizontal" android:id="@+id/user_card_view" android:layout_width="100dp" android:layout_height="100dp" android:layout_marginTop="@dimen/margin_84" app:cardBackgroundColor="@color/user_bg_1" app:cardCornerRadius="50dp">
+        <TextView android:textSize="@dimen/text_size_32" android:textColor="@color/colorWhite" android:gravity="center" android:layout_gravity="center" android:id="@+id/user_icon" android:layout_width="match_parent" android:layout_height="match_parent" android:text="UN"/>
+    </androidx.cardview.widget.CardView>
+    <TextView android:id="@+id/text_name" android:layout_marginTop="@dimen/margin_26" style="@style/title_text_style"/>
+    <TextView android:layout_marginTop="@dimen/margin_26" android:layout_marginRight="@dimen/margin_32" android:text="@string/register_success_tips" style="@style/reminder_text_style"/>
+    <Space android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1"/>
+    <Button android:textColor="@color/colorWhite" android:id="@+id/sign_in" android:background="@drawable/button_next_select_bg" android:text="@string/sign_in" style="@style/bottom_btn_style"/>
+    <TextView android:id="@+id/sign_in_another" android:layout_marginBottom="@dimen/margin_32" android:text="@string/sign_in_with_another_account" style="@style/bottom_cancel_text_style"/>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/container" android:background="@color/colorBackground_e" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/account_top_bar"/>
+    <com.hisense.connect_life.core.widget.IconFontView style="@style/icon_splash_logo_style"/>
+    <TextView android:visibility="gone" android:layout_marginTop="@dimen/margin_50" android:text="@string/login_register_third_title" style="@style/title_text_style"/>
+    <TextView android:id="@+id/content_tips" android:visibility="gone" android:text="@string/login_third_content" style="@style/reminder_text_style"/>
+    <Space android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1"/>
+    <include android:visibility="gone" layout="@layout/sign_type"/>
+    <TextView android:id="@+id/sign_in_manually" android:layout_marginTop="@dimen/margin_240" android:text="@string/sign_in_manually" style="@style/bottom_text_style"/>
+    <TextView android:id="@+id/register_manually" android:visibility="gone" android:layout_marginTop="@dimen/margin_240" android:text="@string/register_manually" style="@style/bottom_text_style"/>
+</LinearLayout>

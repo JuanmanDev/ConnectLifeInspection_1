@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/all_refreshLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.hisense.juconnect.app_device.view.SwipeExpandableListView android:id="@+id/notification_all_elv" android:layout_width="match_parent" android:layout_height="match_parent" android:groupIndicator="@null" android:divider="@null" android:choiceMode="multipleChoice"/>
+        <TextView android:textSize="@dimen/text_size_22" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@+id/all_notification_empty" android:paddingLeft="@dimen/margin_36" android:paddingTop="@dimen/margin_110" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text=""/>
+    </RelativeLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

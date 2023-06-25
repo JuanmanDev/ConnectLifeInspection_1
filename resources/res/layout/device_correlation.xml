@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/text_size_20" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_marginBottom="@dimen/margin_16" android:text="@string/appliance_things_to_do" android:layout_alignParentBottom="true" android:fontFamily="@font/proximanova_extrabold" android:layout_marginStart="@dimen/margin_16"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView android:id="@+id/device_correlation_lights" android:layout_width="0dp" android:layout_height="130dp" android:layout_marginTop="@dimen/margin_16" android:layout_weight="1" android:layout_marginStart="@dimen/margin_16" android:layout_marginEnd="@dimen/margin_8">
+            <RelativeLayout android:orientation="vertical" android:id="@+id/ll_correlation_lights" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@+id/iv_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_16" android:src="@drawable/ic___icon_hood_36_light_on"/>
+                <TextView android:textSize="@dimen/text_size_20" android:textStyle="bold" android:textColor="@color/colorBlack" android:ellipsize="end" android:id="@+id/tv_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_16" android:text="@string/lights" android:lines="1" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/margin_16"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp" android:src="@drawable/ic_icon_general_24_link_go" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+                <ImageView android:id="@+id/iv_lights_top" android:background="@color/transparent_b4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.5"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="130dp" android:layout_marginTop="@dimen/margin_16" android:layout_weight="1" android:layout_marginStart="@dimen/margin_8" android:layout_marginEnd="@dimen/margin_16">
+            <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/iv_lock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_16" android:src="@drawable/ic_keylock"/>
+                    <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <ToggleButton android:id="@+id/toggle_child_lock" android:background="@drawable/switch_on_off" android:layout_width="50dp" android:layout_height="30dp" android:layout_margin="@dimen/margin_16" android:textOn="" android:textOff=""/>
+                    <ImageView android:id="@+id/iv_key_lock_top" android:background="@color/transparent_b4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.5"/>
+                </LinearLayout>
+                <TextView android:textSize="@dimen/text_size_20" android:textStyle="bold" android:textColor="@color/colorBlack" android:ellipsize="end" android:id="@+id/tv_lock" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_16" android:text="@string/key_lock" android:lines="1" android:layout_toLeftOf="@+id/trangle" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/margin_16"/>
+                <ImageView android:id="@+id/trangle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_16" android:layout_marginBottom="@dimen/margin_16" android:src="@drawable/ic_icon_general_24_link_go" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+                <ImageView android:id="@+id/iv_lock_go" android:background="@color/transparent" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <ImageView android:id="@+id/iv_lock_top" android:background="@color/transparent_b4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.5"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView android:id="@+id/device_correlation_statistics" android:layout_width="0dp" android:layout_height="130dp" android:layout_marginTop="@dimen/margin_16" android:layout_weight="1" android:layout_marginStart="@dimen/margin_16" android:layout_marginEnd="@dimen/margin_8">
+            <RelativeLayout android:orientation="vertical" android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_16" android:src="@drawable/ic_icon_general_48_statistics"/>
+                <TextView android:textSize="@dimen/text_size_20" android:textStyle="bold" android:textColor="@color/colorBlack" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_16" android:text="@string/statistics" android:lines="1" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/margin_16"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp" android:src="@drawable/ic_icon_general_24_link_go" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_16" android:layout_weight="1" android:layout_marginStart="@dimen/margin_8" android:layout_marginEnd="@dimen/margin_16"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_size_20" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_marginBottom="@dimen/margin_16" android:text="@string/more" android:layout_alignParentBottom="true" android:fontFamily="@font/proximanova_extrabold" android:layout_marginStart="@dimen/margin_16"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView android:id="@+id/device_correlation_manuals" android:layout_width="0dp" android:layout_height="130dp" android:layout_marginTop="@dimen/margin_16" android:layout_weight="1" android:layout_marginStart="@dimen/margin_16" android:layout_marginEnd="@dimen/margin_8">
+            <RelativeLayout android:orientation="vertical" android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_16" android:src="@drawable/ic__icon_general_48_manuals"/>
+                <TextView android:textSize="@dimen/text_size_20" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_16" android:text="@string/manuals" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/margin_16"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp" android:src="@drawable/ic_icon_general_24_link_go" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:id="@+id/device_correlation_settings" android:layout_width="0dp" android:layout_height="130dp" android:layout_marginTop="@dimen/margin_16" android:layout_weight="1" android:layout_marginStart="@dimen/margin_8" android:layout_marginEnd="@dimen/margin_16">
+            <RelativeLayout android:orientation="vertical" android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_16" android:src="@drawable/ic__icon_general_48_aplnc_setting"/>
+                <TextView android:textSize="@dimen/text_size_20" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_16" android:text="@string/preferences" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/margin_16"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp" android:src="@drawable/ic_icon_general_24_link_go" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <LinearLayout android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView android:id="@+id/device_correlation_service" android:layout_width="0dp" android:layout_height="130dp" android:layout_marginTop="@dimen/margin_16" android:layout_weight="1" android:layout_marginStart="@dimen/margin_16" android:layout_marginEnd="@dimen/margin_8">
+            <RelativeLayout android:orientation="vertical" android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_16" android:src="@drawable/ic__icon_48_aplc_service"/>
+                <TextView android:textSize="@dimen/text_size_20" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_16" android:text="@string/service" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/margin_16"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp" android:src="@drawable/ic_icon_general_24_link_go" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_16" android:layout_weight="1" android:layout_marginStart="@dimen/margin_8" android:layout_marginEnd="@dimen/margin_16"/>
+    </LinearLayout>
+    <Space android:layout_width="wrap_content" android:layout_height="@dimen/margin_40"/>
+</LinearLayout>

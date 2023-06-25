@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/text_size_22" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_36" android:text="@string/no_device_info" android:layout_marginStart="@dimen/margin_36" android:layout_marginEnd="@dimen/margin_32"/>
+    <androidx.cardview.widget.CardView android:layout_gravity="center_horizontal" android:id="@+id/appliance_pairing_cv" android:layout_width="match_parent" android:layout_height="130dp" android:layout_marginTop="@dimen/margin_36" android:alpha="0.85" android:layout_marginStart="@dimen/margin_16" android:layout_marginEnd="@dimen/margin_16" app:cardElevation="@dimen/margin_26">
+        <LinearLayout android:orientation="vertical" android:id="@+id/dashboard_add_appliance" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.hisense.connect_life.core.widget.IconFontView android:textSize="@dimen/text_size_58" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_12" android:text="@string/btn_dashboard_add"/>
+            <TextView android:textSize="@dimen/text_size_20" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_appliance_new" android:layout_marginStart="@dimen/margin_16"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

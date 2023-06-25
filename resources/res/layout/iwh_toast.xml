@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textColor="@color/white" android:id="@+id/iwh_toast_text" android:background="@drawable/shape_rect_black_bg" android:paddingLeft="@dimen/margin_24" android:paddingTop="@dimen/margin_16" android:paddingBottom="@dimen/margin_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="设备解绑成功" android:layout_marginStart="@dimen/margin_10" android:layout_marginEnd="@dimen/margin_10"/>
+</LinearLayout>

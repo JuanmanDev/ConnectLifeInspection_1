@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="@dimen/margin_90">
+    <TextView android:textSize="@dimen/text_size_20" android:textStyle="bold" android:textColor="@color/colorBlack" android:ellipsize="end" android:id="@+id/tv_manual_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_20" android:maxLines="1"/>
+    <com.hisense.connect_life.core.widget.NovaTextView android:textSize="@dimen/text_size_16" android:textColor="@color/colorBlack" android:ellipsize="end" android:id="@+id/tv_device_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:maxLines="1" android:layout_below="@+id/tv_manual_name"/>
+    <com.hisense.connect_life.core.widget.OvenIconFontView android:textSize="@dimen/text_size_24" android:id="@+id/ifv_manual" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icon_manual_icon_pdf" style="@style/style_wine_filter_type_icon"/>
+</RelativeLayout>

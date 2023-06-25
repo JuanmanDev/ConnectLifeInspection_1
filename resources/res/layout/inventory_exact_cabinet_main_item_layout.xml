@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingLeft="@dimen/margin_32" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Space android:layout_width="match_parent" android:layout_height="@dimen/margin_22"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/icon_bottles" android:background="@drawable/inventory_rectangle_black" android:layout_width="@dimen/margin_42" android:layout_height="@dimen/margin_66" android:layout_centerVertical="true">
+                <com.hisense.connect_life.core.widget.IconFontView android:textSize="@dimen/text_size_20" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icon_shelf_possition_new" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/transparent_99" android:id="@+id/text_unplaced" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_16" android:text="@string/unplaced" android:layout_toRightOf="@+id/icon_bottles" android:layout_centerVertical="true"/>
+            <RelativeLayout android:id="@+id/bottles_count_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_64" android:layout_toRightOf="@+id/text_unplaced" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/text_size_26" android:textColor="@color/transparent_99" android:id="@+id/bottles_count_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12"/>
+                <com.hisense.connect_life.core.widget.IconFontView android:textSize="@dimen/text_size_26" android:textColor="@color/transparent_99" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_4" android:layout_marginBottom="@dimen/margin_8" android:text="@string/icon_wine_position" android:layout_toRightOf="@+id/bottles_count_text"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/wine_zone_recycler" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_12" android:overScrollMode="never"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

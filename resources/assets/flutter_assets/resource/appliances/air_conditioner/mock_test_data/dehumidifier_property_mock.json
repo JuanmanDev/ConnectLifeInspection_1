@@ -1,0 +1,165 @@
+{
+  "deviceTypeCode": "007",
+  "deviceTypeName": "ac_dehumidifier",
+  "deviceFeatureCode": "200",
+  "deviceFeatureCodeName": "冷暖机型无功率",
+  "version": "1.0",
+  "properties": [
+    {
+      "propertyKey": "t_work_mode",
+      "propertyName": "设定模式",
+      "propertyType": "0",
+      "propertyValueList": "0,1,2",
+      "propertyValueDescList": "持续,正常,自动",
+      "propertyRW": "RW",
+      "usedForScene": "true"
+    },
+    {
+      "propertyKey": "t_power",
+      "propertyName": "设定开关机",
+      "propertyType": "0",
+      "propertyValueList": "0,1",
+      "propertyValueDescList": "关,开",
+      "propertyRW": "RW",
+      "usedForScene": "true"
+    },
+    {
+      "propertyKey": "t_humidity",
+      "propertyName": "设置湿度",
+      "propertyType": "1",
+      "lower": "16",
+      "upper": "32",
+      "step": "1",
+      "propertyValueList": "16~32,61~90",
+      "propertyValueDescList": "",
+      "propertyRW": "RW",
+      "usedForScene": "true"
+    },
+    {
+      "propertyKey": "t_fan_speed",
+      "propertyName": "设定风速",
+      "propertyType": "0",
+      "propertyValueList": "0,1,2",
+      "propertyValueDescList": "低风,高风,自动",
+      "propertyRW": "RW",
+      "usedForScene": "true"
+    },
+    {
+      "propertyKey": "f_power_display",
+      "propertyName": "电量统计",
+      "propertyType": "0",
+      "propertyValueList": "",
+      "propertyValueDescList": "",
+      "propertyRW": "RW",
+      "usedForScene": "false"
+    },
+    {
+      "propertyKey": "f_manual_check_up",
+      "propertyName": "体检",
+      "propertyType": "0",
+      "propertyValueList": "",
+      "propertyValueDescList": "",
+      "propertyRW": "RW",
+      "usedForScene": "false"
+    },
+    {
+      "propertyKey": "f_humidity",
+      "propertyName": "室内温度",
+      "propertyType": "2",
+      "propertyValueList": "",
+      "propertyValueDescList": "",
+      "propertyRW": "R",
+      "usedForScene": "true"
+    },
+    {
+      "propertyKey": "t_beep",
+      "propertyName": "蜂鸣器开关",
+      "propertyType": "0",
+      "propertyValueList": "0,1",
+      "propertyValueDescList": "关闭,开启",
+      "propertyRW": "RW",
+      "usedForScene": "false"
+    },
+    {
+      "propertyKey": "t_device_info",
+      "propertyName": "手动刷新数据",
+      "propertyType": "0",
+      "propertyValueList": "0,1",
+      "propertyValueDescList": "不需要刷新,需要刷新",
+      "propertyRW": "RW",
+      "usedForScene": "false"
+    },
+    {
+      "propertyKey": "t_device_info",
+      "propertyName": "手动刷新数据",
+      "propertyType": "0",
+      "propertyValueList": "0,1",
+      "propertyValueDescList": "不需要刷新,需要刷新",
+      "propertyRW": "RW",
+      "usedForScene": "false"
+    },
+    {
+      "propertyKey": "f_e_push",
+      "propertyName": "推送故障",
+      "propertyType": "0",
+      "propertyValueList": "1,2,14,17,18,19",
+      "propertyValueDescList": "室内温度传感器故障,室内盘管温度传感器故障,室外盘管温度传感器故障,水满报警,室内(上部)直流风机电机运转异常故障,室外(下部)直流风机电机运转异常故障",
+      "propertyRW": "RW",
+      "usedForScene": "false"
+    },
+    {
+      "propertyKey": "f_e_intemp",
+      "propertyName": "室内温度传感器故障",
+      "propertyType": "0",
+      "propertyValueList": "0,1",
+      "propertyValueDescList": "正常,有故障",
+      "propertyRW": "RW",
+      "usedForScene": "false"
+    },
+    {
+      "propertyKey": "f_e_incoiltemp",
+      "propertyName": "室内盘管温度传感器故障",
+      "propertyType": "0",
+      "propertyValueList": "0,1",
+      "propertyValueDescList": "正常,有故障",
+      "propertyRW": "RW",
+      "usedForScene": "false"
+    },
+    {
+      "propertyKey": "f_e_outcoiltemp",
+      "propertyName": "室外盘管温度传感器故障",
+      "propertyType": "0",
+      "propertyValueList": "0,1",
+      "propertyValueDescList": "正常,有故障",
+      "propertyRW": "RW",
+      "usedForScene": "false"
+    },
+    {
+      "propertyKey": "f_e_waterfull",
+      "propertyName": "水满报警",
+      "propertyType": "0",
+      "propertyValueList": "0,1",
+      "propertyValueDescList": "正常,有故障",
+      "propertyRW": "RW",
+      "usedForScene": "false"
+    },
+    {
+      "propertyKey": "f_e_upmachine",
+      "propertyName": "室内（上部）直流风机电机运转异常故障",
+      "propertyType": "0",
+      "propertyValueList": "0,1",
+      "propertyValueDescList": "正常,有故障",
+      "propertyRW": "RW",
+      "usedForScene": "false"
+    },
+    {
+      "propertyKey": "f_e_dwmachine",
+      "propertyName": "室外（下部）直流风机电机运转异常故障",
+      "propertyType": "0",
+      "propertyValueList": "0,1",
+      "propertyValueDescList": "正常,有故障",
+      "propertyRW": "RW",
+      "usedForScene": "false"
+    }
+  ]
+}

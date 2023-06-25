@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/container" android:background="@color/colorBackground_e" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/account_top_bar"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="48dp" android:layout_weight="1" android:contentDescription="@string/app_name" android:layout_marginStart="16dp" android:layout_marginEnd="16dp">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_userprofile_edit_round" android:paddingTop="0dp" android:paddingBottom="18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_marginTop="40dp" android:text="@string/rest_pwd_hint" android:fontFamily="@font/proximanova_extrabold" style="@style/title_reset_password_text_style"/>
+            <TextView android:layout_marginTop="20dp" android:text="@string/reset_password_tips_2" style="@style/reset_password_content_text_style"/>
+            <Button android:enabled="false" android:textColor="@color/colorText_86" android:id="@+id/get_verification_code" android:background="@drawable/button_next_unselect_bg" android:layout_marginLeft="@dimen/margin_16" android:layout_marginTop="@dimen/margin_32" android:layout_marginRight="@dimen/margin_16" android:text="@string/get_verification_code" style="@style/bottom_btn_style"/>
+            <TextView android:layout_marginTop="20dp" android:text="@string/reset_password_tips_3" style="@style/reset_password_content_text_style"/>
+            <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/colorBlack" android:id="@+id/tv_title_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:text="@string/verification_code_up" android:fontFamily="@font/proximanova_semibold" android:layout_marginStart="32dp"/>
+            <LinearLayout android:id="@+id/ll_et_code_bg" style="@style/layout_edit_input_new_style">
+                <EditText android:textColorHint="#757575" android:id="@+id/sign_code" android:hint="@string/verification_code" android:inputType="textEmailAddress" android:fontFamily="@font/proximanova_extrabold" android:layout_marginEnd="8dp" android:importantForAutofill="2" style="@style/edit_input_in_layout_style"/>
+            </LinearLayout>
+            <TextView android:textSize="12sp" android:textColor="@color/color_error_text_02" android:id="@+id/tv_error_code" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/edit_textinput_hint_style"/>
+            <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/colorBlack" android:id="@+id/tv_title_password" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/reset_new_psw" android:fontFamily="@font/proximanova_semibold" android:layout_marginStart="32dp"/>
+            <LinearLayout android:id="@+id/ll_et_password_bg" style="@style/layout_edit_input_new_style">
+                <EditText android:textColorHint="#757575" android:id="@+id/sign_password" android:hint="@string/reset_new_psw" android:inputType="textPassword" android:fontFamily="@font/proximanova_extrabold" android:importantForAutofill="2" style="@style/edit_input_in_layout_style"/>
+                <com.hisense.connect_life.core.widget.IconFontView android:id="@+id/show_hide_password" android:text="@string/icon_login_password_show" style="@style/show_hide_password_style"/>
+            </LinearLayout>
+            <TextView android:textSize="12sp" android:textColor="@color/color_error_text_02" android:id="@+id/tv_error_password" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/edit_textinput_hint_style"/>
+            <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/colorBlack" android:id="@+id/tv_title_repeat_password" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/reset_re_enter_psw" android:fontFamily="@font/proximanova_semibold" android:layout_marginStart="32dp"/>
+            <LinearLayout android:id="@+id/ll_et_repeat_password_bg" style="@style/layout_edit_input_new_style">
+                <EditText android:textColorHint="#757575" android:id="@+id/sign_repeat_password" android:hint="@string/reset_re_enter_psw" android:inputType="textPassword" android:fontFamily="@font/proximanova_extrabold" android:importantForAutofill="2" style="@style/edit_input_in_layout_style"/>
+                <com.hisense.connect_life.core.widget.IconFontView android:id="@+id/show_hide_repeat_password" android:text="@string/icon_login_password_show" style="@style/show_hide_password_style"/>
+            </LinearLayout>
+            <TextView android:textSize="12sp" android:textColor="@color/color_error_text_02" android:id="@+id/tv_error_repeat_password" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/edit_textinput_hint_style"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:background="@color/white" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:paddingStart="8dp" android:paddingEnd="8dp">
+        <Button android:id="@+id/next" android:background="@drawable/button_bottom_green_round_selector" android:text="@string/reset_password" android:fontFamily="@font/proximanova_extrabold" style="@style/bottom_btn_match_style"/>
+    </LinearLayout>
+</LinearLayout>

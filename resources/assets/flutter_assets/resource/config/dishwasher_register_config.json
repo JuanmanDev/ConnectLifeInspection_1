@@ -1,0 +1,475 @@
+{
+  "applianceInfo": {
+    "typeCode": "022",
+    "typeName": "dishwasher_type",
+    "isGorenje": true
+  },
+  "logo": {
+    "icon": "0xe81e",
+    "fontFamily": "ConnectLifeAllFont"
+  },
+  "logoBold": {
+    "icon": "0xe7c6",
+    "fontFamily": "ConnectLifeAllFont"
+  },
+  "softAp": {
+    "type": "1",
+    "resource": [
+      {
+        "title": "step",
+        "content": "dw_config_wifi_step1",
+        "content_pair": "dw_config_wifi_step1_pair",
+        "path": "resource/images/atos_pair_page/instructions_dw_step_1@3x.png",
+        "pair_path": "resource/images/atos_pair_page/instructions_dw_step_1@3x.png"
+      },{
+        "title": "step",
+        "content": "dw_config_wifi_step2",
+        "content_pair": "dw_config_wifi_step2_pair",
+        "path": "resource/images/atos_pair_page/instructions_dw_step_2@3x.png",
+        "pair_path": "resource/images/atos_pair_page/instructions_dw_step_2@3x.png"
+      },{
+        "title": "step",
+        "content": "dw_config_wifi_step3",
+        "content_pair": "dw_config_wifi_step3_pair",
+        "path": "resource/images/atos_pair_page/instructions_dw_step_3@3x.png",
+        "pair_path": "resource/images/atos_pair_page/instructions_dw_step_3_pair@3x.png"
+      },{
+        "title": "step",
+        "content": "",
+        "content_pair": "dw_config_wifi_step4_pair",
+        "path": "",
+        "pair_path": "resource/images/atos_pair_page/instructions_dw_step_4@3x.png"
+      }
+    ]
+  },
+  "applianceTile": {
+    "convertType": "dw",
+    "icon": {
+      "icon": "0xe7c6",
+      "fontFamily": "ConnectLifeWasher"
+    },
+    "style": "dw",
+    "properties": [
+      {
+        "propertyKey": "Device_status",
+        "type": "5",
+        "prefix": "",
+        "suffix": "",
+        "display": {
+          "Device_status": "7012"
+        }
+      }
+    ]
+  },
+  "appliancePreference": "type_4",
+  "activity": {
+    "icon": {
+      "icon": "0xe7c6",
+      "fontFamily": "ConnectLifeWasher"
+    },
+    "style": "0",
+    "condition": [
+      {
+        "propertyKey": "Device_status",
+        "value": "5"
+      }
+    ],
+    "properties": []
+  },
+  "scene": {
+    "isSupport": 0,
+    "convertType": "diswasher",
+    "automation": {
+      "condition": [
+        {
+          "propertyKey": "t_power",
+          "title": "ac_power",
+          "desc": "开/关机",
+          "type": "1",
+          "style": "switch",
+          "prefix": "",
+          "suffix": ""
+        },
+        {
+          "propertyKey": "t_work_mode",
+          "title": "ac_mode",
+          "desc": "模式",
+          "type": "1",
+          "style": "picker",
+          "prefix": "",
+          "suffix": ""
+        },
+        {
+          "propertyKey": "t_fan_speed",
+          "title": "ac_wind_speed",
+          "desc": "风速",
+          "type": "1",
+          "style": "picker",
+          "prefix": "",
+          "suffix": ""
+        },
+        {
+          "propertyKey": "f_humidity",
+          "title": "ac_humidity",
+          "desc": "房间湿度范围",
+          "type": "0",
+          "icon":{
+            "icon": "0xe78a",
+            "fontFamily": "ConnectLifeAirConditionerFont"
+          },
+          "style": "picker",
+          "prefix": "",
+          "suffix": "%RH"
+        }
+      ],
+      "action": [
+        {
+          "propertyKey": "t_power",
+          "title": "ac_power",
+          "desc": "开/关机",
+          "type": "1",
+          "style": "picker",
+          "prefix": "",
+          "suffix": ""
+        },
+        {
+          "propertyKey": "t_work_mode",
+          "title": "ac_mode",
+          "desc": "模式",
+          "type": "1",
+          "style": "picker",
+          "prefix": "",
+          "suffix": ""
+        },
+        {
+          "propertyKey": "t_fan_speed",
+          "title": "ac_wind_speed",
+          "desc": "风速",
+          "type": "1",
+          "style": "picker",
+          "prefix": "",
+          "suffix": ""
+        },
+        {
+          "propertyKey": "t_humidity",
+          "title": "ac_humidity",
+          "desc": "设定湿度",
+          "type": "0",
+          "style": "picker",
+          "prefix": "",
+          "suffix": "%RH"
+        }
+      ]
+    },
+    "manual": [
+      {
+        "propertyKey": "Selected_program_id",
+        "title": "program_name",
+        "desc": "program_name",
+        "type": "1",
+        "prefix": "",
+        "suffix": ""
+      },
+      {
+        "propertyKey": "Program_mode",
+        "title": "program_mode",
+        "desc": "program_mode",
+        "type": "1",
+        "prefix": "",
+        "suffix": ""
+      },
+      {
+        "propertyKey": "Extra_drying_function",
+        "title": "extra_dry",
+        "desc": "extra_dry",
+        "type": "1",
+        "prefix": "",
+        "suffix": ""
+      },
+      {
+        "propertyKey": "Selected_program_auto_door_open_function",
+        "title": "auto_door_opening",
+        "desc": "auto_door_opening",
+        "type": "1",
+        "prefix": "",
+        "suffix": ""
+      },
+      {
+        "propertyKey": "Time_program_set_duration",
+        "title": "duration",
+        "desc": "duration",
+        "type": "1",
+        "prefix": "",
+        "suffix": ""
+      }
+    ]
+  },
+  "options": {
+    "Selected_program_id": [
+      {
+        "value": 7191,
+        "title": "ECO",
+        "des": "ECO"
+      },
+      {
+        "value": 7194,
+        "title": "RINSE",
+        "des": "RINSE"
+      },
+      {
+        "value": 7195,
+        "title": "AUTO",
+        "des": "AUTO"
+      },
+      {
+        "value": 7196,
+        "title": "DAILY",
+        "des": "DAILY"
+      },
+      {
+        "value": 7197,
+        "title": "NORMAL",
+        "des": "NORMAL"
+      },
+      {
+        "value": 7198,
+        "title": "TIME",
+        "des": "TIME"
+      },
+      {
+        "value": 7199,
+        "title": "PLASTIC",
+        "des": "PLASTIC"
+      },
+      {
+        "value": 7200,
+        "title": "LOWER",
+        "des": "LOWER"
+      },
+      {
+        "value": 7201,
+        "title": "UPPER",
+        "des": "UPPER"
+      },
+      {
+        "value": 7202,
+        "title": "HYGIENE",
+        "des": "HYGIENE"
+      },
+      {
+        "value": 7203,
+        "title": "CRYSTAL_GLASS",
+        "des": "CRYSTAL_GLASS"
+      },
+      {
+        "value": 7204,
+        "title": "QUICK_PRO_WASH",
+        "des": "QUICK_PRO_WASH"
+      },
+      {
+        "value": 7205,
+        "title": "SELF_CLEANING",
+        "des": "SELF_CLEANING"
+      }
+    ],
+    "Program_mode": [
+      {
+        "value": 7436,
+        "title": "NORMAL_MODE",
+        "des": "NORMAL_MODE"
+      },
+      {
+        "value": 7437,
+        "title": "GREEN_MODE",
+        "des": "GREEN_MODE"
+      },
+      {
+        "value": 7438,
+        "title": "SPEED_MODE",
+        "des": "SPEED_MODE"
+      },
+      {
+        "value": 7439,
+        "title": "NIGHT_MODE",
+        "des": "NIGHT_MODE"
+      },
+      {
+        "value": 7440,
+        "title": "INTENSIVE_MODE",
+        "des": "INTENSIVE_MODE"
+      }
+    ],
+    "Extra_drying_function": [
+      {
+        "value": 7084,
+        "title": "OFF",
+        "des": "OFF"
+      },
+      {
+        "value": 7085,
+        "title": "ON",
+        "des": "ON"
+      }
+    ],
+    "Time_program_set_duration": [
+      {
+        "value": 7401,
+        "title": "15",
+        "des": "15"
+      },
+      {
+        "value": 7402,
+        "title": "30",
+        "des": "30"
+      },
+      {
+        "value": 7403,
+        "title": "45",
+        "des": "45"
+      },
+      {
+        "value": 7404,
+        "title": "60",
+        "des": "60"
+      },
+      {
+        "value": 7405,
+        "title": "90",
+        "des": "90"
+      },
+      {
+        "value": 7406,
+        "title": "120",
+        "des": "120"
+      },
+      {
+        "value": 7407,
+        "title": "150",
+        "des": "150"
+      }
+    ],
+    "Device_status": [
+      {
+        "value": 7011,
+        "title": "Failure",
+        "des": "Failure"
+      },
+      {
+        "value": 7012,
+        "title": "Idle",
+        "des": "Idle"
+      },
+      {
+        "value": 7013,
+        "title": "Service",
+        "des": "Service"
+      },
+      {
+        "value": 7014,
+        "title": "Production",
+        "des": "Production"
+      },
+      {
+        "value": 7015,
+        "title": "Running",
+        "des": "Running"
+      },
+      {
+        "value": 7016,
+        "title": "Paused",
+        "des": "Paused"
+      }
+    ],
+    "Selected_program_auto_door_open_function": [
+      {
+        "value": 7093,
+        "title": "OFF",
+        "des": "OFF"
+      },
+      {
+        "value": 7094,
+        "title": "ON",
+        "des": "ON"
+      },
+      {
+        "value": 7099,
+        "title": "not_available",
+        "des": "Not available"
+      }
+    ],
+    "Feedback_volumen_setting": [
+      {
+        "value": 0,
+        "title": "0",
+        "des": "0"
+      },
+      {
+        "value": 1,
+        "title": "1",
+        "des": "1"
+      },
+      {
+        "value": 2,
+        "title": "2",
+        "des": "2"
+      },
+      {
+        "value": 3,
+        "title": "3",
+        "des": "3"
+      }
+    ],
+    "Water_hardness_setting": [
+      {
+        "value": 0,
+        "title": "0",
+        "des": "0"
+      },
+      {
+        "value": 1,
+        "title": "1",
+        "des": "1"
+      },
+      {
+        "value": 2,
+        "title": "2",
+        "des": "2"
+      },
+      {
+        "value": 3,
+        "title": "3",
+        "des": "3"
+      },
+      {
+        "value": 4,
+        "title": "4",
+        "des": "4"
+      },
+      {
+        "value": 5,
+        "title": "5",
+        "des": "5"
+      },
+      {
+        "value": 6,
+        "title": "6",
+        "des": "6"
+      },
+      {
+        "value": 7,
+        "title": "7",
+        "des": "7"
+      },
+      {
+        "value": 8,
+        "title": "8",
+        "des": "8"
+      },
+      {
+        "value": 9,
+        "title": "9",
+        "des": "9"
+      }
+    ]
+  }
+}

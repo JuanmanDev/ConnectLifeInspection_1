@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="@dimen/margin_94" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_16">
+    <RelativeLayout android:id="@+id/layout_image" android:layout_width="match_parent" android:layout_height="@dimen/margin_120">
+        <ImageView android:id="@+id/wine_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+        <com.hisense.connect_life.core.widget.IconFontView android:textSize="@dimen/text_size_20" android:textColor="@color/colorWhite" android:id="@+id/ic_favorite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_6" android:layout_marginBottom="@dimen/margin_8" android:text="@string/icon_general_fav_add" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/text_size_10" android:textStyle="bold" android:textColor="@color/colorBlack" android:ellipsize="end" android:id="@+id/type_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_6" android:text="RED" android:lines="1"/>
+    <TextView android:textSize="@dimen/text_size_16" android:textStyle="bold" android:textColor="@color/colorBlack" android:ellipsize="end" android:id="@+id/name_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="Wine name in 2 lines …" android:lines="2"/>
+</LinearLayout>

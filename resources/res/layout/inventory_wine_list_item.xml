@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingRight="@dimen/margin_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_24" android:paddingStart="@dimen/margin_16">
+    <RelativeLayout android:id="@+id/image_layout" android:layout_width="@dimen/margin_64" android:layout_height="@dimen/margin_90" android:layout_centerVertical="true">
+        <ImageView android:id="@+id/image_wine" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+        <com.hisense.connect_life.core.widget.IconFontView android:textSize="44sp" android:textColor="@color/colorBlack" android:id="@+id/ic_selected" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icon_apliances_success" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_wine_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_12" android:layout_marginBottom="@dimen/margin_8" android:layout_toRightOf="@+id/image_layout">
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/colorBlack" android:ellipsize="end" android:id="@+id/text_winery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="111" android:lines="1" android:fontFamily="@font/proximanova_medium"/>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_22" android:textColor="@color/colorBlack" android:ellipsize="end" android:id="@+id/text_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_6" android:text="22" android:lines="2" android:layout_toLeftOf="@+id/ic_favorite" android:fontFamily="@font/proximanova_bold"/>
+            <com.hisense.connect_life.core.widget.IconFontView android:textSize="@dimen/text_size_24" android:textColor="@color/colorBlack" android:layout_gravity="center_vertical" android:id="@+id/ic_favorite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btn_favourutes_normal" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/colorBlack" android:ellipsize="end" android:id="@+id/text_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_alignBottom="@+id/ic_unplaced" android:fontFamily="@font/proximanova_semibold"/>
+            <com.hisense.connect_life.core.widget.IconFontView android:textSize="@dimen/text_size_20" android:textColor="@color/colorBlack" android:layout_gravity="center_vertical" android:id="@+id/ic_unplaced" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icon_shelf_possition" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

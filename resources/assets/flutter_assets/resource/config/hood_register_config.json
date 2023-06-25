@@ -1,0 +1,74 @@
+{
+  "applianceInfo": {
+    "typeCode": "021",
+    "typeName": "hood_atag",
+    "isGorenje": true
+  },
+  "logo": {
+    "icon": "0xe7e3",
+    "fontFamily": "connectLifeHood"
+  },
+  "logoBold": {
+    "icon": "0xe7c8",
+    "fontFamily": "connectLifeHood"
+  },
+  "softAp": {
+    "type": "1",
+    "resource": [
+      {
+        "title": "step",
+        "content": "hood_config_wifi_step1",
+        "content_pair": "hood_config_wifi_step1_pair",
+        "path": "resource/images/atos_pair_page/instructions_hood_step_1.png",
+        "pair_path": "resource/images/atos_pair_page/instructions_hood_step_1.png"
+      },{
+        "title": "step",
+        "content": "hood_config_wifi_step2",
+        "content_pair": "hood_config_wifi_step2_pair",
+        "path": "resource/images/atos_pair_page/instructions_hood_step_2.png",
+        "pair_path": "resource/images/atos_pair_page/instructions_hood_step_2.png"
+      },{
+        "title": "step",
+        "content": "hood_config_wifi_step3",
+        "content_pair": "hood_config_wifi_step3_pair_new",
+        "path": "resource/images/atos_pair_page/instructions_hood_step_3.png",
+        "pair_path": "resource/images/atos_pair_page/instructions_hood_step_3_copy.png"
+      },{
+        "title": "step",
+        "content": "hood_config_wifi_step4",
+        "content_pair": "hood_config_wifi_step4_pair",
+        "path": "resource/images/atos_pair_page/instructions_hood_step_4.png",
+        "pair_path": "resource/images/atos_pair_page/instructions_hood_step_3_pair.png"
+      },{
+        "title": "step",
+        "content": "hood_config_wifi_step5",
+        "content_pair": "hood_config_wifi_step5_pair",
+        "path": "resource/images/atos_pair_page/instructions_hood_step_5.png",
+        "pair_path": "resource/images/atos_pair_page/instructions_hood_step_4_pair.png"
+      }
+    ]
+  },
+  "applianceTile": {
+    "convertType": "hood",
+    "icon": {
+      "icon": "0xe7e7",
+      "fontFamily": "ConnectLifeFont"
+    },
+    "style": "hood",
+    "properties": [
+      {
+        "propertyKey": "Device_status",
+        "type": "5",
+        "prefix": "",
+        "suffix": "",
+        "display": {
+          "Device_status": "6011"
+        }
+      }
+    ]
+  },
+  "scene": {
+    "isSupport": 1
+  },
+  "appliancePreference": "type_3"
+}

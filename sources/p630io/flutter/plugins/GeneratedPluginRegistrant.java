@@ -1,0 +1,94 @@
+package p630io.flutter.plugins;
+
+import androidx.annotation.Keep;
+import androidx.annotation.NonNull;
+import com.example.conn_oven.ConnOvenPlugin;
+import com.example.local_intl.LocalIntlPlugin;
+import com.example.network_center.NetworkCenterPlugin;
+import com.hisense.hi_appliance.HiAppliancePlugin;
+import com.hisense.juconnect.connectLife.conn_qr_code_scanner.conn_qr_code_scanner.ConnQrCodeScannerPlugin;
+import com.hisense.ui_frame.UiFramePlugin;
+import com.juconnect.connectlife.hismart.HismartPlugin;
+import com.juconnect.connectlife.ju_dist.JuDistPlugin;
+import com.juconnect.connectlife.ju_picture.JuPicturePlugin;
+import com.kasem.flutter_absolute_path.FlutterAbsolutePathPlugin;
+import com.whelksoft.flutter_native_timezone.FlutterNativeTimezonePlugin;
+import creativecreatorormaybenot.wakelock.WakelockPlugin;
+import p039be.appmire.flutterkeychain.FlutterKeychainPlugin;
+import p040c.p075c0.p076b.C1538a;
+import p040c.p075c0.p320a.C4229a;
+import p040c.p126i.p127a.C2009c;
+import p040c.p130j.p131a.C2034a;
+import p040c.p138l.p139a.C2054b;
+import p040c.p301y.p302b.p303a.C3680q;
+import p040c.p311a0.p312a.C4088b;
+import p040c.p313b0.p314a.C4205j;
+import p040c.p321d0.p322a.C4233c;
+import p040c.p494w.p495a.C7647a;
+import p040c.p537g0.p538a.C8854d;
+import p540d.p541a.p542a.p543a.C8884a;
+import p540d.p544b.p545a.p546a.C8888d;
+import p540d.p544b.p545a.p547b.C8889a;
+import p540d.p544b.p545a.p548c.C8891a;
+import p549e.p550a.p551a.p552a.C8892a;
+import p553f.p554a.p556d.p558b.C8916a;
+import p553f.p554a.p556d.p558b.p561g.p566g.C8959a;
+import p553f.p554a.p576f.p577a.C9068a;
+import p553f.p554a.p576f.p578b.C9070a;
+import p553f.p554a.p576f.p579c.p580a.C9081j;
+import p553f.p554a.p576f.p579c.p581b.C9099r;
+import p553f.p554a.p576f.p582d.C9100a;
+import p553f.p554a.p576f.p583e.C9108h;
+import p553f.p554a.p576f.p584f.C9112a;
+import p553f.p554a.p576f.p585g.C9117c;
+import p553f.p554a.p576f.p586h.C9146g;
+import p553f.p554a.p576f.p587i.C9166i;
+import p553f.p590b.p591a.p592a.p593a.C9182a;
+
+@Keep
+/* renamed from: io.flutter.plugins.GeneratedPluginRegistrant */
+public final class GeneratedPluginRegistrant {
+    public static void registerWith(@NonNull C8916a aVar) {
+        C8959a aVar2 = new C8959a(aVar);
+        C9068a.m24635k(aVar2.registrarFor("io.flutter.plugins.connectivity.ConnectivityPlugin"));
+        aVar.mo46379p().mo46397g(new C8888d());
+        aVar.mo46379p().mo46397g(new C9070a());
+        aVar.mo46379p().mo46397g(new C8889a());
+        aVar.mo46379p().mo46397g(new C8884a());
+        aVar.mo46379p().mo46397g(new C9081j());
+        aVar.mo46379p().mo46397g(new C9099r());
+        FlutterAbsolutePathPlugin.registerWith(aVar2.registrarFor("com.kasem.flutter_absolute_path.FlutterAbsolutePathPlugin"));
+        aVar.mo46379p().mo46397g(new C4088b());
+        aVar.mo46379p().mo46397g(new C4205j());
+        aVar.mo46379p().mo46397g(new C7647a());
+        FlutterKeychainPlugin.registerWith(aVar2.registrarFor("be.appmire.flutterkeychain.FlutterKeychainPlugin"));
+        aVar.mo46379p().mo46397g(new C2034a());
+        FlutterNativeTimezonePlugin.registerWith(aVar2.registrarFor("com.whelksoft.flutter_native_timezone.FlutterNativeTimezonePlugin"));
+        C9182a.m24903b(aVar2.registrarFor("io.github.ponnamkarthik.toast.fluttertoast.FluttertoastPlugin"));
+        aVar.mo46379p().mo46397g(new C9100a());
+        aVar.mo46379p().mo46397g(new C8891a());
+        aVar.mo46379p().mo46397g(new C9108h());
+        C2054b.m2860a(aVar2.registrarFor("com.erluxman.pdf_flutter.PdfFlutterPlugin"));
+        C8892a.m24022b(aVar2.registrarFor("flutter.plugins.screen.screen.ScreenPlugin"));
+        aVar.mo46379p().mo46397g(new C8854d());
+        C9112a.m24708e(aVar2.registrarFor("io.flutter.plugins.sharedpreferences.SharedPreferencesPlugin"));
+        aVar.mo46379p().mo46397g(new C2009c());
+        aVar.mo46379p().mo46397g(new C9117c());
+        aVar.mo46379p().mo46397g(new C9146g());
+        aVar.mo46379p().mo46397g(new WakelockPlugin());
+        aVar.mo46379p().mo46397g(new C9166i());
+        aVar.mo46379p().mo46397g(new C4229a());
+        aVar.mo46379p().mo46397g(new ConnOvenPlugin());
+        aVar.mo46379p().mo46397g(new ConnQrCodeScannerPlugin());
+        aVar.mo46379p().mo46397g(new C1538a());
+        HismartPlugin.registerWith(aVar2.registrarFor("com.juconnect.connectlife.hismart.HismartPlugin"));
+        aVar.mo46379p().mo46397g(new C3680q());
+        aVar.mo46379p().mo46397g(new JuDistPlugin());
+        JuPicturePlugin.registerWith(aVar2.registrarFor("com.juconnect.connectlife.ju_picture.JuPicturePlugin"));
+        aVar.mo46379p().mo46397g(new C4233c());
+        aVar.mo46379p().mo46397g(new HiAppliancePlugin());
+        aVar.mo46379p().mo46397g(new LocalIntlPlugin());
+        aVar.mo46379p().mo46397g(new NetworkCenterPlugin());
+        aVar.mo46379p().mo46397g(new UiFramePlugin());
+    }
+}

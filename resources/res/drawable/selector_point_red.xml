@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_selected="true">
+        <shape android:shape="oval">
+            <size android:height="@dimen/margin_10" android:width="@dimen/margin_10"/>
+            <solid android:color="@color/colorWarning"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <size android:height="@dimen/margin_10" android:width="@dimen/margin_10"/>
+            <solid android:color="@color/colorBlack"/>
+        </shape>
+    </item>
+</selector>

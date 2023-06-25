@@ -1,0 +1,264 @@
+{
+  "deviceTypeCode": "006",
+  "deviceTypeName": "ac_mobile_air_conditioner",
+  "deviceFeatureCode": "200",
+  "deviceFeatureCodeName": "冷暖机型无功率",
+  "version": "1.0",
+  "properties": [
+    {
+      "propertyKey": "t_work_mode",
+      "propertyName": "设定模式",
+      "propertyType": "0",
+      "propertyValueList": "0,1,2,3,4",
+      "propertyValueDescList": "送风,制热,制冷,除湿,自动",
+      "propertyRW": "RW",
+      "usedForScene": "true"
+    },
+    {
+      "propertyKey": "t_power",
+      "propertyName": "设定开关机",
+      "propertyType": "0",
+      "propertyValueList": "0,1",
+      "propertyValueDescList": "关,开",
+      "propertyRW": "RW",
+      "usedForScene": "true"
+    },
+    {
+      "propertyKey": "t_temp",
+      "propertyName": "设置温度",
+      "propertyType": "1",
+      "lower": "16",
+      "upper": "32",
+      "step": "1",
+      "propertyValueList": "16~32,61~90",
+      "propertyValueDescList": "",
+      "propertyRW": "RW",
+      "usedForScene": "true"
+    },
+    {
+      "propertyKey": "t_temp_type",
+      "propertyName": "温度单位切换",
+      "propertyType": "0",
+      "propertyValueList": "0,1",
+      "propertyValueDescList": "摄氏,华氏",
+      "propertyRW": "RW",
+      "usedForScene": "false"
+    },
+    {
+      "propertyKey": "t_fan_speed",
+      "propertyName": "设定风速",
+      "propertyType": "0",
+      "propertyValueList": "0,2,3,4",
+      "propertyValueDescList": "自动,超低风,低风,中风,高风,超高风",
+      "propertyRW": "RW",
+      "usedForScene": "true"
+    },
+    {
+      "propertyKey": "t_fanspeedCV",
+      "propertyName": "设定无极风速",
+      "propertyType": "0",
+      "propertyValueList": "",
+      "propertyValueDescList": "",
+      "propertyRW": "RW",
+      "usedForScene": "true"
+    },
+    {
+      "propertyKey": "t_up_down",
+      "propertyName": "上下风",
+      "propertyType": "0",
+      "propertyValueList": "0,1",
+      "propertyValueDescList": "取消,开启",
+      "propertyRW": "RW",
+      "usedForScene": "false"
+    },
+    {
+      "propertyKey": "t_swing_direction",
+      "propertyName": "设定八字送风",
+      "propertyType": "0",
+      "propertyValueList": "0,1,2,3,4",
+      "propertyValueDescList": "正向,全右,八字,扫掠,全左,即时停",
+      "propertyRW": "RW",
+      "usedForScene": "false"
+    },
+    {
+      "propertyKey": "t_swing_angle",
+      "propertyName": "设定上下风摆角度",
+      "propertyType": "0",
+      "propertyValueList": "0,1,2,3,4,5,6,7",
+      "propertyValueDescList": "000,010,011,100,101,110,111,001",
+      "propertyRW": "RW",
+      "usedForScene": "false"
+    },
+    {
+      "propertyKey": "t_sleep",
+      "propertyName": "设定睡眠",
+      "propertyType": "0",
+      "propertyValueList": "0,1",
+      "propertyValueDescList": "关闭,一般睡眠,老人睡眠,年轻睡眠,儿童睡眠",
+      "propertyRW": "RW",
+      "usedForScene": "false"
+    },
+    {
+      "propertyKey": "t_swing_follow",
+      "propertyName": "设定风向跟随",
+      "propertyType": "0",
+      "propertyValueList": "0,1,2",
+      "propertyValueDescList": "普通风向,风吹人,风避人",
+      "propertyRW": "RW",
+      "usedForScene": "false"
+    },
+    {
+      "propertyKey": "t_fan_mute",
+      "propertyName": "设定静音",
+      "propertyType": "0",
+      "propertyValueList": "0,1",
+      "propertyValueDescList": "停,开",
+      "propertyRW": "RW",
+      "usedForScene": "false"
+    },
+    {
+      "propertyKey": "t_super",
+      "propertyName": "强力",
+      "propertyType": "0",
+      "propertyValueList": "0,1",
+      "propertyValueDescList": "取消,开启",
+      "propertyRW": "RW",
+      "usedForScene": "false"
+    },
+    {
+      "propertyKey": "t_eco",
+      "propertyName": "节能",
+      "propertyType": "0",
+      "propertyValueList": "0,1",
+      "propertyValueDescList": "取消,开启",
+      "propertyRW": "RW",
+      "usedForScene": "false"
+    },
+    {
+      "propertyKey": "f_power_display",
+      "propertyName": "电量统计",
+      "propertyType": "0",
+      "propertyValueList": "",
+      "propertyValueDescList": "",
+      "propertyRW": "RW",
+      "usedForScene": "false"
+    },
+    {
+      "propertyKey": "f_manual_check_up",
+      "propertyName": "体检",
+      "propertyType": "0",
+      "propertyValueList": "",
+      "propertyValueDescList": "",
+      "propertyRW": "RW",
+      "usedForScene": "false"
+    },
+    {
+      "propertyKey": "t_tms",
+      "propertyName": "AI",
+      "propertyType": "0",
+      "propertyValueList": "0,1",
+      "propertyValueDescList": "取消,开启",
+      "propertyRW": "RW",
+      "usedForScene": "false"
+    },
+    {
+      "propertyKey": "f_temp_in",
+      "propertyName": "室内温度",
+      "propertyType": "2",
+      "propertyValueList": "",
+      "propertyValueDescList": "",
+      "propertyRW": "R",
+      "usedForScene": "true"
+    },
+    {
+      "propertyKey": "t_beep",
+      "propertyName": "蜂鸣器开关",
+      "propertyType": "0",
+      "propertyValueList": "0,1",
+      "propertyValueDescList": "关闭,开启",
+      "propertyRW": "RW",
+      "usedForScene": "false"
+    },
+    {
+      "propertyKey": "t_device_info",
+      "propertyName": "手动刷新数据",
+      "propertyType": "0",
+      "propertyValueList": "0,1",
+      "propertyValueDescList": "不需要刷新,需要刷新",
+      "propertyRW": "RW",
+      "usedForScene": "false"
+    },
+    {
+      "propertyKey": "t_device_info",
+      "propertyName": "手动刷新数据",
+      "propertyType": "0",
+      "propertyValueList": "0,1",
+      "propertyValueDescList": "不需要刷新,需要刷新",
+      "propertyRW": "RW",
+      "usedForScene": "false"
+    },
+    {
+      "propertyKey": "f_e_push",
+      "propertyName": "推送故障",
+      "propertyType": "0",
+      "propertyValueList": "1,2,14,17,18,19",
+      "propertyValueDescList": "室内温度传感器故障,室内盘管温度传感器故障,室外盘管温度传感器故障,水满报警,室内(上部)直流风机电机运转异常故障,室外(下部)直流风机电机运转异常故障",
+      "propertyRW": "RW",
+      "usedForScene": "false"
+    },
+    {
+      "propertyKey": "f_e_intemp",
+      "propertyName": "室内温度传感器故障",
+      "propertyType": "0",
+      "propertyValueList": "0,1",
+      "propertyValueDescList": "正常,有故障",
+      "propertyRW": "RW",
+      "usedForScene": "false"
+    },
+    {
+      "propertyKey": "f_e_incoiltemp",
+      "propertyName": "室内盘管温度传感器故障",
+      "propertyType": "0",
+      "propertyValueList": "0,1",
+      "propertyValueDescList": "正常,有故障",
+      "propertyRW": "RW",
+      "usedForScene": "false"
+    },
+    {
+      "propertyKey": "f_e_outcoiltemp",
+      "propertyName": "室外盘管温度传感器故障",
+      "propertyType": "0",
+      "propertyValueList": "0,1",
+      "propertyValueDescList": "正常,有故障",
+      "propertyRW": "RW",
+      "usedForScene": "false"
+    },
+    {
+      "propertyKey": "f_e_waterfull",
+      "propertyName": "水满报警",
+      "propertyType": "0",
+      "propertyValueList": "0,1",
+      "propertyValueDescList": "正常,有故障",
+      "propertyRW": "RW",
+      "usedForScene": "false"
+    },
+    {
+      "propertyKey": "f_e_upmachine",
+      "propertyName": "室内（上部）直流风机电机运转异常故障",
+      "propertyType": "0",
+      "propertyValueList": "0,1",
+      "propertyValueDescList": "正常,有故障",
+      "propertyRW": "RW",
+      "usedForScene": "false"
+    },
+    {
+      "propertyKey": "f_e_dwmachine",
+      "propertyName": "室外（下部）直流风机电机运转异常故障",
+      "propertyType": "0",
+      "propertyValueList": "0,1",
+      "propertyValueDescList": "正常,有故障",
+      "propertyRW": "RW",
+      "usedForScene": "false"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/container" android:background="@color/colorLayoutBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="@dimen/margin_44">
+        <com.hisense.connect_life.core.widget.IconFontView android:textSize="@dimen/margin_16" android:textColor="@color/colorBlack" android:gravity="center" android:id="@+id/user_profile_top_back" android:layout_width="@dimen/margin_44" android:layout_height="match_parent" android:text="@string/btn_main_back"/>
+        <TextView android:textSize="@dimen/text_size_16" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@+id/user_profile_top_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/margin_26" android:layout_toEndOf="@+id/user_profile_top_back"/>
+    </RelativeLayout>
+    <View android:background="@color/colorBackground_a2" android:layout_width="match_parent" android:layout_height="1px"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <RelativeLayout android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="128dp">
+                    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <androidx.cardview.widget.CardView android:id="@+id/user_card_view" android:visibility="visible" android:layout_width="@dimen/margin_80" android:layout_height="@dimen/margin_80" android:layout_marginTop="@dimen/margin_24" android:layout_marginStart="@dimen/margin_32" app:cardBackgroundColor="@color/user_bg_1" app:cardCornerRadius="50dp">
+                                <ImageView android:id="@+id/user_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+                                <TextView android:textSize="@dimen/text_size_32" android:textColor="@color/colorWhite" android:gravity="center" android:layout_gravity="center" android:id="@+id/user_text" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                            </androidx.cardview.widget.CardView>
+                        </FrameLayout>
+                        <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/user_edit_pen" android:layout_width="@dimen/margin_24" android:layout_height="@dimen/margin_24" android:src="@mipmap/icon_user_edit"/>
+                    </FrameLayout>
+                </RelativeLayout>
+                <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/colorBlack" android:id="@+id/add_user_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_37" android:text="@string/user_info" android:fontFamily="@font/proximanova_extrabold" android:layout_marginStart="@dimen/margin_32"/>
+                <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/colorBlack" android:id="@+id/tv_title_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_21" android:text="@string/setting_title" android:fontFamily="@font/proximanova_semibold" android:layout_marginStart="@dimen/margin_32"/>
+                <LinearLayout android:id="@+id/ll_title" android:background="@drawable/bg_userprofile_edit_round" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="64dp" android:paddingStart="16dp" android:paddingEnd="12dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp">
+                    <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:gravity="center_vertical" android:id="@+id/tv_user_title" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_icon_general_24_drop_down"/>
+                    <ImageView android:id="@+id/user_image_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:src="@drawable/shape_circle_red"/>
+                </LinearLayout>
+                <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/colorBlack" android:id="@+id/tv_title_first_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_21" android:text="@string/first_name" android:fontFamily="@font/proximanova_semibold" android:layout_marginStart="@dimen/margin_32"/>
+                <FrameLayout android:id="@+id/fl_first_name" style="@style/user_profile_framelayout">
+                    <EditText android:id="@+id/user_profile_name" android:hint="@string/first_name" android:inputType="text" android:fontFamily="@font/proximanova_extrabold" style="@style/user_profile_edittext"/>
+                    <ImageView android:layout_gravity="end" android:id="@+id/user_image_name" android:visibility="gone" android:layout_marginTop="8dp" android:src="@drawable/shape_circle_red" style="@style/user_profile_image_red"/>
+                </FrameLayout>
+                <TextView android:textSize="12sp" android:textColor="@color/color_error_text_02" android:id="@+id/tv_error_first_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/error_empty_first_name" style="@style/edit_textinput_hint_style"/>
+                <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/colorBlack" android:id="@+id/tv_surname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_21" android:text="@string/last_name" android:fontFamily="@font/proximanova_semibold" android:layout_marginStart="@dimen/margin_32"/>
+                <FrameLayout android:id="@+id/fl_last_name" style="@style/user_profile_framelayout">
+                    <EditText android:id="@+id/user_profile_surname" android:hint="@string/last_name" android:inputType="text" android:fontFamily="@font/proximanova_extrabold" style="@style/user_profile_edittext"/>
+                    <ImageView android:layout_gravity="end" android:id="@+id/user_image_surname" android:visibility="gone" android:layout_marginTop="8dp" android:src="@drawable/shape_circle_red" style="@style/user_profile_image_red"/>
+                </FrameLayout>
+                <TextView android:textSize="12sp" android:textColor="@color/color_error_text_02" android:id="@+id/tv_error_last_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/error_empty_last_name" style="@style/edit_textinput_hint_style"/>
+                <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/colorBlack" android:id="@+id/tv_title_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_21" android:text="@string/email" android:fontFamily="@font/proximanova_semibold" android:layout_marginStart="@dimen/margin_32"/>
+                <FrameLayout style="@style/user_profile_framelayout">
+                    <TextView android:enabled="true" android:textColor="@color/colorText_c4" android:id="@+id/user_profile_email" android:hint="@string/email" android:inputType="textEmailAddress" android:fontFamily="@font/proximanova_extrabold" style="@style/user_profile_edittext"/>
+                    <ImageView android:layout_gravity="end" android:id="@+id/user_image_email" android:visibility="gone" android:layout_marginTop="8dp" android:src="@drawable/shape_circle_red" style="@style/user_profile_image_red"/>
+                    <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/iv_edit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_icon_edit_24" android:layout_marginEnd="12dp"/>
+                </FrameLayout>
+                <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/colorBlack" android:id="@+id/tv_contact_information" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_37" android:text="@string/contact_infomation" android:fontFamily="@font/proximanova_extrabold" android:layout_marginStart="@dimen/margin_32"/>
+                <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_21" android:text="@string/setting_phone_number" android:fontFamily="@font/proximanova_semibold" android:layout_marginStart="@dimen/margin_32"/>
+                <FrameLayout style="@style/user_profile_framelayout">
+                    <EditText android:id="@+id/user_profile_phone" android:hint="@string/setting_phone_number" android:fontFamily="@font/proximanova_extrabold" style="@style/user_profile_edittext"/>
+                    <ImageView android:id="@+id/user_image_phoneNumber" android:visibility="gone" android:src="@drawable/shape_circle_red" style="@style/user_profile_image_red"/>
+                </FrameLayout>
+                <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_21" android:text="@string/street" android:fontFamily="@font/proximanova_semibold" android:layout_marginStart="@dimen/margin_32"/>
+                <FrameLayout style="@style/user_profile_framelayout">
+                    <EditText android:id="@+id/user_profile_street" android:hint="@string/street" android:fontFamily="@font/proximanova_extrabold" style="@style/user_profile_edittext"/>
+                    <ImageView android:id="@+id/user_image_street" android:visibility="gone" android:src="@drawable/shape_circle_red" style="@style/user_profile_image_red"/>
+                </FrameLayout>
+                <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/colorBlack" android:id="@+id/tv_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_21" android:text="@string/house_number_uppercase" android:fontFamily="@font/proximanova_semibold" android:layout_marginStart="@dimen/margin_32"/>
+                <FrameLayout style="@style/user_profile_framelayout">
+                    <EditText android:id="@+id/user_profile_number" android:hint="@string/house_number_uppercase" android:inputType="textPostalAddress" android:fontFamily="@font/proximanova_extrabold" style="@style/user_profile_edittext"/>
+                    <ImageView android:id="@+id/user_image_houseNumber" android:visibility="gone" android:src="@drawable/shape_circle_red" style="@style/user_profile_image_red"/>
+                </FrameLayout>
+                <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/colorBlack" android:id="@+id/tv_postal_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_21" android:text="@string/postal_code" android:fontFamily="@font/proximanova_semibold" android:layout_marginStart="@dimen/margin_32"/>
+                <FrameLayout style="@style/user_profile_framelayout">
+                    <EditText android:id="@+id/user_profile_postal_code" android:hint="@string/postal_code" android:inputType="textPostalAddress" android:fontFamily="@font/proximanova_extrabold" style="@style/user_profile_edittext"/>
+                    <ImageView android:id="@+id/user_image_postalCode" android:visibility="gone" android:src="@drawable/shape_circle_red" style="@style/user_profile_image_red"/>
+                </FrameLayout>
+                <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_21" android:text="@string/city" android:fontFamily="@font/proximanova_semibold" android:layout_marginStart="@dimen/margin_32"/>
+                <FrameLayout style="@style/user_profile_framelayout">
+                    <EditText android:id="@+id/user_profile_city" android:hint="@string/city" android:fontFamily="@font/proximanova_extrabold" style="@style/user_profile_edittext"/>
+                    <ImageView android:id="@+id/user_image_city" android:visibility="gone" android:src="@drawable/shape_circle_red" style="@style/user_profile_image_red"/>
+                </FrameLayout>
+                <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_21" android:text="@string/country_region_up" android:fontFamily="@font/proximanova_semibold" android:layout_marginStart="@dimen/margin_32"/>
+                <FrameLayout style="@style/user_profile_framelayout">
+                    <TextView android:id="@+id/user_profile_country" android:hint="@string/country_region_up" android:fontFamily="@font/proximanova_extrabold" style="@style/user_profile_edittext"/>
+                    <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_icon_general_24_drop_down" android:layout_marginEnd="@dimen/margin_16"/>
+                    <ImageView android:layout_gravity="end" android:id="@+id/user_image_country" android:visibility="gone" android:layout_marginTop="8dp" android:src="@drawable/shape_circle_red" style="@style/user_profile_image_red"/>
+                </FrameLayout>
+                <TextView android:textSize="12sp" android:textColor="@color/color_error_text_02" android:id="@+id/tv_error_country_region" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/error_empty_country_region" style="@style/edit_textinput_hint_style"/>
+                <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_21" android:text="@string/setting_language" android:fontFamily="@font/proximanova_semibold" android:layout_marginStart="@dimen/margin_32"/>
+                <FrameLayout style="@style/user_profile_framelayout">
+                    <TextView android:id="@+id/user_profile_language" android:hint="@string/setting_language" android:fontFamily="@font/proximanova_extrabold" style="@style/user_profile_edittext"/>
+                    <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_icon_general_24_drop_down" android:layout_marginEnd="@dimen/margin_16"/>
+                    <ImageView android:layout_gravity="end" android:id="@+id/user_image_language" android:visibility="gone" android:layout_marginTop="8dp" android:src="@drawable/shape_circle_red" style="@style/user_profile_image_red"/>
+                </FrameLayout>
+                <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/native_language_tips" android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
+                <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_57" android:text="@string/more" android:fontFamily="@font/proximanova_extrabold" android:layout_marginStart="@dimen/margin_32"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/rl_preferences" android:background="@drawable/bg_userprofile_edit_round" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="20dp" android:paddingStart="16dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp">
+                    <TextView android:textSize="20sp" android:textColor="@color/colorBlack" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center|start" android:layout_gravity="center_vertical" android:background="@color/transparent" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/setting_allergies_food_preferences" android:lines="1" android:layout_weight="1" android:fontFamily="@font/proximanova_regular" android:textDirection="anyRtl" android:textAlignment="viewStart"/>
+                    <TextView android:textSize="30dp" android:textColor="@color/colorBlack" android:layout_gravity="center_vertical" android:id="@+id/tv_right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icon_right_arrow" android:layout_centerVertical="true" android:fontFamily="@font/iconfont_g" android:layout_marginEnd="@dimen/margin_16" android:layout_alignParentEnd="true"/>
+                </LinearLayout>
+                <RelativeLayout android:orientation="horizontal" android:id="@+id/rl_change_pwd" android:background="@drawable/bg_userprofile_edit_round" android:focusable="true" android:visibility="visible" android:clickable="true" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="20dp" android:paddingStart="16dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp">
+                    <TextView android:textSize="20sp" android:textColor="@color/colorBlack" android:ellipsize="end" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/password_change" android:lines="1" android:layout_centerVertical="true" android:fontFamily="@font/proximanova_regular"/>
+                    <TextView android:textSize="30sp" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icon_right_arrow" android:layout_centerVertical="true" android:fontFamily="@font/iconfont_g" android:layout_marginEnd="@dimen/margin_16" android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/lly_delete_account" android:background="@drawable/bg_userprofile_edit_round" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="40dp" android:paddingStart="16dp" android:paddingEnd="0dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp">
+                    <ImageView android:id="@+id/iv_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_delete" android:layout_centerVertical="true"/>
+                    <com.hisense.connect_life.core.widget.NovaTextView android:textSize="20sp" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_delete_account_text" android:layout_centerVertical="true" android:layout_marginStart="@dimen/margin_21" android:layout_toEndOf="@+id/iv_delete"/>
+                </RelativeLayout>
+                <View android:layout_width="wrap_content" android:layout_height="75dp"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <include android:id="@+id/ll_toast" android:visibility="gone" layout="@layout/update_userinfo_toast_layout"/>
+    </FrameLayout>
+</LinearLayout>

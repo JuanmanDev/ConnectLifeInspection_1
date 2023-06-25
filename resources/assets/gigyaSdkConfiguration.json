@@ -1,0 +1,9 @@
+{
+  "apiKey": "4_XfymG6p8oYYnIBFh_AbO7A",
+  "apiDomain": "ru1.gigya.com",
+  "accountCacheTime": 1,
+  "account": {
+    "cacheTime": 2
+  },
+  "sessionVerificationInterval": 60
+}

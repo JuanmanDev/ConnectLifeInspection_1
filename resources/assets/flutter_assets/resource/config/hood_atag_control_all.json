@@ -1,0 +1,78 @@
+{
+  "comment": "油烟机hood_atag",
+  "quick_operation": [
+
+    {
+      "style": "normal",
+      "des": "手动设置",
+      "iconType": "0",
+      "isNormal": "1",
+      "type": "0",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "",
+      "icon":{
+        "icon": "icon_aplnc_64_hood.svg",
+        "fontFamily": "ConnectLifeHoodAtagIconFont"
+      },
+      "title": "manual_set",
+      "property": "",
+      "combination": null,
+      "extraInfo": {}
+    },
+    {
+      "style": "normal",
+      "des": "过滤器",
+      "iconType": "0",
+      "isNormal": "1",
+      "type": "0",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "",
+      "icon":{
+        "icon": "ic_48_hood_filter_alarm.svg",
+        "fontFamily": "ConnectLifeHoodAtagIconFont"
+      },
+      "title": "filter",
+      "property": "",
+      "combination": null,
+      "extraInfo": {}
+    },
+    {
+      "style": "switch",
+      "des": "child lock",
+      "iconType": "0",
+      "isNormal": "0",
+      "type": "0",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "",
+      "icon":{
+        "icon": "ic_gen_48_refresh.svg",
+        "fontFamily": "ConnectLifeHoodAtagIconFont"
+      },
+      "title": "active_mode",
+      "property": "active_mode",
+      "combination": null,
+      "extraInfo": {}
+    },
+    {
+      "style": "switch",
+      "des": "child lock",
+      "iconType": "0",
+      "isNormal": "0",
+      "type": "0",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "",
+      "icon":{
+        "icon": "ic_gen_48_refresh.svg",
+        "fontFamily": "ConnectLifeHoodAtagIconFont"
+      },
+      "title": "heat_mode_clean_air",
+      "property": "clean_air",
+      "combination": null,
+      "extraInfo": {}
+    }
+  ]
+}

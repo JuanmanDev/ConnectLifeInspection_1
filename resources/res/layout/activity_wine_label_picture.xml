@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/label_image" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="@dimen/margin_24" android:scaleType="centerCrop" android:layout_weight="1" android:layout_marginStart="@dimen/margin_24" android:layout_marginEnd="@dimen/margin_24"/>
+    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/colorBlack" android:gravity="center_horizontal" android:paddingTop="@dimen/margin_14" android:layout_width="match_parent" android:layout_height="@dimen/margin_70" android:text="@string/preview"/>
+    <LinearLayout android:orientation="horizontal" android:background="@color/colorBlack" android:layout_width="match_parent" android:layout_height="110dp">
+        <TextView android:textSize="@dimen/text_size_14" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:id="@+id/cancel_text" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/cancel" android:layout_weight="1"/>
+        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <com.hisense.connect_life.core.widget.IconFontView android:textSize="@dimen/text_size_40" android:textColor="@color/colorBlack" android:gravity="center" android:layout_gravity="center" android:id="@+id/afresh_text" android:background="@drawable/shape_circle_white" android:layout_width="@dimen/margin_72" android:layout_height="@dimen/margin_72" android:text="@string/btn_camera_refresh"/>
+        </FrameLayout>
+        <TextView android:textSize="@dimen/text_size_14" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:id="@+id/use_text" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/use" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

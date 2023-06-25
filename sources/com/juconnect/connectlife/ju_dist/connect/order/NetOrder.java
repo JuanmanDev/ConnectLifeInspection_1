@@ -1,0 +1,88 @@
+package com.juconnect.connectlife.ju_dist.connect.order;
+
+import com.juconnect.connectlife.ju_dist.connect.TcpClient;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
+@Metadata(mo47990d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u000f\n\u0002\u0018\u0002\n\u0000\b\u0016\u0018\u00002\u00020\u0001B\u0011\b\u0016\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003¢\u0006\u0002\u0010\u0004J\u0012\u0010\u0014\u001a\u0004\u0018\u00010\u00012\u0006\u0010\u0015\u001a\u00020\u0016H\u0016R\u001c\u0010\u0005\u001a\u0004\u0018\u00010\u0006X\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0007\u0010\b\"\u0004\b\t\u0010\nR\u001c\u0010\u000b\u001a\u0004\u0018\u00010\u0006X\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\f\u0010\b\"\u0004\b\r\u0010\nR\u001c\u0010\u000e\u001a\u0004\u0018\u00010\u0006X\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u000f\u0010\b\"\u0004\b\u0010\u0010\nR\u001c\u0010\u0011\u001a\u0004\u0018\u00010\u0006X\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0012\u0010\b\"\u0004\b\u0013\u0010\n¨\u0006\u0017"}, mo47991d2 = {"Lcom/juconnect/connectlife/ju_dist/connect/order/NetOrder;", "Lcom/juconnect/connectlife/ju_dist/connect/order/Order;", "info", "Lcom/juconnect/connectlife/ju_dist/connect/order/DevInfo;", "(Lcom/juconnect/connectlife/ju_dist/connect/order/DevInfo;)V", "DevId", "", "getDevId", "()Ljava/lang/String;", "setDevId", "(Ljava/lang/String;)V", "DevProductType", "getDevProductType", "setDevProductType", "DevType", "getDevType", "setDevType", "WifiId", "getWifiId", "setWifiId", "getNextOrder", "client", "Lcom/juconnect/connectlife/ju_dist/connect/TcpClient;", "ju_dist_release"}, mo47992k = 1, mo47993mv = {1, 6, 0}, mo47995xi = 48)
+/* compiled from: NetOrder.kt */
+public class NetOrder extends Order {
+    @Nullable
+    public String DevId;
+    @Nullable
+    public String DevProductType;
+    @Nullable
+    public String DevType;
+    @Nullable
+    public String WifiId;
+
+    public NetOrder(@Nullable DevInfo devInfo) {
+        String str;
+        String str2;
+        String str3;
+        String str4 = null;
+        if (devInfo == null) {
+            str = null;
+        } else {
+            str = devInfo.getWifiId();
+        }
+        this.WifiId = str;
+        if (devInfo == null) {
+            str2 = null;
+        } else {
+            str2 = devInfo.getDevId();
+        }
+        this.DevId = str2;
+        if (devInfo == null) {
+            str3 = null;
+        } else {
+            str3 = devInfo.getDevType();
+        }
+        this.DevType = str3;
+        this.DevProductType = devInfo != null ? devInfo.getDevProductType() : str4;
+    }
+
+    @Nullable
+    public final String getDevId() {
+        return this.DevId;
+    }
+
+    @Nullable
+    public final String getDevProductType() {
+        return this.DevProductType;
+    }
+
+    @Nullable
+    public final String getDevType() {
+        return this.DevType;
+    }
+
+    @Nullable
+    public Order getNextOrder(@NotNull TcpClient tcpClient) {
+        Intrinsics.checkNotNullParameter(tcpClient, "client");
+        return new NetReplyOrder();
+    }
+
+    @Nullable
+    public final String getWifiId() {
+        return this.WifiId;
+    }
+
+    public final void setDevId(@Nullable String str) {
+        this.DevId = str;
+    }
+
+    public final void setDevProductType(@Nullable String str) {
+        this.DevProductType = str;
+    }
+
+    public final void setDevType(@Nullable String str) {
+        this.DevType = str;
+    }
+
+    public final void setWifiId(@Nullable String str) {
+        this.WifiId = str;
+    }
+}

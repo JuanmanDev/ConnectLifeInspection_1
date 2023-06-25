@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" style="@style/style_wine_filter_type_layout">
+    <TextView android:id="@+id/wineType" android:text="@string/white" style="@style/style_wine_filter_type_title"/>
+    <com.hisense.connect_life.core.widget.IconFontView android:id="@+id/icon_type_view" android:text="@string/btn_main_checkbox_normal" style="@style/style_wine_filter_type_icon"/>
+</RelativeLayout>

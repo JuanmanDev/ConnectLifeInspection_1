@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="#000000" android:gravity="start" android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="@string/app_update_dialog_tips" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"/>
+    <ScrollView android:orientation="vertical" android:fadingEdgeLength="5dp" android:layout_width="match_parent" android:layout_height="70dp" android:layout_marginTop="10dp" android:requiresFadingEdge="vertical" android:layout_marginStart="15dp" android:layout_marginEnd="15dp">
+        <TextView android:textSize="16sp" android:textColor="#000000" android:gravity="start" android:id="@+id/tv_content" android:layout_width="match_parent" android:layout_height="match_parent" android:text=""/>
+    </ScrollView>
+    <LinearLayout android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/ll_checkbox" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="15dp" android:layout_marginStart="15dp" android:layout_marginEnd="15dp">
+        <CheckBox android:textSize="14sp" android:textColor="#000000" android:gravity="left|center_vertical|center_horizontal|center|start" android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/cb_no_more_ask" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleX="0.6" android:scaleY="0.6" android:buttonTint="#000000"/>
+        <TextView android:textSize="14sp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_update_do_not_ask_me_again"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="16sp" android:textColor="#000000" android:id="@+id/btn_later" android:background="@color/colorBackground_e" android:layout_width="0dp" android:layout_height="48dp" android:text="@string/app_update_later" android:layout_weight="1"/>
+        <Button android:textSize="16sp" android:textStyle="bold" android:textColor="#ffffff" android:id="@+id/btn_update" android:background="@color/color_00b3aa" android:layout_width="0dp" android:layout_height="48dp" android:text="@string/app_update_update" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/colorWhite" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/top_bar_device"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_38" android:text="@string/time" style="@style/title_text_style"/>
+    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/colorBlack" android:id="@+id/time_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_48" android:layout_marginTop="@dimen/margin_20"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_28" android:text="@string/appliance" style="@style/title_text_style"/>
+    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/colorBlack" android:id="@+id/appliance_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_48" android:layout_marginTop="@dimen/margin_20"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_28" android:text="@string/event" style="@style/title_text_style"/>
+    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/colorBlack" android:id="@+id/event_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_48" android:layout_marginTop="@dimen/margin_20"/>
+    <Space android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1"/>
+    <LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:id="@+id/bottom_layout" android:layout_width="match_parent" android:layout_height="@dimen/margin_50" android:layout_marginBottom="@dimen/margin_4">
+        <TextView android:textSize="@dimen/text_size_16" android:textStyle="bold" android:textColor="@color/colorBlack" android:gravity="center" android:id="@+id/delete" android:background="@color/colorText_e5" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/delete" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/text_size_16" android:textStyle="bold" android:textColor="@color/colorBlack" android:ellipsize="end" android:gravity="center" android:id="@+id/report_ticket" android:background="@color/colorButton" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/report_uppercase" android:lines="1" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

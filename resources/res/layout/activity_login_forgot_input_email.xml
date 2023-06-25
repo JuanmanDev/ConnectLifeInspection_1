@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/account_top_bar"/>
+    <com.hisense.connect_life.core.widget.IconFontView style="@style/icon_splash_logo_style"/>
+    <TextView android:layout_marginLeft="@dimen/margin_16" android:layout_marginTop="@dimen/margin_60" android:layout_marginRight="@dimen/margin_16" android:text="@string/reset_password_enter_email" style="@style/reminder_text_style"/>
+    <EditText android:id="@+id/forget_email" android:layout_marginTop="@dimen/margin_50" android:hint="@string/forgot_password_input_email_hint" android:inputType="textEmailAddress" style="@style/edit_input_style"/>
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/tv_error_email" app:hintEnabled="false" style="@style/edit_textinput_hint_style"/>
+    <Button android:enabled="false" android:textSize="@dimen/text_size_14" android:textStyle="bold" android:textColor="@color/colorText_86" android:id="@+id/get_verification_code" android:background="@drawable/button_next_unselect_bg" android:layout_marginLeft="@dimen/margin_16" android:layout_marginTop="@dimen/margin_32" android:layout_marginRight="@dimen/margin_16" android:text="@string/get_verification_code" style="@style/bottom_btn_style"/>
+</LinearLayout>

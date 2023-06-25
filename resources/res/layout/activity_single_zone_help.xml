@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/colorStatus" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/top_bar_device"/>
+    <TextView android:textSize="@dimen/text_size_20" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="@string/where_can_i_find" android:layout_marginStart="@dimen/margin_32" android:lineHeight="24dp"/>
+    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/colorBlack" android:layout_width="311dp" android:layout_height="72dp" android:layout_marginTop="30dp" android:text="@string/Each_appliance_has_an_label" android:layout_marginStart="@dimen/margin_32"/>
+    <ImageView android:layout_width="313dp" android:layout_height="69dp" android:layout_marginTop="20dp" android:src="@drawable/img_auid_label" android:scaleType="centerCrop" android:layout_marginStart="@dimen/margin_32"/>
+    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/colorBlack" android:layout_width="311dp" android:layout_height="72dp" android:layout_marginTop="30dp" android:text="@string/They_are_located_mostly" android:layout_marginStart="@dimen/margin_32" android:lineHeight="24dp"/>
+    <ImageView android:layout_width="312dp" android:layout_height="105dp" android:src="@drawable/img_label_positions_appliance" android:scaleType="centerCrop" android:layout_marginStart="@dimen/margin_32"/>
+    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/colorBlack" android:layout_width="311dp" android:layout_height="72dp" android:layout_marginTop="20dp" android:text="@string/qr_code_or_auid_are_normally" android:layout_marginStart="@dimen/margin_32" android:lineHeight="24dp"/>
+    <ImageView android:layout_width="71dp" android:layout_height="57dp" android:layout_marginTop="@dimen/margin_20" android:src="@drawable/img_label_positions_box" android:scaleType="centerCrop" android:layout_marginStart="@dimen/margin_32"/>
+</LinearLayout>

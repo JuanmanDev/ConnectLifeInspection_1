@@ -1,0 +1,320 @@
+{
+  "applianceInfo": {
+    "typeCode": "027",
+    "typeName": "washing_type",
+    "isGorenje": true
+  },
+  "logo": {
+    "icon": "0xe80b",
+    "fontFamily": "ConnectLifeAllFont"
+  },
+  "logoBold": {
+    "icon": "0xe6b9",
+    "fontFamily": "ConnectLifeAllFont"
+  },
+  "softAp": {
+    "type": "1",
+    "pairDesc": "td22_pair_desc",
+    "resource": [
+      {
+        "title": "step",
+        "style": 0,
+        "content": "wm22_connect_step1_desc",
+        "content_pair": "wm22_pair_step1_desc",
+        "path": "resource/images/wm22/instruction_wm22_cs_step1.png",
+        "pair_path": "resource/images/wm22/instruction_wm22_p_step1.png"
+      },{
+        "title": "step",
+        "style": 0,
+        "content": "wm22_connect_step2_desc",
+        "content_pair": "wm22_pair_step2_desc",
+        "path": "resource/images/wm22/instruction_wm22_cs_step2.png",
+        "pair_path": "resource/images/wm22/instruction_wm22_p_step2.png"
+      },{
+        "title": "step",
+        "style": 0,
+        "content": "td22_connect_step3_desc",
+        "content_pair": "td22_pair_step3_desc",
+        "path": "resource/images/wm22/instruction_wm22_cs_step3.png",
+        "pair_path": "resource/images/wm22/instruction_wm22_p_step3.png"
+      },{
+        "title": "step",
+        "style": 0,
+        "content": "td22_connect_step4_desc",
+        "content_pair": "",
+        "path": "resource/images/wm22/instruction_wm22_cs_step4.png",
+        "pair_path": ""
+      }
+    ]
+  },
+  "appliancePreference": "type_3",
+  "applianceTile": {
+    "convertType": "pind",
+    "icon": {
+      "icon": "0xe80b",
+      "fontFamily": "ConnectLifeFont"
+    },
+    "style": "pind",
+    "properties": []
+  },
+  "scene": {
+    "isSupport": 1
+  },
+  "activity": {
+    "icon": {
+      "icon": "0xe7c6",
+      "fontFamily": "ConnectLifeWasher"
+    },
+    "style": "0",
+    "condition": [
+      {
+        "propertyKey": "Status",
+        "value": "3"
+      }
+    ],
+    "properties": []
+  },
+  "scene": {
+    "isSupport": 1,
+    "convertType": "diswasher",
+    "automation": {
+    },
+    "manual": [
+      {
+        "propertyKey": "Selected_program_id",
+        "title": "program_name",
+        "desc": "program_name",
+        "type": "1",
+        "prefix": "",
+        "suffix": ""
+      }
+    ]
+  },
+  "options": {
+    "Selected_program_id": [
+      {
+        "value": 0,
+        "title": "WT_PROGRAM_ECO_4060",
+        "des": "Eco 40-60",
+        "icon": {
+          "icon": "0xeb12",
+          "fontFamily": "CLFont"
+        }
+      },
+      {
+        "value": 1,
+        "title": "WT_PROGRAM_COTTON_WHITE",
+        "des": "Cotton white",
+        "icon": {
+          "icon": "0xe962",
+          "fontFamily": "CLFont"
+        }
+      },
+      {
+        "value": 2,
+        "title": "WT_PROGRAM_COTTON_COLOR",
+        "des": "Colour",
+        "icon": {
+          "icon": "0xe935",
+          "fontFamily": "CLFont"
+        }
+      },
+      {
+        "value": 3,
+        "title": "WT_PROGRAM_WOOL_HANDWASH",
+        "des": "Wool&hand",
+        "icon": {
+          "icon": "0xe91b",
+          "fontFamily": "CLFont"
+        }
+      },
+      {
+        "value": 4,
+        "title": "WT_PROGRAM_MIX_SYNTHETICS",
+        "des": "Mix/synthetics",
+        "icon": {
+          "icon": "0xe907",
+          "fontFamily": "CLFont"
+        }
+      },
+      {
+        "value": 5,
+        "title": "WT_PROGRAM_ALLERGY_CARE",
+        "des": "Extra hygiene",
+        "icon": {
+          "icon": "0xeb16",
+          "fontFamily": "CLFont"
+        }
+      },
+      {
+        "value": 6,
+        "title": "WT_PROGRAM_SPEED_20MIN",
+        "des": "Speed 20'",
+        "icon": {
+          "icon": "0xe904",
+          "fontFamily": "CLFont"
+        }
+      },
+      {
+        "value": 7,
+        "title": "WT_PROGRAM_POWER_59MIN_32MIN",
+        "des": "Power 59'/32'",
+        "icon": {
+          "icon": "0xeb14",
+          "fontFamily": "CLFont"
+        }
+      },
+      {
+        "value": 8,
+        "title": "WT_PROGRAM_DAILY_WASH",
+        "des": "Daily",
+        "icon": {
+          "icon": "0xe962",
+          "fontFamily": "CLFont"
+        }
+      },
+      {
+        "value": 9,
+        "title": "WT_PROGRAM_SPORTS_WEAR",
+        "des": "Sports",
+        "icon": {
+          "icon": "0xe90d",
+          "fontFamily": "CLFont"
+        }
+      },
+      {
+        "value": 10,
+        "title": "WT_PROGRAM_BABY_PREWASH",
+        "des": "Baby",
+        "icon": {
+          "icon": "0xe8f8",
+          "fontFamily": "CLFont"
+        }
+      },
+      {
+        "value": 11,
+        "title": "WT_PROGRAM_PET_PREWASH",
+        "des": "Pets",
+        "icon": {
+          "icon": "0xeb1b",
+          "fontFamily": "CLFont"
+        }
+      },
+      {
+        "value": 12,
+        "title": "WT_PROGRAM_SHIRTS",
+        "des": "Shirts",
+        "icon": {
+          "icon": "0xe901",
+          "fontFamily": "CLFont"
+        }
+      },
+      {
+        "value": 13,
+        "title": "WT_PROGRAM_STERILTUB",
+        "des": "Drum clean",
+        "icon": {
+          "icon": "0xe909",
+          "fontFamily": "CLFont"
+        }
+      },
+      {
+        "value": 14,
+        "title": "WT_PROGRAM_SPIN",
+        "des": "Spin",
+        "icon": {
+          "icon": "0xe905",
+          "fontFamily": "CLFont"
+        }
+      },
+      {
+        "value": 15,
+        "title": "WT_PROGRAM_DRAIN",
+        "des": "Drain",
+        "icon": {
+          "icon": "0xe905",
+          "fontFamily": "CLFont"
+        }
+      },
+
+      {
+        "value": 16,
+        "title": "WT_PROGRAM_RINSE",
+        "des": "Rinse&softening",
+        "icon": {
+          "icon": "0xe900",
+          "fontFamily": "CLFont"
+        }
+      },
+      {
+        "value": 17,
+        "title": "WT_PROGRAM_SOFTENING",
+        "des": "Softening",
+        "icon": {
+          "icon": "0xe91d",
+          "fontFamily": "CLFont"
+        }
+      },
+      {
+        "value": 18,
+        "title": "WT_PROGRAM_STERILTUB_AIRDRY",
+        "des": "Drum clean & dry",
+        "icon": {
+          "icon": "0xeb11",
+          "fontFamily": "CLFont"
+        }
+      },
+      {
+        "value": 19,
+        "title": "WT_PROGRAM_ENTRYSTEAM",
+        "des": "/",
+        "icon": {
+          "icon": "0xe908",
+          "fontFamily": "CLFont"
+        }
+      },
+      {
+        "value": 20,
+        "title": "WT_PROGRAM_AIRDRY",
+        "des": "Airdry",
+        "icon": {
+          "icon": "0xe86e",
+          "fontFamily": "CLFont"
+        }
+      },
+      {
+        "value": 21,
+        "title": "WT_PROGRAM_ANTICREASE",
+        "des": "/",
+        "icon": {
+          "icon": "0xe908",
+          "fontFamily": "CLFont"
+        }
+      }, {
+        "value": 22,
+        "title": "WT_PROGRAM_WIFI",
+        "des": "/",
+        "icon": {
+          "icon": "0xe908",
+          "fontFamily": "CLFont"
+        }
+      }, {
+        "value": 23,
+        "title": "WT_PROGRAM_PREWASH",
+        "des": "/",
+        "icon": {
+          "icon": "0xe908",
+          "fontFamily": "CLFont"
+        }
+      }, {
+        "value": 24,
+        "title": "WT_PROGRAM_PREWASH_COTTON_WHITE",
+        "des": "/",
+        "icon": {
+          "icon": "0xe908",
+          "fontFamily": "CLFont"
+        }
+      }
+    ]
+  }
+}

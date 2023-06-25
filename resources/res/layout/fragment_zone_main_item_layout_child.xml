@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/title_view" android:paddingTop="@dimen/margin_38" android:paddingBottom="@dimen/margin_6" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_20" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@+id/text_shelf_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="A1"/>
+        <TextView android:textSize="@dimen/text_size_16" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@+id/text_bottles_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bottles_d" android:layout_toLeftOf="@+id/text_bottles_num"/>
+        <TextView android:textSize="@dimen/text_size_16" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@+id/text_bottles_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_32" android:text=" 12" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/wine_zone_item_recycler" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_12" android:overScrollMode="never"/>
+</LinearLayout>

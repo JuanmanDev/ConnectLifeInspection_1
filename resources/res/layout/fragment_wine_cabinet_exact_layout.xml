@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/colorBackground_e" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@color/colorText_c4" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/margin_16"/>
+        <com.donkingliang.groupedadapter.widget.StickyHeaderLayout android:id="@+id/sticky_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/margin_16" android:layout_marginTop="@dimen/margin_16">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/exact_cabinet_recycler_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </com.donkingliang.groupedadapter.widget.StickyHeaderLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

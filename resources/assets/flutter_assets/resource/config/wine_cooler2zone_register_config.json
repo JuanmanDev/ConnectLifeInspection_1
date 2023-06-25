@@ -1,0 +1,136 @@
+{
+  "applianceInfo": {
+    "typeCode": "001",
+    "typeName": "cooler_type",
+    "isGorenje": true
+  },
+  "logo": {
+    "icon": "0xe6a2",
+    "fontFamily": "WineZoneFont"
+  },
+  "logoBold": {
+    "icon": "0xe6a2",
+    "fontFamily": "WineZoneFont"
+  },
+  "escaped": [],
+  "softAp": {
+    "type": "1",
+    "resource": [
+      {
+        "title": "step",
+        "style": 0,
+        "content": "wine_2_zone_cs_1",
+        "content_pair": "wine_2_zone_pair_1",
+        "path": "resource/images/winezone/instructions_WCC60_2Z_step_1.png",
+        "pair_path": "resource/images/winezone/instructions_WCC60_2Z_step_1.png"
+      },
+      {
+        "title": "step",
+        "style": 0,
+        "content": "wine_2_zone_cs_2",
+        "content_pair": "wine_2_zone_pair_2",
+        "path": "resource/images/winezone/instructions_WCC60_2Z_step_2.png",
+        "pair_path": "resource/images/winezone/pair_instructions_WCC60_2Z_step_2.png"
+      },
+      {
+        "title": "step",
+        "style": 0,
+        "content": "wine_2_zone_cs_3",
+        "content_pair": "wine_2_zone_pair_3",
+        "path": "resource/images/winezone/instructions_WCC60_2Z_step_3.png",
+        "pair_path": "resource/images/winezone/instructions_wcc60_2z_pairing_step3.png"
+      },
+      {
+        "title": "step",
+        "style": 0,
+        "content": "wine_2_zone_cs_4",
+        "content_pair": "wine_2_zone_pair_4",
+        "path": "resource/images/winezone/instructions_wcc60_2z_step4.png",
+        "pair_path": "resource/images/winezone/instructions_wcc60_2z_pairing_step4.png"
+      },
+      {
+        "title": "step",
+        "style": 0,
+        "content": "wine_2_zone_cs_5",
+        "content_pair": "",
+        "path": "resource/images/winezone/instructions_WCC60_2Z_step_5.png",
+        "pair_path": ""
+      }
+    ]
+  },
+  "applianceTile": {
+    "convertType": "cooler",
+    "icon": {
+      "icon": "0xe7b6",
+      "fontFamily": "ConnectLifeFont"
+    },
+    "style": "cooler",
+    "properties": [
+      {
+        "propertyKey": "Zone1SetTemperature",
+        "type": "3",
+        "unitPropertyKey": "TemperatureUnit",
+        "prefix": "",
+        "suffix": ""
+      },
+      {
+        "propertyKey": "Zone2SetTemperature",
+        "type": "3",
+        "unitPropertyKey": "TemperatureUnit",
+        "prefix": "",
+        "suffix": ""
+      },{
+        "propertyKey": "Zone3SetTemperature",
+        "type": "3",
+        "unitPropertyKey": "TemperatureUnit",
+        "prefix": "",
+        "suffix": ""
+      }
+    ]
+  },
+  "applianceTile2": {
+    "convertType": "cooler",
+    "icon": {
+      "icon": "0xe7b6",
+      "fontFamily": "ConnectLifeFont"
+    },
+    "style": "cooler",
+    "properties": [
+      {
+        "propertyKey": "Zone1SetTemperature",
+        "type": "3",
+        "unitPropertyKey": "TemperatureUnit",
+        "prefix": "",
+        "suffix": ""
+      }
+    ]
+  },
+  "activity": {
+    "icon": {
+      "icon": "0xe6a2",
+      "fontFamily": "WineZoneFont"
+    },
+    "style": "0",
+    "condition": [
+    ],
+    "properties": []
+  },
+  "scene": {
+    "isSupport": 1
+  },
+  "appliancePreference": "type_1",
+  "options": {
+    "TemperatureUnit": [
+      {
+        "value": 1,
+        "des": "°F",
+        "title": "°F"
+      },
+      {
+        "value": 0,
+        "des": "°C",
+        "title": "°C"
+      }
+    ]
+  }
+}

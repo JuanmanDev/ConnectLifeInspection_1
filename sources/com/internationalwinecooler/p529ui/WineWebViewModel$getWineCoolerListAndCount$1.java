@@ -1,0 +1,96 @@
+package com.internationalwinecooler.p529ui;
+
+import androidx.lifecycle.ViewModelKt;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.hisense.connect_life.core.global.EventBusConstKt;
+import com.hisense.connect_life.core.utils.LoggerUtil;
+import com.hisense.connect_life.hismart.networks.request.device.DeviceCache;
+import com.hisense.connect_life.hismart.networks.request.device.model.DeviceInfo;
+import com.hisense.connect_life.hismart.networks.request.device.model.OnlineStatus;
+import java.util.ArrayList;
+import java.util.List;
+import kotlin.Metadata;
+import kotlin.ResultKt;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsKt;
+import kotlin.coroutines.jvm.internal.Boxing;
+import kotlin.coroutines.jvm.internal.DebugMetadata;
+import kotlin.coroutines.jvm.internal.SuspendLambda;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.Intrinsics;
+import kotlinx.coroutines.BuildersKt__Builders_commonKt;
+import kotlinx.coroutines.CoroutineScope;
+import kotlinx.coroutines.CoroutineStart;
+import kotlinx.coroutines.Dispatchers;
+import kotlinx.coroutines.Job;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
+@Metadata(mo47990d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H@"}, mo47991d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, mo47992k = 3, mo47993mv = {1, 6, 0}, mo47995xi = 48)
+@DebugMetadata(mo48700c = "com.internationalwinecooler.ui.WineWebViewModel$getWineCoolerListAndCount$1", mo48701f = "WineWebViewModel.kt", mo48702i = {}, mo48703l = {}, mo48704m = "invokeSuspend", mo48705n = {}, mo48706s = {})
+/* renamed from: com.internationalwinecooler.ui.WineWebViewModel$getWineCoolerListAndCount$1 */
+/* compiled from: WineWebViewModel.kt */
+public final class WineWebViewModel$getWineCoolerListAndCount$1 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
+    public final /* synthetic */ String $model;
+    public int label;
+    public final /* synthetic */ WineWebViewModel this$0;
+
+    /* JADX INFO: super call moved to the top of the method (can break code semantics) */
+    public WineWebViewModel$getWineCoolerListAndCount$1(WineWebViewModel wineWebViewModel, String str, Continuation<? super WineWebViewModel$getWineCoolerListAndCount$1> continuation) {
+        super(2, continuation);
+        this.this$0 = wineWebViewModel;
+        this.$model = str;
+    }
+
+    @NotNull
+    public final Continuation<Unit> create(@Nullable Object obj, @NotNull Continuation<?> continuation) {
+        return new WineWebViewModel$getWineCoolerListAndCount$1(this.this$0, this.$model, continuation);
+    }
+
+    @Nullable
+    public final Object invoke(@NotNull CoroutineScope coroutineScope, @Nullable Continuation<? super Unit> continuation) {
+        return ((WineWebViewModel$getWineCoolerListAndCount$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+    }
+
+    @Nullable
+    public final Object invokeSuspend(@NotNull Object obj) {
+        IntrinsicsKt__IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        if (this.label == 0) {
+            ResultKt.throwOnFailure(obj);
+            List<DeviceInfo> deviceList = DeviceCache.Companion.getInstance().getDeviceList();
+            ArrayList<DeviceInfo> arrayList = new ArrayList<>();
+            for (T next : deviceList) {
+                if (Intrinsics.areEqual((Object) ((DeviceInfo) next).getDeviceTypeCode(), (Object) "001")) {
+                    arrayList.add(next);
+                }
+            }
+            WineWebViewModel wineWebViewModel = this.this$0;
+            String str = this.$model;
+            JsonObject jsonObject = new JsonObject();
+            jsonObject.addProperty("resultCode", (Number) Boxing.boxInt(0));
+            JsonArray jsonArray = new JsonArray();
+            for (DeviceInfo deviceInfo : arrayList) {
+                JsonObject jsonObject2 = new JsonObject();
+                jsonObject2.addProperty("deviceId", deviceInfo.getDeviceId());
+                jsonObject2.addProperty(EventBusConstKt.WIFIID, deviceInfo.getWifiId());
+                OnlineStatus onlineStatus = deviceInfo.getOnlineStatus();
+                jsonObject2.addProperty("devNetStatus", (Number) Boxing.boxInt(onlineStatus == null ? 0 : onlineStatus.getType()));
+                jsonObject2.addProperty("devTypeName", deviceInfo.getDeviceTypeName());
+                jsonObject2.addProperty("devNickName", deviceInfo.getDeviceNickName());
+                jsonObject2.addProperty("devName", deviceInfo.getDeviceName());
+                jsonObject2.addProperty("isOneZoneWineCooler", DeviceCache.Companion.getInstance().getOneZoneFlagByFeatureCode(deviceInfo.getDeviceId()));
+                jsonObject2.addProperty("onlineStatus", OnlineStatus.CONNECTED == deviceInfo.getOnlineStatus() ? "1" : "2");
+                jsonObject2.addProperty("thisTypeWineCount", (Number) Boxing.boxInt(wineWebViewModel.getWineCount(deviceInfo.getDeviceId(), str)));
+                jsonArray.add((JsonElement) jsonObject2);
+            }
+            jsonObject.add("data", jsonArray);
+            LoggerUtil.Companion.mo39146e(Intrinsics.stringPlus("getWineCoolerListAndCount: ", jsonObject));
+            Job unused = BuildersKt__Builders_commonKt.launch$default(ViewModelKt.getViewModelScope(wineWebViewModel), Dispatchers.getMain(), (CoroutineStart) null, new WineWebViewModel$getWineCoolerListAndCount$1$2$2(wineWebViewModel, jsonObject, (Continuation<? super WineWebViewModel$getWineCoolerListAndCount$1$2$2>) null), 2, (Object) null);
+            return Unit.INSTANCE;
+        }
+        throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+    }
+}

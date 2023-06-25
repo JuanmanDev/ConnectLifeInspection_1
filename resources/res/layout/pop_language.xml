@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="186dp">
+        <com.contrarywind.view.WheelView android:id="@+id/wheelview_language" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <com.contrarywind.view.WheelView android:id="@+id/wheelview_city" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="75dp">
+        <TextView android:textColor="@color/colorBlack" android:gravity="center" android:id="@+id/pop_cancel" android:background="@drawable/button_circle_hollow" android:layout_width="106dp" android:layout_height="35dp" android:text="@string/cancel" android:layout_marginEnd="@dimen/margin_12" android:layout_toStartOf="@+id/pop_confirm"/>
+        <TextView android:textColor="@color/colorWhite" android:gravity="center" android:id="@+id/pop_confirm" android:background="@drawable/button_circle_solid" android:layout_width="104dp" android:layout_height="35dp" android:text="@string/key_confirm_upper" android:layout_marginEnd="@dimen/margin_16" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</LinearLayout>

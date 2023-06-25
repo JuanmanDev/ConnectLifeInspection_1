@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="64dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="@dimen/margin_32">
+        <TextView android:textSize="@dimen/text_size_16" android:textStyle="bold" android:textColor="@color/colorBlack" android:ellipsize="end" android:id="@+id/wine_cooler_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wine_cooler_name" android:lines="1"/>
+        <TextView android:textSize="@dimen/text_size_12" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@+id/wine_cooler_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wine_cooler_name"/>
+    </LinearLayout>
+    <com.hisense.connect_life.core.widget.IconFontView android:textSize="@dimen/text_size_12" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btn_main_unfold_right" android:layout_marginEnd="@dimen/margin_32"/>
+</LinearLayout>

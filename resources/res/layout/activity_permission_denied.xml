@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/title_rl" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="64dp">
+        <ImageView android:id="@+id/tv_back" android:focusable="true" android:clickable="true" android:layout_width="24dp" android:layout_height="24dp" android:src="@mipmap/ic_back" android:layout_centerVertical="true" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/tv_back" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="30dp" android:layout_marginRight="16dp" android:src="@mipmap/icon_general_64_warningattention_wht"/>
+        <com.hisense.connect_life.core.widget.NovaTextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp"/>
+        <com.hisense.connect_life.core.widget.NovaTextView android:textSize="16sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32dp" android:layout_marginTop="29dp" android:layout_marginRight="32dp"/>
+        <com.hisense.connect_life.core.widget.NovaTextView android:textSize="16sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32dp" android:layout_marginTop="56dp" android:layout_marginRight="32dp"/>
+        <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <Button android:textSize="14sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/btn_open_setting" android:background="@drawable/shape_rect_bg_green" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:text="@string/go_setting"/>
+        <Space android:layout_width="match_parent" android:layout_height="20dp"/>
+    </LinearLayout>
+</LinearLayout>

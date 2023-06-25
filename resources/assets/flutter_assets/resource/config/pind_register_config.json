@@ -1,0 +1,172 @@
+{
+  "applianceInfo": {
+    "typeCode": "010",
+    "typeName": "pind_induction_hob",
+    "isGorenje": true
+  },
+  "logo": {
+    "icon": "0xe7b6",
+    "fontFamily": "ConnectLifeFont"
+  },
+  "logoBold": {
+    "icon": "0xe7d4",
+    "fontFamily": "ConnectLifeFont"
+  },
+  "escaped": [],
+  "softAp": {
+    "type": "1",
+    "resource": [
+      {
+        "title": "step",
+        "content": "pind_config_wifi_step1",
+        "content_pair": "pind_config_wifi_step1_pair",
+        "path": "resource/images/pind/instructions_pind_step_1.png",
+        "pair_path": "resource/images/pind/instructions_pind_step_pair_1.png"
+      },{
+        "title": "step",
+        "content": "pind_config_wifi_step2",
+        "content_pair": "pind_config_wifi_step2_pair",
+        "path": "resource/images/pind/instructions_pind_step_2.png",
+        "pair_path": "resource/images/pind/instructions_pind_step_pair_2.png"
+      },{
+        "title": "step",
+        "content": "pind_config_wifi_step3",
+        "content_pair": "pind_config_wifi_step3_pair",
+        "path": "resource/images/pind/instructions_pind_step_3.png",
+        "pair_path": "resource/images/pind/instructions_pind_step_pair_3.png"
+      },{
+        "title": "step",
+        "content": "pind_config_wifi_step4",
+        "content_pair": "pind_config_wifi_step4_pair",
+        "path": "resource/images/pind/instructions_pind_step_4.png",
+        "pair_path": "resource/images/pind/instructions_pind_step_pair_4.png"
+      },{
+        "title": "step",
+        "content": "pind_config_wifi_step5",
+        "content_pair": "pind_config_wifi_step5_pair",
+        "path": "resource/images/pind/instructions_pind_step_5.png",
+        "pair_path": "resource/images/pind/instructions_pind_step_pair_5.png"
+      }
+    ]
+  },
+  "applianceTile": {
+    "convertType": "pind",
+    "icon": {
+      "icon": "0xe7b6",
+      "fontFamily": "ConnectLifeFont"
+    },
+    "style": "pind",
+    "properties": []
+  },
+  "activity": {
+    "icon": {
+      "icon": "0xe7b6",
+      "fontFamily": "ConnectLifeFont"
+    },
+    "style": "0",
+    "condition": [
+      {
+        "propertyKey": "Device_status",
+        "value": "5"
+      }
+    ],
+    "properties": []
+  },
+  "scene": {
+    "isSupport": 1
+  },
+  "appliancePreference": "type_2",
+  "options": {
+    "SL1_Cooking_method": [
+      {
+        "value": 0,
+        "des": "Standard",
+        "title": "pind_standard"
+      },
+      {
+        "value": 1,
+        "des": "Plus",
+        "title": "pind_plus_cooking"
+      },
+      {
+        "value": 2,
+        "des": "Hestan Cue",
+        "title": "pind_hestan_cue"
+      }
+    ],
+    "SL1_Functions": [
+      {
+        "value": 0,
+        "des": "None",
+        "title": "",
+        "icon": {
+          "icon": "",
+          "fontFamily": ""
+        }
+      },
+      {
+        "value": 1,
+        "des": "Warm up Keep warm",
+        "title": "pind_function_warm_up",
+        "icon": {
+          "icon": "0xe85c",
+          "fontFamily": "ConnectLifeHob"
+        }
+      },
+      {
+        "value": 2,
+        "des": "Fry Wokk",
+        "title": "pind_function_fry",
+        "icon": {
+          "icon": "0xe85a",
+          "fontFamily": "ConnectLifeHob"
+        }
+      },
+      {
+        "value": 3,
+        "des": "Grill",
+        "title": "pind_function_grill",
+        "icon": {
+          "icon": "0xe85b",
+          "fontFamily": "ConnectLifeHob"
+        }
+      },
+      {
+        "value": 4,
+        "des": "Hestan Cue Mode",
+        "title": "pind_function_hestan_mode",
+        "icon": {
+          "icon": "0xe7f9",
+          "fontFamily": "ConnectLifeHob"
+        }
+      },
+      {
+        "value": 5,
+        "des": "Hestan Cue Warmup/Slow",
+        "title": "pind_function_hestan_slow",
+        "icon": {
+          "icon": "0xe85d",
+          "fontFamily": "ConnectLifeHob"
+        }
+      },
+      {
+        "value": 6,
+        "des": "Hestan Cue Boil",
+        "title": "pind_function_hestan_boil",
+        "icon": {
+          "icon": "0xe859",
+          "fontFamily": "ConnectLifeHob"
+        }
+      },
+      {
+        "value": 7,
+        "des": "Hestan Cue Heat",
+        "title": "pind_function_hestan_heat",
+        "icon": {
+          "icon": "0xe844",
+          "fontFamily": "ConnectLifeHob"
+        }
+      }
+    ]
+  }
+}

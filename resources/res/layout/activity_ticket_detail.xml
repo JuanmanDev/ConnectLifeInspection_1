@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/top_bar_device"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_20" android:layout_marginStart="@dimen/margin_32">
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ticket_number"/>
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/colorBlack" android:id="@+id/ticket_number" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/service_order_id_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_12" android:layout_marginStart="@dimen/margin_32">
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/service_order_id"/>
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/colorBlack" android:id="@+id/service_order_id_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/claim_id_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_12" android:layout_marginStart="@dimen/margin_32">
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/claim_id"/>
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/colorBlack" android:id="@+id/claim_id_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_12" android:layout_marginStart="@dimen/margin_32">
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ticket_status"/>
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/colorBlack" android:id="@+id/ticket_status" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_12" android:layout_marginStart="@dimen/margin_32">
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tickets_date_opened"/>
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/colorBlack" android:id="@+id/ticket_opened_time" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_12" android:layout_marginStart="@dimen/margin_32">
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tickets_date_closed"/>
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/colorBlack" android:id="@+id/ticket_closed_time" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/transparent_61" android:id="@+id/ticket_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_12" android:layout_marginStart="@dimen/margin_32"/>
+    <TextView android:textSize="@dimen/text_size_18" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_36" android:text="@string/appliance" android:layout_marginStart="@dimen/margin_32"/>
+    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/colorBlack" android:gravity="center_vertical" android:id="@+id/ticket_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_20" android:layout_marginStart="@dimen/margin_48" android:layout_marginEnd="@dimen/margin_32"/>
+    <TextView android:textSize="@dimen/text_size_18" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_28" android:text="@string/ticket_brief" android:layout_marginStart="@dimen/margin_32"/>
+    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/colorBlack" android:gravity="center_vertical" android:id="@+id/ticket_option" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_20" android:paddingStart="@dimen/margin_16" android:layout_marginStart="@dimen/margin_32" android:layout_marginEnd="@dimen/margin_32"/>
+    <TextView android:textSize="@dimen/text_size_18" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_28" android:text="@string/ticket_detail" android:layout_marginStart="@dimen/margin_32"/>
+    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/colorBlack" android:gravity="center_vertical" android:id="@+id/ticket_issue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_20" android:paddingStart="@dimen/margin_16" android:layout_marginStart="@dimen/margin_32" android:layout_marginEnd="@dimen/margin_32"/>
+    <Space android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1"/>
+    <TextView android:textColor="@color/colorWhite" android:gravity="center" android:layout_gravity="end" android:id="@+id/add_ticket_confirm" android:background="@drawable/button_region_dialog_bg" android:layout_width="104dp" android:layout_height="35dp" android:layout_marginBottom="@dimen/margin_16" android:text="@string/close" android:layout_marginEnd="@dimen/margin_16"/>
+</LinearLayout>

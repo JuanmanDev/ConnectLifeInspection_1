@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/container" android:background="@color/colorBackground_e" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/sabbath_is_noactive" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp">
+                    <com.hisense.connect_life.core.widget.ClAllFontView android:textSize="24sp" android:textColor="@color/colorBlack" android:id="@+id/font_remote_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icon_remote_off"/>
+                    <com.hisense.connect_life.core.widget.OvenIconFontView android:textSize="24sp" android:textColor="@color/colorBlack" android:id="@+id/font_remote_on" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icon_remote_on"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp">
+                    <com.hisense.connect_life.core.widget.OvenIconFontView android:textSize="24sp" android:textColor="@color/colorBlack" android:id="@+id/font_w_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icon_w_off"/>
+                    <com.hisense.connect_life.core.widget.OvenIconFontView android:textSize="24sp" android:textColor="@color/colorBlack" android:id="@+id/font_w_on" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icon_w_on"/>
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@+id/wine_cooler_name_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="128dp">
+                    <ImageView android:id="@+id/wine_cooler_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_16" android:layout_marginTop="@dimen/margin_16" android:layout_marginRight="@dimen/margin_12" android:layout_marginBottom="@dimen/margin_20" android:src="@drawable/ic_icon_general_64_winecooler_thin" android:layout_alignParentBottom="true"/>
+                    <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/colorBlack" android:ellipsize="end" android:id="@+id/wine_cooler_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_26" android:lines="1" android:layout_toRightOf="@+id/wine_cooler_icon" android:layout_alignParentBottom="true" android:fontFamily="@font/proximanova_extrabold"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/sabbath_is_active" android:background="@drawable/notification_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_30" android:layout_marginStart="@dimen/margin_20" android:layout_marginEnd="@dimen/margin_20" android:elevation="@dimen/margin_12">
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/notification_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp">
+                    <com.hisense.connect_life.core.widget.ClAllFontView android:textSize="24sp" android:textColor="@color/colorBlack" android:id="@+id/font_remote_off02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icon_remote_off"/>
+                    <com.hisense.connect_life.core.widget.OvenIconFontView android:textSize="24sp" android:textColor="@color/colorBlack" android:id="@+id/font_remote_on02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icon_remote_on"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp">
+                    <com.hisense.connect_life.core.widget.OvenIconFontView android:textSize="24sp" android:textColor="@color/colorBlack" android:id="@+id/font_w_off02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icon_w_off"/>
+                    <com.hisense.connect_life.core.widget.OvenIconFontView android:textSize="24sp" android:textColor="@color/colorBlack" android:id="@+id/font_w_on02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icon_w_on"/>
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@+id/wine_cooler_name_layout02" android:visibility="visible" android:layout_width="match_parent" android:layout_height="128dp">
+                    <ImageView android:id="@+id/wine_cooler_icon02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_16" android:layout_marginTop="@dimen/margin_16" android:layout_marginRight="@dimen/margin_12" android:layout_marginBottom="@dimen/margin_20" android:src="@drawable/ic_icon_add_wine" android:layout_alignParentBottom="true"/>
+                    <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/colorBlack" android:ellipsize="end" android:id="@+id/wine_cooler_name02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_26" android:lines="1" android:layout_toRightOf="@+id/wine_cooler_icon02" android:layout_alignParentBottom="true" android:fontFamily="@font/proximanova_extrabold"/>
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/sabbath_is_active_not" android:background="@drawable/button_circle_hollow" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_16" android:layout_marginRight="@dimen/margin_16" android:layout_marginBottom="@dimen/margin_16">
+                    <TextView android:textSize="@dimen/margin_22" android:textColor="#000000" android:paddingLeft="@dimen/margin_10" android:paddingTop="@dimen/margin_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="S"/>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_8">
+                        <TextView android:textSize="@dimen/margin_18" android:textColor="#000000" android:paddingLeft="@dimen/margin_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sabbath_mode_active" android:fontFamily="@font/proximanova_extrabold"/>
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_8" android:src="@drawable/ic_icon_general_24_link_go" android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <androidx.cardview.widget.CardView android:id="@+id/device_notification" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_16">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_size_14" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_gravity="end" android:id="@+id/device_notification_clear" android:paddingTop="@dimen/margin_16" android:paddingBottom="@dimen/margin_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/clear" android:paddingEnd="@dimen/margin_34"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/device_notification_rv" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <LinearLayout android:layout_gravity="center" android:id="@+id/device_notification_more" android:paddingTop="@dimen/margin_16" android:paddingBottom="@dimen/margin_12" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/colorText_7b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/show_all_notifications" android:layout_marginEnd="@dimen/margin_4"/>
+                    <com.hisense.connect_life.core.widget.IconFontView android:textSize="@dimen/text_size_8" android:textColor="@color/colorText_86" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btn_main_unfold_down"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <RelativeLayout android:id="@+id/wine_inventory_maintain1" android:background="@mipmap/pic_winecabinet_inventory" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_30" android:layout_marginStart="@dimen/margin_16" android:layout_marginEnd="@dimen/margin_16">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_20" android:layout_alignParentBottom="true">
+                <TextView android:textSize="@dimen/text_size_20" android:textStyle="bold" android:textColor="@color/colorWhite" android:layout_gravity="center" android:id="@+id/inventory_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wine_inventory" android:layout_weight="1" android:fontFamily="@font/proximanova_regular"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp" android:src="@drawable/ic_icon_general_24_link_go__" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <include android:id="@+id/single_zone_layout" android:visibility="visible" layout="@layout/single_wine_zone_dashboard_layout"/>
+        <include android:id="@+id/wine_inventory_humiture" android:visibility="gone" layout="@layout/item_dashboard_wine_cooler"/>
+        <include layout="@layout/device_correlation"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

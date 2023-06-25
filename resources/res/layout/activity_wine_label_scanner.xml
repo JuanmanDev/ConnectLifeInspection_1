@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.hisense.connect_life.core.widget.IconFontView android:textSize="@dimen/margin_24" android:textColor="@color/colorBlack" android:gravity="center" android:id="@+id/top_back" android:layout_width="@dimen/margin_44" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_8" android:text="@string/btn_main_back" android:layout_marginStart="6dp"/>
+        <TextureView android:id="@+id/texture_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <View android:id="@+id/view_camera" android:background="@drawable/camera_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_marginStart="25dp" android:layout_marginEnd="25dp"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@color/colorBlack" android:layout_width="match_parent" android:layout_height="110dp">
+        <TextView android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:id="@+id/cancel_text" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/cancel" android:layout_weight="1" android:fontFamily="@font/proximanova_extrabold"/>
+        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <com.hisense.connect_life.core.widget.IconFontView android:textSize="@dimen/text_size_24" android:textColor="@color/colorBlack" android:gravity="center" android:layout_gravity="center" android:id="@+id/camera_text" android:background="@drawable/shape_circle_white" android:layout_width="@dimen/margin_72" android:layout_height="@dimen/margin_72" android:text="@string/icon_apliances_camera" android:layout_weight="1"/>
+        </FrameLayout>
+        <com.hisense.connect_life.core.widget.IconFontView android:textSize="@dimen/text_size_34" android:textColor="@color/colorWhite" android:gravity="center" android:id="@+id/flash_text" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/icon_apliances_lightning" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

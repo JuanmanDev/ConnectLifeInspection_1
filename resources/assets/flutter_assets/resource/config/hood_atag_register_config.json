@@ -1,0 +1,59 @@
+{
+  "applianceInfo": {
+    "typeCode": "012",
+    "typeName": "过滤油烟机",
+    "isGorenje": true
+  },
+  "logo": {
+    "icon": "0xe7e3",
+    "fontFamily": "connectLifeHood"
+  },
+  "logoBold": {
+    "icon": "0xe7c8",
+    "fontFamily": "connectLifeHood"
+  },
+  "softAp": {
+    "type": "1",
+    "resource": [
+      {
+        "title": "add_appliance_step",
+        "content": "add_washing_machine",
+        "content_pair": "add_washing_machine_pair",
+        "path": "resource/images/appliance/add_app_mobile_wm.png"
+      }
+    ]
+  },
+  "applianceTile": {
+    "convertType": "hood_atag",
+    "icon": {
+      "icon": "0xe7e7",
+      "fontFamily": "ConnectLifeFont"
+    },
+    "style": "hood_atag",
+    "properties": [
+      {
+        "propertyKey": "DeviceStatus",
+        "type": "5",
+        "prefix": "",
+        "suffix": "",
+        "display": {
+          "DeviceStatus": "1"
+        }
+      },
+
+      {
+        "propertyKey": "DeviceStatus",
+        "type": "5",
+        "prefix": "",
+        "suffix": "",
+        "display": {
+          "DeviceStatus": "5"
+        }
+      }
+    ]
+  },
+  "scene": {
+    "isSupport": 1
+  },
+  "appliancePreference": "type_3"
+}

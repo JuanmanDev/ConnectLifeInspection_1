@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:alpha="0.85" app:cardElevation="@dimen/margin_12">
+        <RelativeLayout android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="40dp">
+            <com.hisense.connect_life.core.widget.IconFontView android:textSize="@dimen/text_size_20" android:textColor="@color/colorBlack" android:gravity="center" android:id="@+id/info_back" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/btn_main_back" android:paddingStart="@dimen/margin_10" android:paddingEnd="@dimen/margin_10"/>
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/colorBlack" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_appliance_name" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/margin_20" android:layout_marginRight="@dimen/margin_10" android:lines="1" android:layout_toLeftOf="@+id/info_notification" android:layout_toRightOf="@+id/info_back" android:fontFamily="@font/proximanova_semibold"/>
+            <ImageView android:gravity="center_vertical" android:id="@+id/icon_share" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/icon_share" android:layout_alignParentTop="true" android:layout_alignParentBottom="true" android:layout_toStartOf="@+id/info_notification"/>
+            <Space android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <FrameLayout android:gravity="center" android:id="@+id/info_notification" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true">
+                <com.hisense.connect_life.core.widget.IconFontView android:textSize="@dimen/text_size_22" android:textColor="@color/colorBlack" android:gravity="center" android:id="@+id/info_go_notification" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/btn_main_notifications_bell" android:layout_alignParentRight="true" android:paddingStart="@dimen/margin_12" android:paddingEnd="@dimen/margin_12"/>
+                <FrameLayout android:id="@+id/info_hav_notification" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent">
+                    <ImageView android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_notification_unread" android:paddingStart="@dimen/margin_12" android:paddingEnd="@dimen/margin_12"/>
+                    <com.google.android.material.imageview.ShapeableImageView android:layout_gravity="right" android:layout_width="7dp" android:layout_height="7dp" android:layout_marginTop="10dp" android:src="@drawable/shape_red_bg" android:layout_marginEnd="15dp"/>
+                </FrameLayout>
+            </FrameLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <FrameLayout android:id="@+id/activity_device_info" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+</LinearLayout>

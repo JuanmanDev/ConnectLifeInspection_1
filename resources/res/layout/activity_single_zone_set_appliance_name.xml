@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/colorStatus" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/top_bar_device"/>
+    <TextView android:textSize="@dimen/text_size_20" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="@string/appliance_identification" android:layout_marginStart="@dimen/margin_32"/>
+    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/colorBlack" android:layout_width="300dp" android:layout_height="72dp" android:layout_marginTop="@dimen/margin_20" android:text="@string/one_last_step" android:layout_marginStart="@dimen/margin_32" android:lineHeight="24dp"/>
+    <LinearLayout android:gravity="center_vertical" android:background="@drawable/shape_rect_bg" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="@dimen/margin_24" android:layout_marginStart="@dimen/margin_16" android:layout_marginEnd="@dimen/margin_16">
+        <EditText android:textSize="@dimen/text_size_20" android:id="@+id/et_appliance_name" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="wine cooler" android:layout_marginStart="@dimen/margin_16"/>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/text_size_16" android:textStyle="bold" android:textColor="@color/colorWhite" android:id="@+id/bt_single_zone_save_bind_relation" android:background="@drawable/button_circle_solid" android:layout_width="match_parent" android:layout_height="52dp" android:text="@string/pair" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/account_top_bar"/>
+    <com.hisense.connect_life.core.widget.IconFontView style="@style/icon_splash_logo_style"/>
+    <EditText android:id="@+id/forget_email" android:layout_marginTop="@dimen/margin_24" android:hint="@string/password" android:inputType="textEmailAddress" style="@style/edit_input_style"/>
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/tv_error_email" app:hintEnabled="false" style="@style/edit_textinput_hint_style"/>
+    <TextView android:textSize="@dimen/text_size_16" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_32" android:text="@string/reset_password_enter_email" android:layout_marginStart="@dimen/margin_32" android:layout_marginEnd="@dimen/margin_70"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/next" android:text="delete" style="@style/next_btn_style"/>
+    </RelativeLayout>
+</LinearLayout>

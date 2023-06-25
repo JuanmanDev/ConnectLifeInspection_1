@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/colorStatus" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/top_bar_device"/>
+    <TextView android:textSize="@dimen/text_size_20" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="46dp" android:text="@string/appliance_identification" android:layout_marginStart="@dimen/margin_32"/>
+    <TextView android:textSize="@dimen/text_size_16" android:id="@+id/tv_single_zone_invalid_auid_guid" android:layout_width="311dp" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="@string/manually_enter" android:layout_marginStart="@dimen/margin_32"/>
+    <TextView android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@+id/tv_audi_code_invalid" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:text="AUID CODE" android:layout_marginStart="@dimen/margin_32"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/shape_rect_bg" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginRight="@dimen/margin_16" android:layout_marginStart="@dimen/margin_16">
+        <EditText android:textSize="@dimen/text_size_20" android:id="@+id/et_enter_code" android:background="@drawable/shape_rect_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Enter code" android:layout_marginStart="@dimen/margin_16"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@android:color/holo_red_light" android:id="@+id/tv_audi_code_error" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/auid_code_in_valid_err" android:layout_marginStart="@dimen/margin_32"/>
+    <RelativeLayout android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/text_size_14" android:textStyle="bold" android:textColor="@color/colorWhite" android:id="@+id/bt_single_zone_enter_manually_connect" android:background="@drawable/button_circle_solid" android:layout_width="match_parent" android:layout_height="52dp" android:text="@string/connect" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</LinearLayout>

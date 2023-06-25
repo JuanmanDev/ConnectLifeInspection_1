@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center_horizontal" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_8" android:layout_marginBottom="@dimen/margin_8" android:alpha="0.85" android:layout_marginStart="@dimen/margin_16" android:layout_marginEnd="@dimen/margin_16">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/margin_16" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_16" android:layout_marginBottom="@dimen/margin_8" android:layout_marginStart="@dimen/margin_16" android:layout_marginEnd="@dimen/margin_22">
+            <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/colorBlack" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/control_appliance" android:layout_weight="1" android:fontFamily="@font/proximanova_regular"/>
+            <com.hisense.connect_life.core.widget.IconFontView android:textSize="30sp" android:textColor="#cd473d" android:id="@+id/single_zone_offline_ic" android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginTop="10dp" android:layout_marginRight="5dp" android:text="@string/off_line"/>
+            <com.hisense.connect_life.core.widget.IconFontView android:textSize="@dimen/text_size_16" android:textColor="@color/colorBlack" android:id="@+id/single_zone_arrow_ic" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_6" android:text="@string/btn_main_more"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_16" android:paddingStart="@dimen/margin_16" android:paddingEnd="@dimen/margin_16">
+            <TextView android:textSize="@dimen/text_size_18" android:textStyle="bold" android:textColor="@color/colorBlack" android:gravity="center" android:background="@drawable/button_circle_hollow" android:layout_width="0dp" android:layout_height="@dimen/margin_52" android:text="A" android:layout_weight="1"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="@dimen/margin_16">
+                <Space android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1"/>
+                <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="@dimen/margin_52" android:layout_above="@+id/temperature_divider">
+                    <TextView android:textSize="@dimen/text_size_18" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@+id/tv__single_zone_temperature" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10"/>
+                    <TextView android:textSize="@dimen/text_size_18" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@+id/tv_single_zone_temperature_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="℃" android:layout_toEndOf="@+id/tv__single_zone_temperature"/>
+                </RelativeLayout>
+                <View android:id="@+id/temperature_divider" android:background="@color/colorDivider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true"/>
+            </LinearLayout>
+            <Space android:layout_width="@dimen/margin_12" android:layout_height="wrap_content"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <Space android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1"/>
+                <RelativeLayout android:gravity="center" android:id="@+id/humidity_show" android:layout_width="match_parent" android:layout_height="@dimen/margin_52" android:layout_above="@+id/humidity_divider">
+                    <TextView android:textSize="@dimen/text_size_18" android:textStyle="bold" android:textColor="@color/colorText_c4" android:id="@+id/tv_single_zone_humidity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10" android:layout_marginEnd="-6dp"/>
+                    <com.hisense.connect_life.core.widget.IconFontView android:textSize="@dimen/text_size_18" android:textStyle="bold" android:textColor="@color/colorText_c4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icon_dashboard_humidity" android:layout_toEndOf="@+id/tv_single_zone_humidity"/>
+                </RelativeLayout>
+                <View android:id="@+id/humidity_divider" android:background="@color/colorDivider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/ll_vibration1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_16" android:layout_marginStart="@dimen/margin_16" android:layout_marginEnd="@dimen/margin_22">
+            <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vibration"/>
+            <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/colorBlack" android:id="@+id/tv_vibration1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="textCapWords"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

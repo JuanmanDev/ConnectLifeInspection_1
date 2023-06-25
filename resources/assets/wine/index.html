@@ -1,0 +1,49 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=apple-mobile-web-app-capable content=yes><meta name=apple-touch-fullscreen content=yes><meta name=format-detection content="telephone=no"><meta name=apple-mobile-web-app-status-bar-style content=black><meta name=msapplication-tap-highlight content=no><meta name=viewport content="initial-scale=1,maximum-scale=1,minimum-scale=1,viewport-fit=cover,user-scalable=no"><title>20221230版本迭代酒柜APP</title><link href=./static/css/app.86dd3a319de23b8137760aaea743f875.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=./static/js/manifest.3c75f85fc4257522681a.js></script><script type=text/javascript src=./static/js/vendor.6b31119a4a036bc50fa8.js></script><script type=text/javascript src=./static/js/app.a45fae69e1fe4e2d5f08.js></script></body><style src=@/style/main.css></style><style>body {
+      padding-top: constant(safe-area-inset-top);
+      padding-left: constant(safe-area-inset-left);
+      padding-right: constant(safe-area-inset-right);
+      padding-bottom: constant(safe-area-inset-bottom);
+    }
+    *{
+      word-wrap: break-word !important;  /* 只对英文起作用，根据单词换行 */
+      /* font-family: "ProximaNova-Extrabld"; 全局用到的字体 */
+    }
+    #app .van-switch {
+      width: 51px;
+      height: 26px;
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      -ms-border-radius: 15px;
+      -o-border-radius: 15px;
+      border-radius: 40px;
+      border: 2px solid #000;
+    }
+    #app .van-switch__node {
+      top: 0;
+      left: 0px;
+      width: 30px;
+      height: 26px;
+      /* border:2px solid black; */
+
+      border-right: 2px solid black;
+      border-bottom:0px solid black;
+      border-left: 0px solid black;
+      border-top:0px solid black;
+    }
+    #app .van-switch--on .van-switch__node {
+      -webkit-transform: translateX(23px);
+      transform: translateX(23px);
+    }
+
+    /* 解决时间选择器及相关的 滑动选值时样式错乱 (数值不在框中) 也会导致选值有误*/
+    #app .van-picker-column__item{
+      height: 44px !important;
+    }
+  /* 去掉蒙层的黑色 变成透明 */
+  .van-overlay{
+    background-color: rgba(0,0,0,0.3) !important;
+  }
+  /* 底部弹窗 位置 */
+  .van-toast--bottom{
+    bottom: 2% !important;
+  }</style></html>

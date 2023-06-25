@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/top_bar_app"/>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_wine_type" android:paddingTop="@dimen/margin_44" android:paddingBottom="@dimen/margin_36" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/margin_32">
+            <TextView android:id="@+id/text_type_title" android:text="@string/type" android:fontFamily="@font/proximanova_extrabold" style="@style/style_wine_filter_title"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_add_wine_type" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/text_region_title" android:layout_marginTop="@dimen/margin_32" android:text="@string/regions" android:fontFamily="@font/proximanova_extrabold" style="@style/style_wine_filter_title"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_24" android:layout_marginEnd="@dimen/margin_32">
+                <TextView android:id="@+id/text_region" android:layout_width="wrap_content" android:text="@string/all_device" android:fontFamily="@font/proximanova_regular" style="@style/style_wine_filter_type_title"/>
+                <com.hisense.connect_life.core.widget.IconFontView android:textSize="@dimen/text_size_12" android:gravity="center" android:layout_width="30dp" android:layout_height="30dp" android:text="@string/btn_main_unfold_down" android:layout_alignParentRight="true" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <TextView android:id="@+id/text_country_title" android:layout_marginTop="@dimen/margin_32" android:text="@string/countries" android:fontFamily="@font/proximanova_extrabold" style="@style/style_wine_filter_title"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_24" android:layout_marginEnd="@dimen/margin_32">
+                <TextView android:id="@+id/text_country" android:layout_width="match_parent" android:text="@string/all_device" android:fontFamily="@font/proximanova_regular" style="@style/style_wine_filter_type_title"/>
+                <com.hisense.connect_life.core.widget.IconFontView android:textSize="@dimen/text_size_12" android:gravity="center" android:layout_width="30dp" android:layout_height="30dp" android:text="@string/btn_main_unfold_down" android:layout_alignParentRight="true" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <TextView android:id="@+id/text_grapes_title" android:layout_marginTop="@dimen/margin_32" android:text="@string/grape" android:fontFamily="@font/proximanova_extrabold" style="@style/style_wine_filter_title"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_24" android:layout_marginEnd="@dimen/margin_32">
+                <TextView android:id="@+id/text_grapes" android:layout_width="match_parent" android:text="@string/all_device" android:fontFamily="@font/proximanova_regular" style="@style/style_wine_filter_type_title"/>
+                <com.hisense.connect_life.core.widget.IconFontView android:textSize="@dimen/text_size_12" android:gravity="center" android:layout_width="30dp" android:layout_height="30dp" android:text="@string/btn_main_unfold_down" android:layout_alignParentRight="true" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <TextView android:id="@+id/text_vintage_d_title" android:layout_marginTop="@dimen/margin_32" android:text="@string/vintage_d" android:fontFamily="@font/proximanova_extrabold" style="@style/style_wine_filter_title"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_24" android:layout_marginEnd="@dimen/margin_32">
+                <TextView android:id="@+id/text_vintage" android:layout_width="match_parent" android:text="@string/select_vintage" android:fontFamily="@font/proximanova_regular" style="@style/style_wine_filter_type_title"/>
+                <com.hisense.connect_life.core.widget.IconFontView android:textSize="@dimen/text_size_12" android:gravity="center" android:layout_width="30dp" android:layout_height="30dp" android:text="@string/btn_main_unfold_down" android:layout_alignParentRight="true" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <TextView android:id="@+id/text_best_to_serve_title" android:layout_marginTop="@dimen/margin_38" android:text="@string/best_drink_date_uppercase" android:fontFamily="@font/proximanova_extrabold" style="@style/style_wine_filter_title"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_24" android:layout_marginEnd="@dimen/margin_32">
+                <TextView android:id="@+id/text_best_to_serve" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/select_date" android:fontFamily="@font/proximanova_regular" style="@style/style_wine_filter_type_title"/>
+                <com.hisense.connect_life.core.widget.IconFontView android:textSize="@dimen/text_size_12" android:gravity="center" android:layout_width="30dp" android:layout_height="30dp" android:text="@string/btn_main_unfold_down" android:layout_alignParentRight="true" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <TextView android:id="@+id/text_other_title" android:layout_marginTop="@dimen/margin_38" android:text="@string/favourites" android:fontFamily="@font/proximanova_extrabold" style="@style/style_wine_filter_title"/>
+            <RelativeLayout android:id="@+id/layout_other" android:layout_marginTop="@dimen/margin_32" style="@style/style_wine_filter_type_layout">
+                <TextView android:text="@string/show_only_favourite" android:fontFamily="@font/proximanova_medium" style="@style/style_wine_filter_type_title"/>
+                <com.hisense.connect_life.core.widget.IconFontView android:textSize="@dimen/text_size_32" android:id="@+id/icon_only_favorite" android:text="@string/btn_switch_off" style="@style/style_wine_filter_type_icon"/>
+            </RelativeLayout>
+            <TextView android:id="@+id/text_wine_cooler_select_title" android:layout_marginTop="@dimen/margin_38" android:text="@string/wine_coolers" android:fontFamily="@font/proximanova_extrabold" style="@style/style_wine_filter_title"/>
+            <TextView android:id="@+id/text_wine_cooler_select" android:layout_width="match_parent" android:layout_marginTop="@dimen/margin_24" android:text="@string/all_device" android:fontFamily="@font/proximanova_regular" android:layout_marginEnd="@dimen/margin_32" style="@style/style_wine_filter_type_title"/>
+            <View android:background="@color/colorText_c4" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/margin_38" android:layout_marginEnd="@dimen/margin_32"/>
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10" android:text="@string/show_wine_tips" android:fontFamily="@font/proximanova_medium"/>
+            <RelativeLayout android:id="@+id/layout_is_in_inventory" android:layout_marginTop="@dimen/margin_26" style="@style/style_wine_filter_type_layout">
+                <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/colorBlack" android:ellipsize="end" android:gravity="left" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_8" android:layout_marginRight="3dp" android:layout_marginBottom="@dimen/margin_8" android:text="@string/show_only_unplaced" android:singleLine="true" android:layout_toLeftOf="@+id/icon_is_in_inventory" android:layout_centerVertical="true" android:fontFamily="@font/proximanova_medium"/>
+                <com.hisense.connect_life.core.widget.IconFontView android:textSize="@dimen/text_size_32" android:id="@+id/icon_is_in_inventory" android:text="@string/btn_switch_off" style="@style/style_wine_filter_type_icon"/>
+            </RelativeLayout>
+            <View android:background="@color/colorText_c4" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/margin_38" android:layout_marginEnd="@dimen/margin_32"/>
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10" android:text="@string/show_wine_tip" android:fontFamily="@font/proximanova_medium"/>
+            <RelativeLayout android:id="@+id/layout_show_deleted_items" android:layout_marginTop="@dimen/margin_26" style="@style/style_wine_filter_type_layout">
+                <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/colorBlack" android:ellipsize="end" android:gravity="left" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_8" android:layout_marginRight="3dp" android:layout_marginBottom="@dimen/margin_8" android:text="@string/show_only_removed" android:singleLine="true" android:layout_toLeftOf="@+id/icon_show_deleted_items" android:layout_centerVertical="true" android:fontFamily="@font/proximanova_medium"/>
+                <com.hisense.connect_life.core.widget.IconFontView android:textSize="@dimen/text_size_32" android:textColor="@color/colorBlack" android:id="@+id/icon_show_deleted_items" android:text="@string/btn_switch_off" style="@style/style_wine_filter_type_icon"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <androidx.cardview.widget.CardView android:layout_gravity="bottom" android:id="@+id/filter_results_cv" android:layout_width="match_parent" android:layout_height="@dimen/margin_76" app:cardBackgroundColor="@color/colorWhite" app:cardElevation="@dimen/margin_16">
+        <View android:background="@color/colorBackground_e" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <TextView android:textSize="@dimen/text_size_14" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:layout_gravity="center" android:id="@+id/text_filter_results" android:background="@drawable/button_circle_solid" android:paddingTop="@dimen/margin_10" android:paddingBottom="@dimen/margin_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filter_results" android:paddingStart="@dimen/margin_16" android:paddingEnd="@dimen/margin_16"/>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

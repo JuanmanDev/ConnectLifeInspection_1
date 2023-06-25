@@ -1,0 +1,31 @@
+package com.juconnect.connectlife.ju_ble;
+
+import com.clj.fastble.callback.BleRssiCallback;
+import com.clj.fastble.exception.BleException;
+import com.juconnect.connectlife.ju_ble.BleDeviceManager;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
+
+@Metadata(mo47990d1 = {"\u0000\u001f\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\u0010\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\u0016J\u0010\u0010\u0006\u001a\u00020\u00032\u0006\u0010\u0007\u001a\u00020\bH\u0016¨\u0006\t"}, mo47991d2 = {"com/juconnect/connectlife/ju_ble/BleDeviceManager$getRSSI$1", "Lcom/clj/fastble/callback/BleRssiCallback;", "onRssiFailure", "", "exception", "Lcom/clj/fastble/exception/BleException;", "onRssiSuccess", "rssi", "", "ju_ble_release"}, mo47992k = 1, mo47993mv = {1, 6, 0}, mo47995xi = 48)
+/* compiled from: BleDeviceManager.kt */
+public final class BleDeviceManager$getRSSI$1 extends BleRssiCallback {
+    public void onRssiFailure(@NotNull BleException bleException) {
+        Intrinsics.checkNotNullParameter(bleException, "exception");
+        BleDeviceManager.INSTANCE.getTAG();
+        "获取信号强度失败： code = " + bleException.getCode() + " ,desc = " + bleException.getDescription();
+        if (BleDeviceManager.INSTANCE.getMBleCallback() != null) {
+            BleDeviceManager.BleDeviceConnectCallBack mBleCallback = BleDeviceManager.INSTANCE.getMBleCallback();
+            Intrinsics.checkNotNull(mBleCallback);
+            mBleCallback.getRSSI(-1);
+        }
+    }
+
+    public void onRssiSuccess(int i) {
+        if (BleDeviceManager.INSTANCE.getMBleCallback() != null) {
+            BleDeviceManager.BleDeviceConnectCallBack mBleCallback = BleDeviceManager.INSTANCE.getMBleCallback();
+            Intrinsics.checkNotNull(mBleCallback);
+            mBleCallback.getRSSI(i);
+        }
+    }
+}

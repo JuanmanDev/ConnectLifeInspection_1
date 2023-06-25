@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/container" android:background="@color/colorBackground_e" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_more" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_20" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="36dp" android:layout_marginBottom="16dp" android:text="@string/more_main_menu" android:layout_marginStart="@dimen/margin_32"/>
+            <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_appliance_manager" android:layout_width="match_parent" android:layout_height="64dp">
+                <com.hisense.connect_life.core.widget.IconFontView android:textSize="@dimen/text_size_32" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icon_dashboard_app_manager" android:layout_marginStart="@dimen/margin_32"/>
+                <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more_appliance_manager" android:layout_marginStart="@dimen/margin_16" android:letterSpacing="@dimen/more_letter_spacing"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_firmware_update" android:visibility="visible" android:layout_width="match_parent" android:layout_height="64dp">
+                <com.hisense.connect_life.core.widget.IconFontView android:textSize="@dimen/text_size_32" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icon_dashboard_app_manager" android:layout_marginStart="@dimen/margin_32"/>
+                <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/firmware_update" android:layout_marginStart="@dimen/margin_16" android:letterSpacing="@dimen/more_letter_spacing"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/text_size_20" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="36dp" android:layout_marginBottom="16dp" android:text="@string/preferences" android:layout_marginStart="@dimen/margin_32"/>
+            <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_user_profile" android:layout_width="match_parent" android:layout_height="64dp">
+                <com.hisense.connect_life.core.widget.IconFontView android:textSize="@dimen/text_size_22" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icon_dashboard_user_profile" android:layout_marginStart="@dimen/margin_32"/>
+                <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/colorBlack" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/user_profile" android:layout_weight="1" android:layout_marginStart="@dimen/margin_16" android:letterSpacing="@dimen/more_letter_spacing"/>
+                <com.hisense.connect_life.core.widget.IconFontView android:textSize="@dimen/text_size_12" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btn_main_unfold_right" android:layout_marginEnd="@dimen/margin_32"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_application_settings" android:layout_width="match_parent" android:layout_height="64dp">
+                <com.hisense.connect_life.core.widget.IconFontView android:textSize="@dimen/text_size_22" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icon_dashboard_app_settings" android:layout_marginStart="@dimen/margin_32"/>
+                <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/colorBlack" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/application_settings" android:layout_weight="1" android:layout_marginStart="@dimen/margin_16" android:letterSpacing="@dimen/more_letter_spacing"/>
+                <com.hisense.connect_life.core.widget.IconFontView android:textSize="@dimen/text_size_12" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btn_main_unfold_right" android:layout_marginEnd="@dimen/margin_32"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_log_out" android:layout_width="match_parent" android:layout_height="64dp">
+                <com.hisense.connect_life.core.widget.IconFontView android:textSize="@dimen/text_size_18" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icon_dashboard_logout" android:layout_marginStart="@dimen/margin_32"/>
+                <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/colorLogout" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/logout" android:layout_weight="1" android:layout_marginStart="@dimen/margin_16" android:letterSpacing="@dimen/more_letter_spacing"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_delete" android:visibility="gone" android:layout_width="match_parent" android:layout_height="64dp">
+                <com.hisense.connect_life.core.widget.IconFontView android:textSize="@dimen/text_size_18" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icon_dashboard_logout" android:layout_marginStart="@dimen/margin_32"/>
+                <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/colorLogout" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/delete" android:layout_weight="1" android:layout_marginStart="@dimen/margin_16" android:letterSpacing="@dimen/more_letter_spacing"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/appliance_manager" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/text_size_20" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_18" android:layout_marginBottom="@dimen/margin_40" android:text="@string/connected_apoliances" android:layout_marginStart="@dimen/margin_16"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_appliance_manager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

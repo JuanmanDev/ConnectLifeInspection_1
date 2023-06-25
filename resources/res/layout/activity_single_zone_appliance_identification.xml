@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/colorStatus" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/top" layout="@layout/top_bar_device"/>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/margin_52" android:layout_below="@+id/top">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/text_size_20" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="@string/appliance_identification" android:layout_marginStart="@dimen/margin_32"/>
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/colorBlack" android:layout_width="312dp" android:layout_height="48dp" android:layout_marginTop="@dimen/margin_40" android:text="@string/enter_your_home_network" android:layout_marginStart="@dimen/margin_32"/>
+            <TextView android:textSize="@dimen/text_size_16" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_30" android:text="@string/wifi_name" android:layout_marginStart="@dimen/margin_32"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/shape_rect_bg" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="6dp" android:layout_marginStart="@dimen/margin_16" android:layout_marginEnd="@dimen/margin_16">
+                <TextView android:textSize="@dimen/text_size_20" android:textStyle="bold" android:textColor="@color/colorBlack" android:gravity="center_vertical" android:id="@+id/et_connection_setup_wifi_name" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_marginStart="@dimen/margin_16"/>
+                <ImageView android:id="@+id/iv_connection_setup_wifi_name" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginRight="20dp" android:src="@drawable/icon_general_24_dropdown"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/linear_wifi_type" android:background="@drawable/shape_rect_bg" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="@dimen/margin_10" android:layout_marginStart="@dimen/margin_16" android:layout_marginEnd="@dimen/margin_16">
+                <TextView android:textSize="@dimen/text_size_20" android:textStyle="bold" android:textColor="@color/colorBlack" android:gravity="center_vertical" android:id="@+id/et_connection_setup_wifi_type" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_marginStart="@dimen/margin_16"/>
+                <ImageView android:id="@+id/iv_connection_setup_wifi_type" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginRight="20dp" android:src="@drawable/icon_general_24_dropdown"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/psw_linear" android:background="@drawable/shape_rect_bg" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="@dimen/margin_10" android:layout_marginStart="@dimen/margin_16" android:layout_marginEnd="@dimen/margin_16">
+                <EditText android:textSize="@dimen/text_size_20" android:id="@+id/et_home_wifi_passwd" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Enter WiFi password" android:layout_marginStart="@dimen/margin_16"/>
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/lv_wifi_ssid" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginStart="@dimen/margin_32"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="@dimen/margin_52" android:layout_alignParentBottom="true">
+        <Button android:textSize="@dimen/text_size_14" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:layout_gravity="bottom" android:id="@+id/bt_single_zone_connect_setup_connect" android:background="@drawable/button_circle_solid" android:layout_width="match_parent" android:layout_height="@dimen/margin_52" android:text="@string/connect"/>
+    </LinearLayout>
+</RelativeLayout>

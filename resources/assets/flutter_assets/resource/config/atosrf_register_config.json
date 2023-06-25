@@ -1,0 +1,93 @@
+{
+  "applianceInfo": {
+    "typeCode": "024",
+    "typeName": "atosRf_type",
+    "isGorenje": true
+  },
+  "logo": {
+    "icon": "0xe854",
+    "fontFamily": "ConnectLifeAtosRF"
+  },
+  "logoBold": {
+    "icon": "0xe8a3",
+    "fontFamily": "ConnectLifeAtosRF"
+  },
+  "softAp": {
+    "type": "1",
+    "resource": [
+      {
+        "title": "step",
+        "content": "cooling_config_wifi_step1",
+        "content_pair": "cooling_config_wifi_step1_pair",
+        "path": "resource/images/atos_pair_page/instructions_cooling_step_1.png",
+        "pair_path": "resource/images/atos_pair_page/instructions_cooling_step_1.png"
+      },{
+        "title": "step",
+        "content": "cooling_config_wifi_step2",
+        "content_pair": "cooling_config_wifi_step2_pair",
+        "path": "resource/images/atos_pair_page/instructions_cooling_step_2.png",
+        "pair_path": "resource/images/atos_pair_page/instructions_cooling_step_2_pair.png"
+      },{
+        "title": "step",
+        "content": "cooling_config_wifi_step3",
+        "content_pair": "",
+        "path": "resource/images/atos_pair_page/instructions_cooling_step_3.png",
+        "pair_path": ""
+      }
+    ]
+  },
+  "applianceTile": {
+    "convertType": "rf",
+    "icon": {
+      "icon": "0xe7e7",
+      "fontFamily": "ConnectLifeFont"
+    },
+    "style": "rf",
+    "properties": [
+      {
+        "propertyKey": "Refrigerator_temperature",
+        "type": "3",
+        "unitPropertyKey": "Refrigerator_temperature_unit",
+        "prefix": "",
+        "suffix": ""
+      },
+      {
+        "propertyKey": "Freezer_temperature",
+        "type": "3",
+        "unitPropertyKey": "Freezer_temperature_unit",
+        "prefix": "",
+        "suffix": ""
+      }
+    ]
+  },
+  "scene": {
+    "isSupport": 1
+  },
+  "options": {
+    "Refrigerator_temperature_unit": [
+      {
+        "value": 2031,
+        "des": "°C",
+        "title": "°C"
+      },
+      {
+        "value": 2032,
+        "des": "°F",
+        "title": "°F"
+      }
+    ],
+    "Freezer_temperature_unit": [
+      {
+        "value": 2031,
+        "des": "°C",
+        "title": "°C"
+      },
+      {
+        "value": 2032,
+        "des": "°F",
+        "title": "°F"
+      }
+    ]
+  },
+  "appliancePreference": "type_5"
+}

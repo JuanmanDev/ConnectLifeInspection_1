@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/account_top_bar"/>
+    <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.hisense.connect_life.app_account.widget.ExtraWebView android:id="@+id/local_webView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="60dp"/>
+        <androidx.cardview.widget.CardView android:id="@+id/card_down" android:visibility="gone" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginBottom="100dp" android:layout_alignParentBottom="true" android:layout_marginEnd="30dp" android:layout_alignParentEnd="true" app:cardBackgroundColor="@color/white" app:cardCornerRadius="5dp" app:cardElevation="3dp">
+            <ImageView android:id="@+id/iv_down" android:padding="8dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_icon_general_24_drop_down" android:contentDescription="@string/app_name"/>
+        </androidx.cardview.widget.CardView>
+        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:id="@+id/tv_agree" android:background="@drawable/button_circle_blue" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/margin_48" android:layout_marginBottom="30dp" android:text="@string/agree" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/margin_32" android:layout_marginEnd="@dimen/margin_32"/>
+    </RelativeLayout>
+</LinearLayout>

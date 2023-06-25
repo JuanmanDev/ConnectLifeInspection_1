@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/container" android:background="@color/colorBackground_e9" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/account_top_bar"/>
+    <com.hisense.connect_life.core.widget.IconFontView style="@style/icon_splash_logo_style"/>
+    <View android:background="@drawable/shape_top_round_white" android:layout_width="match_parent" android:layout_height="@dimen/margin_16" android:layout_marginTop="@dimen/margin_32"/>
+    <ScrollView android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_marginTop="@dimen/margin_50" android:text="@string/check_your_email" android:layout_marginStart="16dp" style="@style/title_text_style"/>
+            <TextView android:id="@+id/email_reminder" android:layout_marginTop="@dimen/margin_40" android:text="@string/register_verification_tips_edit" android:layout_marginStart="@dimen/margin_16" android:layout_marginEnd="@dimen/margin_16" style="@style/reminder_text_style"/>
+            <TextView android:visibility="gone" android:layout_marginTop="@dimen/margin_14" android:text="@string/register_verification_tips" style="@style/reminder_text_style"/>
+            <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/colorBlack" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_32" android:text="@string/verification_code_up" android:layout_marginStart="@dimen/margin_16"/>
+            <EditText android:id="@+id/edit_verification" android:layout_marginTop="10dp" android:hint="@string/verification_code" android:inputType="textEmailAddress" style="@style/edit_input_style"/>
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/til_verification" app:hintEnabled="false" style="@style/edit_textinput_hint_style"/>
+            <Button android:enabled="true" android:textColor="@color/colorWhite" android:id="@+id/get_verification_code" android:background="@drawable/button_circle_black" android:layout_height="@dimen/margin_44" android:layout_marginLeft="@dimen/margin_16" android:layout_marginTop="@dimen/margin_16" android:layout_marginRight="@dimen/margin_16" android:text="@string/resend_verification_code" style="@style/bottom_btn_style"/>
+        </LinearLayout>
+    </ScrollView>
+    <Button android:id="@+id/next" android:background="@drawable/button_bottom_green_selector" android:text="@string/create_account" style="@style/bottom_btn_match_style"/>
+</LinearLayout>

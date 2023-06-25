@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_44" android:layout_marginRight="@dimen/margin_44">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/sign_g" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <com.hisense.connect_life.core.widget.IconFontView android:textSize="@dimen/margin_65" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icon_logo_google"/>
+        <TextView android:textSize="@dimen/text_size_12" android:textStyle="bold" android:textColor="@color/colorText_4a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_6" android:text="Google"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/sign_f" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <com.hisense.connect_life.core.widget.IconFontView android:textSize="@dimen/margin_65" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icon_logo_facebook"/>
+        <TextView android:textSize="@dimen/text_size_12" android:textStyle="bold" android:textColor="@color/colorText_4a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_6" android:text="Facebook"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/sign_m" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <com.hisense.connect_life.core.widget.IconFontView android:textSize="@dimen/margin_65" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icon_logo_microsoft"/>
+        <TextView android:textSize="@dimen/text_size_12" android:textStyle="bold" android:textColor="@color/colorText_4a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_6" android:text="Microsoft"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/sign_t" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <com.hisense.connect_life.core.widget.IconFontView android:textSize="@dimen/margin_65" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icon_logo_google"/>
+        <TextView android:textSize="@dimen/text_size_12" android:textStyle="bold" android:textColor="@color/colorText_4a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_6" android:text="Twitter"/>
+    </LinearLayout>
+</LinearLayout>

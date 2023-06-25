@@ -1,0 +1,208 @@
+{
+  "comment": "DW-洗碗机",
+  "version": {
+    "des": "Host code软件版本号",
+    "title": "属性的中文名称的多语言key",
+    "property": "version",
+    "combination": null,
+    "extraInfo": {}
+  },
+  "oem_host_version": {
+    "des": "模板版本号",
+    "title": "属性的中文名称的多语言key",
+    "property": "oem_host_version",
+    "combination": null,
+    "extraInfo": {}
+  },
+  "hardware_type": {
+    "des": "硬件设备的类型",
+    "title": "属性的中文名称的多语言key",
+    "property": "hardware_type",
+    "combination": null,
+    "extraInfo": {}
+  },
+  "quick_operation": [
+    {
+      "style": "normal",
+      "des": "washer dishes",
+      "iconType": "0",
+      "isNormal": "1",
+      "type": "0",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "",
+      "icon":{
+        "icon": "0xe833",
+        "fontFamily": "ConnectLifeWasher"
+      },
+      "title": "washed_dishes",
+      "property": "washed_dishes",
+      "combination": null,
+      "extraInfo": {}
+    },
+    {
+      "style": "normal",
+      "des": "tip sand tricks ",
+      "iconType": "0",
+      "isNormal": "1",
+      "type": "0",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "",
+      "icon":{
+        "icon": "0xe7cf",
+        "fontFamily": "ConnectLifeWasher"
+      },
+      "title": "tips_and_tricks",
+      "property": "tips_and_tricks",
+      "combination": null,
+      "extraInfo": {}
+    },
+    {
+      "style": "normal",
+      "des": "手动设置",
+      "iconType": "0",
+      "isNormal": "1",
+      "type": "0",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "",
+      "icon":{
+        "icon": "0xe821",
+        "fontFamily": "ConnectLifeWasher"
+      },
+      "title": "manual_set",
+      "property": "manual_set",
+      "combination": null,
+      "extraInfo": {}
+    },
+    {
+      "style": "switch",
+      "des": "儿童模式",
+      "iconType": "0",
+      "isNormal": "1",
+      "type": "0",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "",
+      "icon":{
+        "icon": "0xe824",
+        "fontFamily": "ConnectLifeWasher"
+      },
+      "title": "child_lock",
+      "property": "Child_lock",
+      "combination": null,
+      "extraInfo": {}
+    },
+
+    {
+      "style": "normal",
+      "des": "program_name",
+      "iconType": "0",
+      "isNormal": "1",
+      "type": "0",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "",
+      "icon":{
+        "icon": "0xe82f",
+        "fontFamily": "ConnectLifeWasher"
+      },
+      "title": "program_name",
+      "property": "Selected_program_id",
+      "combination": null,
+      "extraInfo": {}
+    },
+    {
+      "style": "normal",
+      "des": "program_mode",
+      "iconType": "0",
+      "isNormal": "1",
+      "type": "0",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "",
+      "icon":{
+        "icon": "0xe82f",
+        "fontFamily": "ConnectLifeWasher"
+      },
+      "title": "program_mode",
+      "property": "Program_mode",
+      "combination": null,
+      "extraInfo": {}
+    },
+    {
+      "style": "switch",
+      "des": "extra_dry",
+      "iconType": "0",
+      "isNormal": "1",
+      "type": "0",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "",
+      "icon":{
+        "icon": "0xe830",
+        "fontFamily": "ConnectLifeWasher"
+      },
+      "title": "extra_dry",
+      "property": "Extra_drying_function",
+      "combination": null,
+      "extraInfo": {}
+    },
+    {
+      "style": "switch",
+      "des": "auto_door_opening",
+      "iconType": "0",
+      "isNormal": "1",
+      "type": "0",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "",
+      "icon":{
+        "icon": "0xe863",
+        "fontFamily": "ConnectLifeWasher"
+      },
+      "title": "auto_door_opening",
+      "property": "Selected_program_auto_door_open_function",
+      "combination": null,
+      "extraInfo": {}
+    },
+    {
+      "style": "normal",
+      "des": "duration",
+      "iconType": "0",
+      "isNormal": "1",
+      "type": "0",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "",
+      "icon":{
+        "icon": "0xe82f",
+        "fontFamily": "ConnectLifeWasher"
+      },
+      "title": "duration",
+      "property": "Time_program_set_duration",
+      "combination": null,
+      "extraInfo": {}
+    },
+
+    {
+      "style": "normal",
+      "des": "start_time",
+      "iconType": "0",
+      "isNormal": "1",
+      "type": "0",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "",
+      "icon":{
+        "icon": "0xe832",
+        "fontFamily": "ConnectLifeWasher"
+      },
+      "title": "start_time",
+      "property": "Delay_start_time",
+      "combination": null,
+      "extraInfo": {}
+    }
+  ]
+}

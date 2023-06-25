@@ -1,0 +1,621 @@
+{
+  "supportAppliance": [
+    "001",
+    "003",
+    "004",
+    "006",
+    "007",
+    "008",
+    "009",
+    "010",
+    "012",
+    "020",
+    "021",
+    "011",
+    "022",
+    "023",
+    "024",
+    "013",
+    "015",
+    "016",
+    "026",
+    "025",
+    "031",
+    "030",
+    "027",
+    "032"
+  ],
+  "airDevices": [
+    "006",
+    "007",
+    "008",
+    "009",
+    "016"
+  ],
+  "addApplianceEntry": [
+    {
+      "typeName": "add_appliance_3_zone_wine_climate_cabinet",
+      "desc": "3 Zone Wine Climate Cabinet",
+      "devType": "",
+      "typeCode": "001",
+      "isDirect": false,
+      "logo": {
+        "icon": "0xe8c8",
+        "fontFamily": "ConnectLifeFont1210"
+      }
+    },
+    {
+      "typeName": "add_appliance_1_zone_wine_climate_cabinet",
+      "desc": "1 Zone Wine Climate Cabinet",
+      "devType": "",
+      "typeCode": "",
+      "isDirect": false,
+      "logo": {
+        "icon": "0xeadf",
+        "fontFamily": "ConnectLifeFont1210"
+      }
+    },
+    {
+      "typeName": "add_appliance_under_counter_wine_climate_cabinet",
+      "desc": "Under Counter Wine Climate Cabinet",
+      "devType": "",
+      "typeCode": "",
+      "isDirect": false,
+      "logo": {
+        "icon": "0xeae0",
+        "fontFamily": "ConnectLifeFont1210"
+      }
+    },
+    {
+      "typeName": "ac_separated_air_conditioner",
+      "desc": "Split air conditioner",
+      "devType": "1",
+      "typeCode": "009",
+      "isDirect": true,
+      "logo": {
+        "icon": "0xe7c3",
+        "fontFamily": "ConnectLifeAirConditionerFont"
+      }
+    },
+    {
+      "typeName": "ac_commercial_air_conditioner",
+      "desc": "Commercial air conditioner",
+      "devType": "100",
+      "typeCode": "009",
+      "isDirect": true,
+      "logo": {
+        "icon": "0xe7c3",
+        "fontFamily": "ConnectLifeAirConditionerFont"
+      }
+    },
+    {
+      "typeName": "ac_mobile_air_conditioner",
+      "desc": "Portable air conditioner",
+      "typeCode": "006",
+      "devType": "54",
+      "isDirect": true,
+      "logo": {
+        "icon": "0xe7c5",
+        "fontFamily": "ConnectLifeAirConditionerFont"
+      }
+    },
+    {
+      "typeName": "ac_window_machine",
+      "desc": "Window air conditioner",
+      "typeCode": "008",
+      "devType": "55",
+      "isDirect": true,
+      "logo": {
+        "icon": "0xe7c4",
+        "fontFamily": "ConnectLifeAirConditionerFont"
+      }
+    },
+    {
+      "typeName": "ac_dehumidifier",
+      "desc": "Dehumidifier",
+      "devType": "21",
+      "typeCode": "007",
+      "isDirect": true,
+      "logo": {
+        "icon": "0xe7c6",
+        "fontFamily": "ConnectLifeAirConditionerFont"
+      }
+    },
+    {
+      "typeName": "heat_pump",
+      "desc": "热泵热水器",
+      "devType": "80",
+      "typeCode": "016",
+      "isDirect": true,
+      "logo": {
+        "icon": "0xE605",
+        "fontFamily": "ConnectLifePumpFont"
+      }
+    },
+    {
+      "typeName": "oven",
+      "desc": "Oven",
+      "devType": "",
+      "typeCode": "",
+      "isDirect": false,
+      "logo": {
+        "icon": "0xe838",
+        "fontFamily": "ConnectLifeAllFont"
+      }
+    },
+    {
+      "typeName": "hood",
+      "desc": "Hood",
+      "devType": "",
+      "typeCode": "",
+      "isDirect": false,
+      "logo": {
+        "icon": "0xe843",
+        "fontFamily": "ConnectLifeAllFont"
+      }
+    },
+    {
+      "typeName": "hob",
+      "desc": "Hob",
+      "devType": "",
+      "typeCode": "",
+      "isDirect": false,
+      "logo": {
+        "icon": "0xe7ae",
+        "fontFamily": "ConnectLifeAllFont"
+      }
+    },
+    {
+      "typeName": "dishwasher_type",
+      "desc": "Dishwasher",
+      "devType": "",
+      "typeCode": "",
+      "isDirect": false,
+      "logo": {
+        "icon": "0xe81e",
+        "fontFamily": "ConnectLifeAllFont"
+      }
+    },
+    {
+      "typeName": "atosRf_type",
+      "desc": "Refrigerator",
+      "devType": "",
+      "typeCode": "",
+      "isDirect": false,
+      "logo": {
+        "icon": "0xe850",
+        "fontFamily": "ConnectLifeAllFont"
+      }
+    },
+    {
+      "typeName": "washing_type",
+      "desc": "Washing Machine",
+      "devType": "",
+      "typeCode": "",
+      "isDirect": false,
+      "logo": {
+        "icon": "0xe7e7",
+        "fontFamily": "ConnectLifeAllFont"
+      }
+    },
+    {
+      "typeName": "tumble_dryer",
+      "desc": "Tumble dryer",
+      "devType": "",
+      "typeCode": "",
+      "isDirect": false,
+      "logo": {
+        "icon": "0xe964",
+        "fontFamily": "ConnectLifeAllFont"
+      }
+    },
+    {
+      "typeName": "pro_series",
+      "desc": "PRO Series",
+      "devType": "",
+      "typeCode": "",
+      "isDirect": false,
+      "logo": {
+        "icon": "0xe7e7",
+        "fontFamily": "ConnectLifeAllFont"
+      }
+    }
+  ],
+  "softSupport": [
+    {
+      "groupKey": "paring_air_treatment",
+      "groupDesc": "Air treatment",
+      "support": [
+        {
+          "typeName": "ac_separated_air_conditioner",
+          "desc": "ac_separated_air_conditioner",
+          "devType": "1",
+          "typeCode": "009",
+          "isDirect": true,
+          "logo": {
+            "icon": "0xe7c3",
+            "fontFamily": "ConnectLifeAirConditionerFont"
+          }
+        },
+        {
+          "typeName": "ac_commercial_air_conditioner",
+          "desc": "ac_commercial_air_conditioner",
+          "devType": "100",
+          "typeCode": "009",
+          "isDirect": true,
+          "logo": {
+            "icon": "0xe7c3",
+            "fontFamily": "ConnectLifeAirConditionerFont"
+          }
+        },
+        {
+          "typeName": "ac_mobile_air_conditioner",
+          "desc": "ac_mobile_air_conditioner",
+          "typeCode": "006",
+          "devType": "54",
+          "isDirect": true,
+          "logo": {
+            "icon": "0xe7c5",
+            "fontFamily": "ConnectLifeAirConditionerFont"
+          }
+        },
+        {
+          "typeName": "ac_window_machine",
+          "desc": "ac_window_machine",
+          "typeCode": "008",
+          "devType": "55",
+          "isDirect": true,
+          "logo": {
+            "icon": "0xe7c4",
+            "fontFamily": "ConnectLifeAirConditionerFont"
+          }
+        },
+        {
+          "typeName": "ac_dehumidifier",
+          "desc": "ac_dehumidifier",
+          "devType": "21",
+          "typeCode": "007",
+          "isDirect": true,
+          "logo": {
+            "icon": "0xe7c6",
+            "fontFamily": "ConnectLifeAirConditionerFont"
+          }
+        }
+      ]
+    },
+    {
+      "groupKey": "paring_home_appliances",
+      "groupDesc": "Home appliances",
+      "support": [
+        {
+          "typeName": "pind_type",
+          "desc": "pind_type",
+          "devType": "6",
+          "typeCode": "010",
+          "isDirect": false,
+          "logo": {
+            "icon": "0xe7d4",
+            "fontFamily": "ConnectLifeFont"
+          }
+        },
+        {
+          "typeName": "cooler_type",
+          "desc": "cooler_type",
+          "devType": "27",
+          "typeCode": "001",
+          "isDirect": false,
+          "logo": {
+            "icon": "0xe7c0",
+            "fontFamily": "ConnectLifeOvenAtagFont"
+          }
+        },
+        {
+          "typeName": "pind_type",
+          "desc": "pind_type",
+          "devType": "6",
+          "typeCode": "020",
+          "isDirect": false,
+          "logo": {
+            "icon": "0xe7d4",
+            "fontFamily": "ConnectLifeFont"
+          }
+        },
+        {
+          "typeName": "tumble_dryer",
+          "desc": "tumble_dryer",
+          "devType": "8",
+          "typeCode": "030",
+          "isDirect": false,
+          "logo": {
+            "icon": "0xe976",
+            "fontFamily": "CLFont"
+          }
+        },
+        {
+          "typeName": "washing_type",
+          "desc": "washing_type",
+          "devType": "9",
+          "typeCode": "025",
+          "isDirect": false,
+          "logo": {
+            "icon": "0xe7e7",
+            "fontFamily": "ConnectLifeAllFont"
+          }
+        },
+        {
+          "typeName": "oven",
+          "desc": "oven",
+          "devType": "6",
+          "typeCode": "013",
+          "isDirect": false,
+          "logo": {
+            "icon": "0xe838",
+            "fontFamily": "ConnectLifeAllFont"
+          }
+        },
+        {
+          "typeName": "dishwasher_type",
+          "desc": "dishwasher_type",
+          "devType": "7",
+          "typeCode": "022",
+          "isDirect": false,
+          "logo": {
+            "icon": "0xe81e",
+            "fontFamily": "ConnectLifeAllFont"
+          }
+        }
+      ]
+    },
+    {
+      "groupKey": "paring_pro_series",
+      "groupDesc": "Pro series",
+      "support": [
+        {
+          "typeName": "washing_type",
+          "desc": "washing_type",
+          "typeCode": "003",
+          "devType": "9",
+          "isDirect": false,
+          "logo": {
+            "icon": "0xe7e7",
+            "fontFamily": "ConnectLifeAllFont"
+          }
+        },
+        {
+          "typeName": "drayer_type",
+          "desc": "drayer_type",
+          "devType": "8",
+          "typeCode": "004",
+          "isDirect": false,
+          "logo": {
+            "icon": "0xe82c",
+            "fontFamily": "ConnectLifeFont"
+          }
+        },
+        {
+          "typeName": "combi600_type",
+          "desc": "combi600_type",
+          "devType": "2",
+          "typeCode": "011",
+          "isDirect": false,
+          "logo": {
+            "icon": "0xe7b8",
+            "fontFamily": "ConnectLifeAllFont"
+          }
+        },
+        {
+          "typeName": "washer_atag_type",
+          "desc": "washer_atag_type",
+          "devType": "3",
+          "typeCode": "015",
+          "isDirect": false,
+          "logo": {
+            "icon": "0xe81e",
+            "fontFamily": "ConnectLifeAllFont"
+          }
+        },
+        {
+          "typeName": "washing_type",
+          "desc": "washing_type",
+          "devType": "9",
+          "typeCode": "027",
+          "isDirect": false,
+          "logo": {
+            "icon": "0xe80b",
+            "fontFamily": "CLFont"
+          }
+        },
+        {
+          "typeName": "tumble_dryer",
+          "desc": "tumble_dryer",
+          "devType": "8",
+          "typeCode": "032",
+          "isDirect": false,
+          "logo": {
+            "icon": "0xe82d",
+            "fontFamily": "CLFont"
+          }
+        },
+        {
+          "typeName": "hood_atag",
+          "desc": "hood_atag",
+          "devType": "35",
+          "typeCode": "012",
+          "isDirect": false,
+          "logo": {
+            "icon": "0xe7e3",
+            "fontFamily": "ConnectLifeAllFont"
+          }
+        },
+        {
+          "typeName": "hood_atag",
+          "desc": "hood_atag",
+          "devType": "35",
+          "typeCode": "013",
+          "isDirect": false,
+          "logo": {
+            "icon": "0xe838",
+            "fontFamily": "ConnectLifeOvenFont"
+          }
+        },
+        {
+          "typeName": "hood_atag",
+          "desc": "hood_atag",
+          "devType": "35",
+          "typeCode": "015",
+          "isDirect": false,
+          "logo": {
+            "icon": "0xe7e3",
+            "fontFamily": "ConnectLifeAllFont"
+          }
+        }
+      ]
+    },
+    {
+      "groupKey": "add_appliance_3_zone_wine_climate_cabinet",
+      "groupDesc": "Home appliances",
+      "support": [
+        {
+          "typeName": "pind_type",
+          "desc": "pind_type",
+          "devType": "6",
+          "typeCode": "010",
+          "isDirect": false,
+          "logo": {
+            "icon": "0xe7d4",
+            "fontFamily": "ConnectLifeFont"
+          }
+        }
+      ]
+    },
+    {
+      "groupKey": "pair_pump_appliance",
+      "groupDesc": "Pump appliances",
+      "support": [
+        {
+          "typeName": "pair_pump_appliance",
+          "desc": "heat_pump",
+          "devType": "80",
+          "typeCode": "016",
+          "isDirect": false,
+          "logo": {
+            "icon": "0xe7d4",
+            "fontFamily": "ConnectLifeFont"
+          }
+        }
+      ]
+    }
+  ],
+  "configPath": {
+    "001": "wine_cooler_register_config",
+    "WINE-COOLER-1Z": "wine_cooler_register_config",
+    "WINE-COOLER-2Z": "wine_cooler2zone_register_config",
+    "WINE-COOLER-WC60-1Z": "wine_cooler_register_config",
+    "WINE-COOLER-WC60-2Z": "wine_cooler2zone_register_config",
+    "WINE-COOLER-WC70-1Z": "wine_cooler_register_config",
+    "003": "washing_machine_register_config",
+    "004": "drayer_machine_register_config",
+    "006": "mobile_air_conditioner_appliance_register_config",
+    "007": "dehumidifier_air_conditioner_appliance_register_config",
+    "008": "window_air_conditioner_appliance_register_config",
+    "009": "separated_air_conditioner_appliance_register_config",
+    "010": "pind_register_config",
+    "012": "hood_atag_register_config",
+    "012": "hood_atag_lightfeedback_register_config",
+    "012": "hood_atag_tactile_register_config",
+    "012": "hood_atag_capactive_register_config",
+    "020": "hob_register_config",
+    "021": "hood_register_config",
+    "011": "combi600_register_config",
+    "022": "dishwasher_register_config",
+    "023": "oven_register_config",
+    "024": "atosrf_register_config",
+    "026": "hisenserf_register_config",
+    "025": "conn_vm_hisense_config",
+    "030": "hisense_dry_config",
+    "013": "oven_atag_register_config",
+    "015": "washer_atag_register_config",
+    "016": "pump_register_config",
+    "031": "wine_cooler_register_config",
+    "027": "washingMachine_atag_register_config",
+    "032": "td22_register_config",
+    "TD-22": "td22_register_config",
+    "TUMBLE-DRYER-SP22": "td22_register_config",
+    "OVEN-BIO21-ICONLEDPLUS": "oven_atag_register_config",
+    "OVEN-BIO21-FULLTOUCH": "oven_atagft_register_config",
+    "OVEN-HI8": "oven_atag_register_config",
+    "OVEN-ASKO CN SMART": "oven_atag14_register_config",
+    "ATAG_OVEN": "oven_atag_register_config",
+    "RANGE-COOKER": "oven_atag_husa_register_config",
+    "ATAG_DISHWASHER": "washer_atag_register_config",
+    "WASHING-MACHINE-WM22": "washingMachine_atag_register_config",
+    "OTHER": "hob_register_config",
+    "HB": "hob_register_config",
+    "OV": "oven_register_config",
+    "OVEN": "oven_register_config",
+    "HOB": "hob_register_config",
+    "WM": "washing_machine_register_config",
+    "WASHING-MACHINE": "washing_machine_register_config",
+    "TD": "drayer_machine_register_config",
+    "TUMBLE-DRYER": "drayer_machine_register_config",
+    "DW": "dishwasher_register_config",
+    "DISHWASHER": "dishwasher_register_config",
+    "RF": "atosrf_register_config.json",
+    "OV_ATOS": "oven_register_config",
+    "OVEN_ATOS": "oven_register_config",
+    "HOB_ATOS": "hob_register_config",
+    "WM_ATOS": "washing_machine_register_config",
+    "WASHING-MACHINE_ATOS": "washing_machine_register_config",
+    "TD_ATOS": "drayer_machine_register_config",
+    "TUMBLE-DRYER_ATOS": "drayer_machine_register_config",
+    "DW_ATOS": "dishwasher_register_config",
+    "DISHWASHER_ATOS": "dishwasher_register_config",
+    "RF_ATOS": "atosrf_register_config.json",
+    "COOLER_ATOS": "atosrf_register_config",
+    "COOLER": "combi600_register_config",
+    "COMBI_ATOS": "atosrf_register_config",
+    "COMBI": "combi600_register_config",
+    "COMBI-FS600": "combi600_register_config",
+    "COMBI-FS600-G34": "combi600_g34_register_config",
+    "COMBI-FS600_ATOS": "combi600_register_config",
+    "WINE-COOLER": "combi600_register_config",
+    "WINE-COMBI": "atosrf_register_config",
+    "FREEZER": "combi600_register_config",
+    "FREEZER-FS600": "combi600_register_config",
+    "FREEZER-FS600_ATOS": "combi600_register_config",
+    "FREEZER_ATOS": "atosrf_register_config",
+    "HD_ATOS": "hood_register_config",
+    "HOOD_ATOS": "hood_register_config",
+    "HD": "hood_register_config",
+    "HOOD": "hood_register_config",
+    "HOOD-AA-CAPACITIVE": "hood_atag_capactive_register_config",
+    "HOOD-AA-TACTILE": "hood_atag_tactile_register_config",
+    "HOOD-AA-LIGHTFEEDBACK": "hood_atag_lightfeedback_register_config",
+    "OV_ATOS": "oven_register_config",
+    "OVEN_ATOS": "oven_register_config",
+    "WM_ATOS": "washing_machine_register_config",
+    "WASHING-MACHINE_ATOS": "washing_machine_register_config",
+    "TD_ATOS": "drayer_machine_register_config",
+    "TUMBLE-DRYER_ATOS": "drayer_machine_register_config",
+    "DW_ATOS": "dishwasher_register_config",
+    "DISHWASHER_ATOS": "dishwasher_register_config",
+    "DISHWASHER-60.1": "washer_atag_register_config",
+    "DISHWASHER-60.2": "washer_atag_602_register_config",
+    "DISHWASHER-60.3": "washer_atag_603_register_config",
+    "DISHWASHER-50.2T": "washer_atag_50t_register_config",
+    "DISHWASHER-50.2F": "washer_atag_50f_register_config",
+    "FREEZER_ATOS": "atosrf_register_config",
+    "FREEZER-FS600": "combi600_register_config",
+    "COMBI_ATOS": "atosrf_register_config",
+    "COMBI-FS600": "combi600_register_config",
+    "COOLER_ATOS": "atosrf_register_config",
+    "COOLER-FS600": "combi600_register_config",
+    "RF_ATOS": "atosrf_register_config.json",
+    "HOB-PIND": "pind_register_config",
+    "HOB_ATOS": "hob_register_config",
+    "HIH": "pind_register_config",
+    "HD_ATOS": "hood_register_config",
+    "HOOD_ATOS": "hood_register_config",
+    "RANGE-COOKER": "oven_atag_husa_register_config"
+  }
+}

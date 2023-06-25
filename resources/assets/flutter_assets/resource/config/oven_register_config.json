@@ -1,0 +1,78 @@
+{
+  "applianceInfo": {
+    "typeCode": "023",
+    "typeName": "oven",
+    "isGorenje": true
+  },
+  "logo": {
+    "icon": "0xe838",
+    "fontFamily": "ConnectLifeOvenFont"
+  },
+  "logoBold": {
+    "icon": "0xe7c4",
+    "fontFamily": "ConnectLifeOvenFont"
+  },
+  "escaped": [],
+  "softAp": {
+    "type": "1",
+    "resource": [
+      {
+        "title": "step",
+        "content": "oven_config_wifi_step1",
+        "content_pair": "oven_config_wifi_step1_pair",
+        "path": "resource/images/atos_pair_page/instructions_oven_step_1.png",
+        "pair_path": "resource/images/atos_pair_page/instructions_oven_step_1.png"
+      },{
+        "title": "step",
+        "content": "oven_config_wifi_step2",
+        "content_pair": "oven_config_wifi_step2_pair",
+        "path": "resource/images/atos_pair_page/instructions_oven_step_2.png",
+        "pair_path": "resource/images/atos_pair_page/instructions_oven_step_3_pair.png"
+      },{
+        "title": "step",
+        "content": "oven_config_wifi_step3",
+        "content_pair": "",
+        "path": "resource/images/atos_pair_page/instructions_oven_step_3.png",
+        "pair_path": ""
+      }
+    ]
+  },
+  "applianceTile": {
+    "convertType": "oven",
+    "icon": {
+      "icon": "0xe838",
+      "fontFamily": "ConnectLifeOvenFont"
+    },
+    "style": "oven",
+    "properties": [
+      {
+        "propertyKey": "Device_status",
+        "type": "5",
+        "prefix": "",
+        "suffix": "",
+        "display": {
+          "Device_status": "3011"
+        }
+      }
+    ]
+  },
+  "activity": {
+    "icon": {
+      "icon": "0xe838",
+      "fontFamily": "ConnectLifeOvenFont"
+    },
+    "style": "0",
+    "condition": [
+      {
+        "propertyKey": "Device_status",
+        "value": "5"
+      }
+    ],
+    "properties": []
+  },
+  "scene": {
+    "isSupport": 1
+  },
+  "appliancePreference": "type_5",
+  "options": {}
+}

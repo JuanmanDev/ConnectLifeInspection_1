@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/margin_56" android:layout_marginLeft="15dp" android:layout_marginTop="11dp" android:layout_marginRight="15dp" android:layout_marginStart="15dp" android:layout_marginEnd="15dp">
+    <LinearLayout android:id="@+id/llTaskDelete" android:layout_width="@dimen/margin_120" android:layout_height="match_parent">
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:background="@drawable/bg_red" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/margin_10" android:layout_marginRight="@dimen/margin_10">
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/delete" android:fontFamily="@font/proximanova_extrabold"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/ll_task" android:background="@drawable/bg_userprofile_edit_round" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/colorBlack" android:id="@+id/user_box" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/proximanova_semibold" android:layout_marginStart="@dimen/margin_16"/>
+    </LinearLayout>
+</com.daimajia.swipe.SwipeLayout>

@@ -1,0 +1,159 @@
+{
+  "comment": "除湿机全量属性（AI、单冷、无节能、无电功率显示）",
+  "version": {
+    "des": "Host code软件版本号",
+    "title": "属性的中文名称的多语言key",
+    "property": "version",
+    "combination": null,
+    "extraInfo": {}
+  },
+  "oem_host_version": {
+    "des": "模板版本号",
+    "title": "属性的中文名称的多语言key",
+    "property": "oem_host_version",
+    "combination": null,
+    "extraInfo": {}
+  },
+  "hardware_type": {
+    "des": "硬件设备的类型",
+    "title": "属性的中文名称的多语言key",
+    "property": "hardware_type",
+    "combination": null,
+    "extraInfo": {}
+  },
+  "air_conditioner": [
+    {
+      "style": "conditioner_custom",
+      "des": "当前湿度",
+      "icon": {
+        "icon": "0xe6da",
+        "fontFamily": "ConnectLifeAirConditionerFont"
+      },
+      "title": "ac_humidity",
+      "property": "f_humidity",
+      "combination": null,
+      "extraInfo": {}
+    }
+  ],
+  "quick_operation": [
+    {
+      "style": "normal",
+      "des": "设定模式",
+      "iconType": "1",
+      "isNormal": "1",
+      "type": "1",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "",
+      "icon": {
+        "icon": "0xe768",
+        "fontFamily": "ConnectLifeAirConditionerFont"
+      },
+      "title": "ac_mode",
+      "property": "t_work_mode",
+      "combination": null,
+      "extraInfo": {}
+    },
+    {
+      "style": "normal",
+      "des": "设定湿度",
+      "iconType": "0",
+      "isNormal": "1",
+      "type": "0",
+      "prefix": "",
+      "suffix": "%",
+      "unitPropertyKey": "",
+      "icon": {
+        "icon": "0xe78a",
+        "fontFamily": "ConnectLifeAirConditionerFont"
+      },
+      "title": "ac_humidity",
+      "property": "t_humidity",
+      "combination": null,
+      "extraInfo": {}
+    },
+    {
+      "style": "normal",
+      "des": "设定风速",
+      "iconType": "1",
+      "isNormal": "1",
+      "type": "1",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "",
+      "icon": {
+        "icon": "0xe75d",
+        "fontFamily": "ConnectLifeAirConditionerFont"
+      },
+      "title": "ac_wind_speed",
+      "property": "t_fan_speed",
+      "combination": null,
+      "extraInfo": {}
+    },
+    {
+      "style": "normal",
+      "des": "用电统计",
+      "iconType": "0",
+      "isNormal": "0",
+      "type": "",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "",
+      "icon": {
+        "icon": "0xe74e",
+        "fontFamily": "ConnectLifeAirConditionerFont"
+      },
+      "title": "ac_electricity_statistics",
+      "property": "f_power_display",
+      "combination": null,
+      "extraInfo": {}
+    },
+    {
+      "style": "normal",
+      "des": "手动体检功能",
+      "iconType": "0",
+      "isNormal": "0",
+      "type": "5",
+      "prefix": "ac_last_examination_date",
+      "suffix": "ac_diagnose_display_error",
+      "unitPropertyKey": "",
+      "icon": {
+        "icon": "0xe747",
+        "fontFamily": "ConnectLifeAirConditionerFont"
+      },
+      "title": "ac_manual_examination",
+      "property": "f_manual_check_up",
+      "combination": null,
+      "extraInfo": {}
+    },
+    {
+      "style": "normal",
+      "des": "Timing",
+      "iconType": "0",
+      "isNormal": "0",
+      "type": "",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "",
+      "icon": {
+        "icon": "0xe823",
+        "fontFamily": "ConnectLifeFont"
+      },
+      "title": "timing",
+      "replaceTitle": "Timing",
+      "property": "air_timing",
+      "combination": null,
+      "extraInfo": {}
+    }
+  ],
+  "display": {
+    "work_mode": {
+      "0": "t_work_mode,t_fan_speed,f_power_display,f_manual_check_up,air_timing",
+      "1": "t_work_mode,t_humidity,t_fan_speed,f_power_display,f_manual_check_up,air_timing",
+      "2": "t_work_mode,t_fan_speed,f_power_display,f_manual_check_up,air_timing"
+    },
+    "power_off": "f_power_display,f_manual_check_up",
+    "fault": "f_power_display,f_manual_check_up",
+    "diagnose": "f_e_filterclean,f_e_wetsensor,f_e_tubetemp,f_e_temp,f_e_pump,f_e_waterfull"
+  }
+}

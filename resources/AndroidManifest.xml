@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="2023052601" android:versionName="1.3.4" android:compileSdkVersion="33" android:compileSdkVersionCodename="13" package="com.hisense.juconnect.connectlife" platformBuildVersionCode="33" platformBuildVersionName="13">
+    <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="33"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="30"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" android:maxSdkVersion="30"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" android:usesPermissionFlags="10000"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="28"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.faketouch" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.portrait" android:required="false"/>
+    <uses-feature android:name="android.hardware.location" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <permission android:name="com.hisense.juconnect.connectlife.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.hisense.juconnect.connectlife.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <permission android:name="com.hisense.juconnect.connectlife.RESTRICT_ACCESS" android:protectionLevel="signature"/>
+    <application android:label="ConnectLife" android:icon="@mipmap/ic_launcher" android:name="com.juconnect.connect_life.application.MainApplication" android:allowBackup="false" android:supportsRtl="true" android:extractNativeLibs="false" android:networkSecurityConfig="@xml/network_security_config" android:roundIcon="@mipmap/ic_launcher_round" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:requestLegacyExternalStorage="true">
+        <meta-data android:name="flutterEmbedding" android:value="2"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@mipmap/ic_launcher_round"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/colorAccent"/>
+        <activity android:theme="@style/LaunchTheme" android:name="com.juconnect.connect_life.MainActivity" android:exported="true" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="locale|keyboard|keyboardHidden|orientation|screenSize|layoutDirection|fontScale" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true">
+            <meta-data android:name="io.flutter.embedding.android.NormalTheme" android:resource="@style/NormalTheme"/>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.RUN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="FLUTTER_NOTIFICATION_CLICK"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https" android:host="www.connectlife.com" android:pathPrefix="/control"/>
+                <data android:scheme="https" android:host="test-dynamic-resources.hijuconn.com" android:pathPrefix="/apple-app-site-association"/>
+                <data android:scheme="connect" android:host="www.connectlife.com" android:pathPrefix="/control"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.juconnect.connect_life.QrCodeScannerActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.juconnect.connect_life.EmbeddingV1Activity" android:screenOrientation="portrait" android:configChanges="locale|keyboard|keyboardHidden|orientation|screenSize|layoutDirection|fontScale" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.juconnect.connect_life.page.NativeWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/FullScreenTheme" android:name="com.juconnect.connect_life.pic_activity.QrCodeActivity"/>
+        <activity android:theme="@style/FullScreenTheme" android:name="com.juconnect.connect_life.pic_activity.AddDeviceScanActivity"/>
+        <activity android:theme="@style/FullScreenTheme" android:name="com.juconnect.connect_life.pic_activity.PermissionDeniedActivity" android:launchMode="singleInstance"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.internationalwinecooler.MainActivity" android:screenOrientation="portrait" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.internationalwinecooler.p529ui.webview.InventoryWebViewActivity" android:screenOrientation="portrait" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.internationalwinecooler.p529ui.webview.SettingWineWebViewActivity" android:screenOrientation="portrait" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.internationalwinecooler.p529ui.webview.StatisticsWebViewActivity" android:screenOrientation="portrait" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.internationalwinecooler.p529ui.webview.SfWebViewActivity" android:screenOrientation="portrait" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.internationalwinecooler.p529ui.webview.AddWineWebViewActivity" android:screenOrientation="portrait" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.internationalwinecooler.p529ui.webview.PropWebViewActivity" android:screenOrientation="portrait" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.internationalwinecooler.p529ui.webview.HumitureWebViewActivity" android:screenOrientation="portrait" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.internationalwinecooler.p529ui.webview.TpWebViewActivity" android:screenOrientation="portrait" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.internationalwinecooler.p529ui.inventory.InventorySelectTypeActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.internationalwinecooler.p529ui.inventory.InventoryTypeDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.internationalwinecooler.p529ui.inventory.InventoryMainActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.internationalwinecooler.p529ui.inventory.InventoryFilterActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.internationalwinecooler.p529ui.webview.VivinoWebViewActivity" android:exported="true" android:screenOrientation="portrait">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http" android:host="www.vivino.com" android:pathPrefix="/wines"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/FullScreenTheme" android:name="com.juconnect.connect_life.pic_activity.QrHelpActivity"/>
+        <provider android:name="com.juconnect.connect_life.application.MyFileProvider" android:exported="false" android:authorities="com.hisense.connect_life.app_account.fileProvider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <service android:name="com.juconnect.connect_life.fcm.MessagingService" android:exported="true">
+            <intent-filter android:priority="1000">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.juconnect.connect_life.receiver.NotificationClickReceiver"/>
+        <activity android:name="com.juconnect.connectlife.ju_ble.NotificationActivity"/>
+        <service android:name="com.juconnect.connectlife.ju_ble.DfuService" android:permission="com.hisense.dfuService" android:enabled="true" android:exported="true"/>
+        <meta-data android:name="ScopedStorage" android:value="true"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.yalantis.ucrop.UCropActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.hisense.juconnect.app_device.activity.TicketDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.hisense.juconnect.app_device.activity.ServiceActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.hisense.juconnect.app_device.activity.ShareInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.hisense.juconnect.app_device.activity.DeviceInfoActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.hisense.juconnect.app_device.activity.ManualListActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.hisense.juconnect.app_device.activity.ManualPdfViewActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.hisense.juconnect.app_device.activity.ManualHtmlViewActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.hisense.juconnect.app_device.activity.ApplicationSettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.hisense.juconnect.app_device.activity.AddNewWifiInstructionsActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.hisense.juconnect.app_device.activity.ApplianceManagementActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.hisense.juconnect.app_device.activity.AppliancePairedSuccessActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.hisense.juconnect.app_device.activity.NameApplianceActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.hisense.juconnect.app_device.activity.QrCodeScannerActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.hisense.juconnect.app_device.activity.SingleZoneQrCodeScannerActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.hisense.juconnect.app_device.activity.SingleZoneEnterCodeManuallyActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.hisense.juconnect.app_device.activity.SingleZoneQrCodeRightActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.hisense.juconnect.app_device.activity.SingleZoneQrCodeErrorActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.hisense.juconnect.app_device.activity.SingleZoneAddNewApplicationActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.hisense.juconnect.app_device.activity.SingleZoneConnectionSetupGuideActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.hisense.juconnect.app_device.activity.SingleZoneApplianceIdentificationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.hisense.juconnect.app_device.activity.SingleZoneHelpActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.hisense.juconnect.app_device.activity.SingleZoneConnectionSetupRightActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.hisense.juconnect.app_device.activity.SingleZoneSetApplianceNameActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.hisense.juconnect.app_device.activity.SingleZonePairApplianceGuideActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.hisense.juconnect.app_device.activity.WineLabelScannerSuccessActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.hisense.juconnect.app_device.activity.WineLabelPictureActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.hisense.juconnect.app_device.activity.WineLabelScannerActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.hisense.juconnect.app_device.activity.NotificationActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.hisense.juconnect.app_device.activity.ReportTicketActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.hisense.juconnect.app_device.activity.AddTicketActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.hisense.juconnect.app_device.activity.FirmwareUpdateActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.hisense.juconnect.app_device.activity.AddApplianceFirstActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.hisense.juconnect.app_device.activity.AddApplianceSinglePairActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.hisense.juconnect.app_device.activity.SingleZoneConnectionSettingWifiActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.hisense.juconnect.app_device.activity.SingleZoneSetApplianceNameErrorActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.hisense.juconnect.app_device.activity.SingleZonePairingErrorActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.hisense.juconnect.app_device.activity.KeyLockActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.hisense.juconnect.app_device.flutterchannel.SoftApActivity" android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|layoutDirection|fontScale" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.hisense.juconnect.app_device.flutterchannel.EmbeddingV1Activity" android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|layoutDirection|fontScale" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true"/>
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService" android:exported="false" android:directBootAware="true">
+            <meta-data android:name="com.google.firebase.components:io.flutter.plugins.firebase.crashlytics.FlutterFirebaseAppRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <activity android:theme="@style/FullScreenTheme" android:name="com.juconnect.connectlife.ju_picture.activity.TakePictureActivity"/>
+        <activity android:theme="@style/FullScreenTheme" android:name="com.juconnect.connectlife.ju_picture.activity.TakePhotoActivity"/>
+        <provider android:name="androidx.core.content.FileProvider" android:exported="false" android:authorities="com.juconnect.connectlife.ju_picture.fileProvider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <provider android:name="com.p539zt.shareextend.ShareExtendProvider" android:exported="false" android:authorities="com.hisense.juconnect.connectlife.shareextend.fileprovider" android:grantUriPermissions="true"/>
+        <activity android:theme="@style/AppTheme" android:name="com.pichillilorenzo.flutter_inappwebview.InAppBrowser.InAppBrowserActivity" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/ThemeTransparent" android:name="com.pichillilorenzo.flutter_inappwebview.ChromeCustomTabs.ChromeCustomTabsActivity" android:configChanges="orientation|screenSize"/>
+        <receiver android:name="com.pichillilorenzo.flutter_inappwebview.ChromeCustomTabs.ActionBroadcastReceiver"/>
+        <activity android:theme="@style/Theme.NoTitleBar.Fullscreen" android:name="p630io.flutter.plugins.urllauncher.WebViewActivity" android:exported="false"/>
+        <activity android:theme="@style/Transparent" android:name="com.juconnect.connectlife.ju_dist.utils.PermissionActivity"/>
+        <activity android:theme="@style/Theme.Design.Light.NoActionBar" android:name="com.hisense.connect_life.app_account.activity.ConfigTestActivity" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection"/>
+        <activity android:theme="@style/Theme.Design.Light.NoActionBar" android:name="com.hisense.connect_life.app_account.activity.AboutActivity" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection"/>
+        <activity android:theme="@style/Theme.Design.Light.NoActionBar" android:name="com.hisense.connect_life.app_account.activity.UserProfileActivity" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection"/>
+        <activity android:theme="@style/Theme.Design.Light.NoActionBar" android:name="com.hisense.connect_life.app_account.activity.LoginUsersActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection"/>
+        <activity android:theme="@style/Theme.Design.Light.NoActionBar" android:name="com.hisense.connect_life.app_account.activity.LoginFirstActivity" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection"/>
+        <activity android:theme="@style/Theme.Design.Light.NoActionBar" android:name="com.hisense.connect_life.app_account.activity.LoginOrRegisterActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection"/>
+        <activity android:theme="@style/Theme.Design.Light.NoActionBar" android:name="com.hisense.connect_life.app_account.activity.PasswordActivity" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection"/>
+        <activity android:theme="@style/Theme.Design.Light.NoActionBar" android:name="com.hisense.connect_life.app_account.activity.LoginEmailActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection"/>
+        <activity android:theme="@style/Theme.Design.Light.NoActionBar" android:name="com.hisense.connect_life.app_account.activity.PrivacyPolicyActivity" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection"/>
+        <activity android:theme="@style/Theme.Design.Light.NoActionBar" android:name="com.hisense.connect_life.app_account.activity.GUserAgreementWebViewActivity" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection"/>
+        <activity android:theme="@style/Theme.Design.Light.NoActionBar" android:name="com.hisense.connect_life.app_account.activity.LoginForgotPswInputEmailActivity" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection"/>
+        <activity android:theme="@style/Theme.Design.Light.NoActionBar" android:name="com.hisense.connect_life.app_account.activity.LoginRedirectActivity" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection"/>
+        <activity android:theme="@style/Theme.Design.Light.NoActionBar" android:name="com.hisense.connect_life.app_account.activity.RegisterInputUserInfoActivity" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection"/>
+        <activity android:theme="@style/Theme.Design.Light.NoActionBar" android:name="com.hisense.connect_life.app_account.activity.RepeatPasswordActivity" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection"/>
+        <activity android:theme="@style/Theme.Design.Light.NoActionBar" android:name="com.hisense.connect_life.app_account.activity.RegisterSetPasswordActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection"/>
+        <activity android:theme="@style/Theme.Design.Light.NoActionBar" android:name="com.hisense.connect_life.app_account.activity.RegisterInputEmaliActiviy" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection"/>
+        <activity android:theme="@style/Theme.Design.Light.NoActionBar" android:name="com.hisense.connect_life.app_account.activity.RegisterInputVerificationActivity" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection"/>
+        <activity android:theme="@style/Theme.Design.Light.NoActionBar" android:name="com.hisense.connect_life.app_account.activity.DeviceCerVerificationActivity" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection"/>
+        <activity android:theme="@style/Theme.Design.Light.NoActionBar" android:name="com.hisense.connect_life.app_account.activity.RegisterSuccessActivity" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection"/>
+        <activity android:theme="@style/Theme.Design.Light.NoActionBar" android:name="com.hisense.connect_life.app_account.activity.LoginResetPswActivity" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection"/>
+        <activity android:theme="@style/Theme.Design.Light.NoActionBar" android:name="com.hisense.connect_life.app_account.activity.LoginResetFirstActivity" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection"/>
+        <activity android:theme="@style/Theme.Design.Light.NoActionBar" android:name="com.hisense.connect_life.app_account.activity.ChangePasswordActivity" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection"/>
+        <activity android:theme="@style/Theme.Design.Light.NoActionBar" android:name="com.hisense.connect_life.app_account.activity.ClipImageActivity" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection"/>
+        <activity android:theme="@style/Theme.Design.Light.NoActionBar" android:name="com.hisense.connect_life.app_account.activity.DeleteAccount" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection"/>
+        <activity android:theme="@style/Theme.Design.Light.NoActionBar" android:name="com.hisense.connect_life.app_account.activity.DeleteAccountEmailCode" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection"/>
+        <activity android:theme="@style/Theme.Design.Light.NoActionBar" android:name="com.hisense.connect_life.app_account.activity.UserAgreementWebViewActivity" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection"/>
+        <activity android:theme="@style/Theme.Design.Light.NoActionBar" android:name="com.hisense.connect_life.app_account.activity.PdfTestActivity" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection"/>
+        <activity android:theme="@style/Theme.Design.Light.NoActionBar" android:name="com.hisense.connect_life.app_account.TestLoginSuccessActivity" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection"/>
+        <activity android:theme="@style/Theme.Design.Light.NoActionBar" android:name="com.hisense.connect_life.app_account.activity.AllergiesAndFoodPreferencesActivity" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection"/>
+        <activity android:theme="@style/Theme.Design.Light.NoActionBar" android:name="com.hisense.connect_life.app_account.activity.CountryListActivity" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan"/>
+        <activity android:theme="@style/Theme.Design.Light.NoActionBar" android:name="com.hisense.connect_life.app_account.activity.ConformDeleteAccount" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection"/>
+        <activity android:theme="@style/Theme.NoDisplay" android:name="com.amazon.identity.auth.device.workflow.WorkflowActivity" android:exported="true" android:launchMode="singleTask" android:allowTaskReparenting="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="amzn" android:host="com.hisense.juconnect.connectlife"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.AppCompat.Translucent" android:name="com.gigya.android.sdk.p309ui.HostActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:theme="@style/Theme.AppCompat.Translucent" android:name="com.gigya.android.sdk.p309ui.WebLoginActivity" android:launchMode="singleTask" android:allowTaskReparenting="true"/>
+        <activity android:theme="@style/Theme.Design.Light.NoActionBar" android:name="com.hisense.connect_life.app_account.activity.ChangeEmailSuccessActivity" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection"/>
+        <activity android:theme="@style/Theme.Design.Light.NoActionBar" android:name="com.hisense.connect_life.app_account.activity.UpgradeActivity" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection"/>
+        <activity android:theme="@style/ActivityTranslucent" android:name="com.blankj.utilcode.util.UtilsTransActivity4MainProcess" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/ActivityTranslucent" android:name="com.blankj.utilcode.util.UtilsTransActivity" android:multiprocess="true" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <provider android:name="com.blankj.utilcode.util.UtilsFileProvider" android:exported="false" android:authorities="com.hisense.juconnect.connectlife.utilcode.provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/util_code_provider_paths"/>
+        </provider>
+        <service android:name="com.blankj.utilcode.util.MessengerUtils$ServerService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.hisense.juconnect.connectlife.messenger"/>
+            </intent-filter>
+        </service>
+        <activity android:theme="@style/EasyPermissions.Transparent" android:label="" android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity" android:exported="false"/>
+        <provider android:name="androidx.startup.InitializationProvider" android:exported="false" android:authorities="com.hisense.juconnect.connectlife.androidx-startup">
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:name="androidx.work.impl.background.systemalarm.SystemAlarmService" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:directBootAware="false"/>
+        <service android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:directBootAware="false"/>
+        <service android:name="androidx.work.impl.foreground.SystemForegroundService" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:directBootAware="false"/>
+        <receiver android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" android:enabled="true" android:exported="false" android:directBootAware="false"/>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP" android:enabled="true" android:exported="true" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <provider android:name="androidx.camera.camera2.impl.Camera2Initializer" android:exported="false" android:multiprocess="true" android:authorities="com.hisense.juconnect.connectlife.camerax-init" android:initOrder="100"/>
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.firebase.messaging.FirebaseMessagingService" android:exported="false" android:directBootAware="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:exported="false" android:excludeFromRecents="true"/>
+        <service android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:exported="true" android:visibleToInstantApps="true"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.firebase.auth.internal.GenericIdpActivity" android:exported="true" android:excludeFromRecents="true" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="genericidp" android:host="firebase.auth" android:path="/"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.firebase.auth.internal.RecaptchaActivity" android:exported="true" android:excludeFromRecents="true" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="recaptcha" android:host="firebase.auth" android:path="/"/>
+            </intent-filter>
+        </activity>
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="com.hisense.juconnect.connectlife.firebaseinitprovider" android:initOrder="100" android:directBootAware="true"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <service android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" android:exported="false">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <receiver android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" android:exported="false"/>
+        <service android:name="androidx.room.MultiInstanceInvalidationService" android:exported="false" android:directBootAware="true"/>
+        <activity android:theme="@style/Theme.PlayCore.Transparent" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:exported="false" android:stateNotNeeded="true"/>
+        <meta-data android:name="com.android.dynamic.apk.fused.modules" android:value="base"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_STANDALONE_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="2"/>
+    </application>
+</manifest>

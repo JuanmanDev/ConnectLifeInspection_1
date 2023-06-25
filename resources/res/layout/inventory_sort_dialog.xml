@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/container" android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.hisense.connect_life.core.widget.IconFontView android:textSize="@dimen/text_size_20" android:textColor="@color/colorBlack" android:gravity="center" android:id="@+id/cancel_ifv" android:paddingTop="@dimen/margin_10" android:paddingBottom="@dimen/margin_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btn_main_close" android:paddingStart="@dimen/margin_18" android:paddingEnd="@dimen/margin_18"/>
+    <TextView android:textSize="@dimen/text_size_22" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@+id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_32" android:text="@string/sort_tip" android:layout_below="@+id/cancel_ifv" android:layout_marginStart="@dimen/margin_32" android:layout_marginEnd="@dimen/margin_32"/>
+    <TextView android:id="@+id/text_old_first" android:layout_marginTop="@dimen/margin_26" android:text="@string/vintage_old" android:layout_below="@+id/title_text" style="@style/style_inventory_filter_text"/>
+    <TextView android:id="@+id/text_young_first" android:text="@string/vintage_young" android:layout_below="@+id/text_old_first" style="@style/style_inventory_filter_text"/>
+    <TextView android:id="@+id/text_name_a_z" android:text="@string/name_small" android:layout_below="@+id/text_young_first" style="@style/style_inventory_filter_text"/>
+    <TextView android:id="@+id/text_name_z_a" android:text="@string/name_big" android:layout_below="@+id/text_name_a_z" style="@style/style_inventory_filter_text"/>
+    <TextView android:id="@+id/text_name_last_in" android:text="@string/inventory_big" android:layout_below="@+id/text_name_z_a" style="@style/style_inventory_filter_text"/>
+    <TextView android:id="@+id/text_name_first_in" android:layout_marginBottom="@dimen/margin_20" android:text="@string/inventory_small" android:layout_below="@+id/text_name_last_in" style="@style/style_inventory_filter_text"/>
+</RelativeLayout>

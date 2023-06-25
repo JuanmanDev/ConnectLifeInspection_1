@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/closed_tickets_refreshLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/closed_tickets_service" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <TextView android:textSize="@dimen/text_size_22" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@+id/closed_tickets_empty" android:paddingLeft="@dimen/margin_36" android:paddingTop="@dimen/margin_240" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/closed_tickets_empty"/>
+    </RelativeLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+        <ImageView android:id="@+id/img_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:src="@drawable/icon_general_24_back" android:layout_marginStart="12dp"/>
+        <TextureView android:id="@+id/texture_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_container" android:background="#000000" android:paddingLeft="30dp" android:paddingRight="30dp" android:layout_width="match_parent" android:layout_height="95dp" android:layout_alignParentBottom="true">
+        <ImageView android:id="@+id/iv_select_photo" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_select_photo_24"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:id="@+id/iv_take_photo" android:layout_width="65dp" android:layout_height="65dp" android:src="@drawable/ic_baseline_brightness_1_24"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/iv_flash" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_baseline_flash_off_24"/>
+    </LinearLayout>
+</LinearLayout>

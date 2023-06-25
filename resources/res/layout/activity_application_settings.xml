@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/container" android:background="@color/colorBackground_e" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/top_bar_device"/>
+        <TextView android:textSize="@dimen/text_size_20" android:textStyle="bold" android:textColor="@color/colorBlack" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_34" android:layout_marginBottom="@dimen/margin_16" android:text="@string/app_settings" android:layout_marginStart="@dimen/margin_32"/>
+        <RelativeLayout android:id="@+id/inventory_mode_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_40" android:paddingStart="@dimen/margin_32" android:paddingEnd="@dimen/margin_32">
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/colorBlack" android:id="@+id/inventory_mode_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Inventory_management"/>
+            <TextView android:textSize="@dimen/text_size_20" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@+id/inventory_mode_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_4" android:text="@string/inventory_type_generic" android:layout_below="@+id/inventory_mode_title"/>
+            <com.hisense.connect_life.core.widget.IconFontView android:textSize="@dimen/text_size_10" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_4" android:text="@string/btn_main_more" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_cloud_notifications" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/margin_64" android:layout_marginTop="@dimen/margin_20" android:paddingStart="@dimen/margin_32" android:paddingEnd="@dimen/margin_32">
+            <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/colorBlack" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/push_notifications" android:layout_weight="1"/>
+            <com.suke.widget.SwitchButton android:id="@+id/switch_button_cloud" android:layout_width="wrap_content" android:layout_height="wrap_content" app:sb_checked="true" app:sb_checked_color="@color/colorBlack" app:sb_show_indicator="false"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_language" android:layout_width="match_parent" android:layout_height="64dp" android:paddingStart="@dimen/margin_32" android:paddingEnd="@dimen/margin_32">
+            <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/colorBlack" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/language" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/colorBlack" android:id="@+id/setting_language" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <com.hisense.connect_life.core.widget.IconFontView android:textSize="@dimen/text_size_10" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btn_main_more"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/text_size_20" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_32" android:layout_marginBottom="@dimen/margin_16" android:text="@string/about_app" android:layout_marginStart="@dimen/margin_34"/>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_about" android:layout_width="match_parent" android:layout_height="64dp" android:paddingStart="@dimen/margin_32" android:paddingEnd="@dimen/margin_32">
+            <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/colorBlack" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/about" android:layout_weight="1"/>
+            <com.hisense.connect_life.core.widget.IconFontView android:textSize="@dimen/text_size_12" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btn_main_unfold_right"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

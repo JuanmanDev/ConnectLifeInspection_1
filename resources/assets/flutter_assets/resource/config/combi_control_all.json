@@ -1,0 +1,170 @@
+{
+  "comment": "combi600 冰箱",
+  "version": {
+    "des": "Host code软件版本号",
+    "title": "属性的中文名称的多语言key",
+    "property": "version",
+    "combination": null,
+    "extraInfo": {}
+  },
+  "oem_host_version": {
+    "des": "模板版本号",
+    "title": "属性的中文名称的多语言key",
+    "property": "oem_host_version",
+    "combination": null,
+    "extraInfo": {}
+  },
+  "hardware_type": {
+    "des": "硬件设备的类型",
+    "title": "属性的中文名称的多语言key",
+    "property": "hardware_type",
+    "combination": null,
+    "extraInfo": {}
+  },
+  "quick_operation": [
+    {
+      "style": "switch",
+      "des": "速冷模式",
+      "iconType": "0",
+      "isNormal": "1",
+      "type": "0",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "",
+      "icon":{
+        "icon": "0xe707",
+        "fontFamily": "ConnectLifeAtosRF"
+      },
+      "title": "super_cool",
+      "property": "SuperCool2",
+      "combination": null,
+      "extraInfo": {}
+    },
+    {
+      "style": "switch",
+      "des": "速冻模式",
+      "iconType": "0",
+      "isNormal": "1",
+      "type": "0",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "",
+      "icon":{
+        "icon": "0xe707",
+        "fontFamily": "ConnectLifeAtosRF"
+      },
+      "title": "fast_freeze",
+      "property": "FastFreeze2",
+      "combination": null,
+      "extraInfo": {}
+    },
+    {
+      "style": "switch",
+      "des": "儿童模式",
+      "iconType": "0",
+      "isNormal": "1",
+      "type": "0",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "",
+      "icon":{
+        "icon": "0xe81f",
+        "fontFamily": "ConnectLifeAtosRF"
+      },
+      "title": "child_lock",
+      "property": "ChildLock2",
+      "combination": null,
+      "extraInfo": {}
+    },
+    {
+      "style": "normal",
+      "des": "设置温度",
+      "iconType": "0",
+      "isNormal": "1",
+      "type": "0",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "t_temp_type",
+      "icon":{
+        "icon": "0xe855",
+        "fontFamily": "ConnectLifeAtosRF"
+      },
+      "title": "cooler",
+      "property": "ZoneTopTemperature",
+      "combination": null,
+      "extraInfo": {}
+    },
+    {
+      "style": "normal",
+      "des": "设置温度",
+      "iconType": "0",
+      "isNormal": "1",
+      "type": "0",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "t_temp_type",
+      "icon":{
+        "icon": "0xe858",
+        "fontFamily": "ConnectLifeAtosRF"
+      },
+      "title": "freezer",
+      "property": "ZoneBottomTemperature",
+      "combination": null,
+      "extraInfo": {}
+    },
+      {
+        "style": "switch",
+        "des": "ECO mode",
+        "iconType": "0",
+        "isNormal": "1",
+        "type": "0",
+        "prefix": "",
+        "suffix": "",
+        "unitPropertyKey": "",
+        "icon":{
+          "icon": "0xe856",
+          "fontFamily": "ConnectLifeAtosRF"
+        },
+        "title": "eco_mode",
+        "property": "EcoMode2",
+        "combination": null,
+        "extraInfo": {}
+      },
+    {
+      "style": "normal",
+      "des": "设置温度",
+      "iconType": "0",
+      "isNormal": "1",
+      "type": "0",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "t_temp_type",
+      "icon":{
+        "icon": "0xe855",
+        "fontFamily": "ConnectLifeAtosRF"
+      },
+      "title": "dura_fresh",
+      "property": "ZoneSpecialTemperature",
+      "combination": null,
+      "extraInfo": {}
+    },
+    {
+      "style": "switch",
+      "des": "Convert mode",
+      "iconType": "0",
+      "isNormal": "1",
+      "type": "0",
+      "prefix": "",
+      "suffix": "",
+      "unitPropertyKey": "",
+      "icon":{
+        "icon": "0xe858",
+        "fontFamily": "ConnectLifeAtosRF"
+      },
+      "title": "convert_mode",
+      "property": "ZoneBottomConvertMode2",
+      "combination": null,
+      "extraInfo": {}
+    }
+  ]
+}
